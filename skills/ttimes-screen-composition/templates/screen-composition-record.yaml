@@ -1,0 +1,108 @@
+schema_version: "0.2"
+# Draft scaffold, not a completed decision. Resolve UNDECIDED before handoff.
+# Remove unused visual objects and set editorial_captions: [] for no-caption beats.
+project:
+  title: ""
+  authoritative_source: ""
+  source_sha256: ""
+  output_filename: ""
+
+segments:
+  - segment_id: "SC-001"
+    source_time: "00:00:00.000-00:00:00.000"
+    speech_anchor: ""
+    editorial_goal: ""
+    # Internal only; selection rationales are not repeated in the editor-facing Word.
+    selection:
+      viewer_gap: ""
+      chosen_reason: ""
+      rejected_alternative: "" # Include NONE when relevant; no mandatory alternatives essay.
+      omission_cost: "" # If nothing is lost, consider NONE.
+    continuity:
+      concept_ids: []
+      relation_to_prior: "" # FIRST | EXTEND | REUSE | RECAP | CLOSE | NA
+      prior_segment_ids: []
+      new_information: ""
+    visual_need: "UNDECIDED" # REQUIRED | OPTIONAL | NONE after the decision gate
+    composition_mode: "UNDECIDED"
+
+    audio:
+      speaker: ""
+      spoken_text: ""
+
+    speech_caption:
+      mode: "UNDECIDED" # Decide from dominant reading object; never suppress by template default.
+      zone: "LOWER"
+
+    visual:
+      placement_id: "M001-P01"
+      asset_id: "M001"
+      source_family: "COMPANY_OFFICIAL"
+      form: "MOTION_CLIP"
+      implementation: "SELECT_EXCERPT"
+      primary_function: "ILLUSTRATE"
+      secondary_functions: []
+      selection_mode: "PD_SELECT"
+      specificity: "GUIDED" # STRICT | GUIDED | OPEN
+      subject: ""
+      action: ""
+      setting: ""
+      shot: ""
+      camera: ""
+      temporal_feel: ""
+      tone: ""
+      verbal_brief: ""
+      include: []
+      exclude: []
+      duration: ""
+      entry_anchor: ""
+      exit_anchor: ""
+      safe_area: ""
+      source_candidates: []
+      search_terms_ko: []
+      search_terms_en: []
+      status: "SEARCH_REQUESTED"
+      source_status: "SOURCE_UNRESOLVED"
+      fact_status: "FACT_NA"
+      rights_status: "RIGHTS_UNKNOWN"
+      source_owner: ""
+      source_title: ""
+      source_url: ""
+      source_timecode: ""
+      delivered_filename: ""
+      credit_text: ""
+      reuse_note: ""
+
+    editorial_captions:
+      - caption_id: "CAP-001"
+        function_primary: "C2-THS"
+        function_secondary: ""
+        tone: "EMPHASIS"
+        render_code: "R2"
+        display_code: "D0"
+        audio_relation: "PARAPHRASE"
+        exact_screen_text: ""
+        wording_locked: "PENDING_APPROVAL"
+        line_break_locked: false
+        time_in: ""
+        time_out: ""
+        screen_zone: "UPPER"
+        material_relation: ""
+        verification_level: "V1"
+        verification_status: "PENDING"
+        source_record: ""
+        editor_action: ""
+        prohibited_action: ""
+
+    source_labels: []
+    layer_plan: [] # Populate only after selecting active objects.
+    timing_mode: "D0"
+    collision_check: "PENDING"
+    internal_note: ""
+
+reviews:
+  sequence_continuity: "PENDING"
+  under_visualized: "PENDING"
+  over_decoration: "PENDING"
+  composition_evidence: "PENDING"
+  blockers: []

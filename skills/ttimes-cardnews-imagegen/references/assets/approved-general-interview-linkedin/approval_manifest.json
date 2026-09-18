@@ -1,0 +1,43 @@
+{
+  "approval_date": "2026-08-29",
+  "user_approval": "일반 대담형은 링크드인 색으로 정하자.",
+  "format": "TTimes 일반 대담형",
+  "video_id": "AOTMvKj_A0M",
+  "palette": {
+    "blue": "#0A66C2",
+    "pale_blue": "#DCE6F1",
+    "slate": "#38434F",
+    "offwhite": "#F3F6F8"
+  },
+  "palette_scope": "UI, typography, generated graphics; exact _list_ and official TTimes logo colors preserved",
+  "production_profile": "../../general-interview-production-profile-20260831.json",
+  "additional_approved_exemplars": [
+    "kim-jihyun-tokenomics-20260831/approval_manifest.json"
+  ],
+  "files": {
+    "01_cover.png": {
+      "sha256": "32a916eaa0562585cc37e7b79f4997aebcac99a54e6b4e5083cb750cd2b2a4b8",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 1143566
+    },
+    "02_body.png": {
+      "sha256": "fc4127e101a55803eb2e8f2ead55b720badd92ccdc67f64abffc04afebb5a2a4",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 150129
+    },
+    "03_closing.png": {
+      "sha256": "f0724f52cdd1751a4412ef325fe4a8b196ff3814a878a76400881f6946d7c82d",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 216480
+    }
+  }
+}

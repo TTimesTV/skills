@@ -1,0 +1,984 @@
+{
+  "schema_version": "1.0.0",
+  "generated_from": "references/editorial-approval-ledger.jsonl",
+  "event_count": 32,
+  "formats": {
+    "TTimes 일반 대담형": {
+      "event_count": 18,
+      "episode_count": 5,
+      "status_counts": {
+        "approved": 5,
+        "rejected": 4,
+        "revised": 9
+      },
+      "positive_signals": [
+        {
+          "signal": "cover_title_more_bottom_breathing_room",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "moderate_upward_shift",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "literal_visual_metaphor",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "instant_claim_readability",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "imagegen_required",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "one_highlight_claim_per_card",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "emphasis_selectivity",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "closing_highlight_on_thesis",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "upper_quote_highlight",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "literal_character_pun",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "visible_expulsion_action",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "access_revocation",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "exit_direction",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "image_reference_required",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "short_assertive_title",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "digital_workforce",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "employee_management_metaphor",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "broad_episode_coverage",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "full_sequence_storyboard",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "four_field_card_spec",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "pre_imagegen_approval",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "complete_resubmission",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "personal_workplace_tension",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "performance_ownership",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "skill_sharing",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "ai_team_lead",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "role_reversal",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "full_storyboard_approved",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "exact_user_cover",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "no_direct_quote_marks",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "two_line_cover",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "preserve_hook",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "concrete_credibility",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "lively_single_verb",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "practical_expert_cover",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "preserve_approved_layout",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "two_continuous_paragraphs",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "balanced_line_width",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "grammatical_wrap",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "metaphor_before_generation",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "bright_dry_figma_flat",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "structural_contrast",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "imagegen_only",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "no_semantic_post_overlay",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "reversal_then_payoff",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "human_responsibility",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "decisive_close",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "second_paragraph_emphasis",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "exact_retrieval",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "epistemic_humility",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "no_invented_substitute",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "metadata_source_of_truth",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        }
+      ],
+      "rejected_signals": [
+        {
+          "signal": "bland",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "explanatory",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "checklist",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "abstract_management",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "no_audience_tension",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "spectacle_without_personal_stakes",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "example_list",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "no_role_reversal",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "abstract_type_taxonomy_rejected",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "reference_title_grammar_required",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "concise_concrete_cover_candidates",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "research_report_voice_rejected",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "direct_reader_facing_copy",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "concrete_scene_first",
+          "events": 1,
+          "episodes": 1
+        }
+      ],
+      "approved_examples": {
+        "body_02_to_04": [
+          {
+            "field": "copy_flow",
+            "final": "기존 왼쪽 정렬을 유지하고 각 카드 본문을 두 개의 연속 문단으로 구성해 행 폭을 균형화",
+            "episode": "조태호 2편 바이브코딩",
+            "signals": [
+              "preserve_approved_layout",
+              "two_continuous_paragraphs",
+              "balanced_line_width",
+              "grammatical_wrap"
+            ]
+          }
+        ],
+        "body_03_04": [
+          {
+            "field": "visual_style",
+            "final": "밝은 피그마식 2D 아이콘 도해: 루프는 오류 회람, 그래프는 외부 관제 고정 경로",
+            "episode": "조태호 2편 바이브코딩",
+            "signals": [
+              "metaphor_before_generation",
+              "bright_dry_figma_flat",
+              "structural_contrast",
+              "imagegen_only",
+              "no_semantic_post_overlay"
+            ]
+          }
+        ],
+        "body_card_02": [
+          {
+            "field": "visual_concept",
+            "final": "데이터센터에서 실제 돈과 컴퓨팅 토큰을 집어삼키는 하마",
+            "episode": "김덕중 에이전트 부채",
+            "signals": [
+              "literal_visual_metaphor",
+              "instant_claim_readability",
+              "imagegen_required"
+            ]
+          },
+          {
+            "field": "highlight_scope",
+            "final": "첫 문장은 일반 본문, 두 번째 문장만 강조",
+            "episode": "김덕중 에이전트 부채",
+            "signals": [
+              "one_highlight_claim_per_card",
+              "emphasis_selectivity"
+            ]
+          }
+        ],
+        "body_card_04": [
+          {
+            "field": "visual_concept",
+            "final": "도둑 모자를 쓴 메이플 루팡이 출입증을 회수당하고 관리자가 가리키는 데이터센터 문밖으로 퇴출",
+            "episode": "김덕중 에이전트 부채",
+            "signals": [
+              "literal_character_pun",
+              "visible_expulsion_action",
+              "access_revocation",
+              "exit_direction",
+              "image_reference_required"
+            ]
+          }
+        ],
+        "closing_05": [
+          {
+            "field": "wording_and_emphasis",
+            "final": "AI를 잘 다루는 방법은 더 많은 일을 맡기는 게 아닙니다. / 어디까지 맡길지 사람이 먼저 정하는 겁니다. 두 번째 문단만 강조",
+            "episode": "조태호 2편 바이브코딩",
+            "signals": [
+              "reversal_then_payoff",
+              "human_responsibility",
+              "decisive_close",
+              "second_paragraph_emphasis"
+            ]
+          }
+        ],
+        "closing_card_05": [
+          {
+            "field": "highlight_scope",
+            "final": "에이전트가 아메바처럼 증식하는 것은 일종의 부채입니다.",
+            "episode": "김덕중 에이전트 부채",
+            "signals": [
+              "closing_highlight_on_thesis",
+              "upper_quote_highlight"
+            ]
+          }
+        ],
+        "cover": [
+          {
+            "field": "title_vertical_position",
+            "final": "title_y=842, bottom_margin=66px",
+            "episode": "김덕중 에이전트 부채",
+            "signals": [
+              "cover_title_more_bottom_breathing_room",
+              "moderate_upward_shift"
+            ]
+          },
+          {
+            "field": "title",
+            "final": "AI 에이전트도 직원처럼 관리해야 한다",
+            "episode": "김덕중 2편 AI 에이전트 스킬과 거버넌스",
+            "signals": [
+              "short_assertive_title",
+              "digital_workforce",
+              "employee_management_metaphor",
+              "broad_episode_coverage"
+            ]
+          },
+          {
+            "field": "title",
+            "final": "모르겠다고 말하는\nAI가 더 정확한 이유",
+            "episode": "조태호 의료 AI·불확실성",
+            "signals": [
+              "exact_user_cover",
+              "no_direct_quote_marks",
+              "two_line_cover",
+              "preserve_hook"
+            ]
+          },
+          {
+            "field": "title",
+            "final": "미국 의대 교수가 말아주는 / 바이브코딩 강의",
+            "episode": "조태호 2편 바이브코딩",
+            "signals": [
+              "concrete_credibility",
+              "lively_single_verb",
+              "practical_expert_cover"
+            ]
+          }
+        ],
+        "sequence-v4": [
+          {
+            "field": "storyboard",
+            "final": "AI가 한 일은 누구의 성과인가 → 노하우를 AI에게 가르치는 것이 성과 → 직원 한 명이 AI 팀장 → 인간+에이전트 시스템 설계",
+            "episode": "김덕중 2편 AI 에이전트 스킬과 거버넌스",
+            "signals": [
+              "personal_workplace_tension",
+              "performance_ownership",
+              "skill_sharing",
+              "ai_team_lead",
+              "role_reversal",
+              "full_storyboard_approved"
+            ]
+          }
+        ],
+        "upload_metadata": [
+          {
+            "field": "exact_description_retrieval",
+            "final": "기존 문구를 찾지 못하면 모르겠다고 명시하고 사용자가 제공한 원문을 그대로 반환",
+            "episode": "조태호 2편 바이브코딩",
+            "signals": [
+              "exact_retrieval",
+              "epistemic_humility",
+              "no_invented_substitute",
+              "metadata_source_of_truth"
+            ]
+          }
+        ],
+        "workflow": [
+          {
+            "field": "storyboard_approval_order",
+            "final": "표지 제목 확정 후 1~5장 전체의 제목·본문·강조 위치·이미지 생성 콘셉트를 한 번에 배치해 승인",
+            "episode": "김덕중 2편 AI 에이전트 스킬과 거버넌스",
+            "signals": [
+              "full_sequence_storyboard",
+              "four_field_card_spec",
+              "pre_imagegen_approval",
+              "complete_resubmission"
+            ]
+          }
+        ]
+      }
+    },
+    "general-interview": {
+      "event_count": 14,
+      "episode_count": 1,
+      "status_counts": {
+        "approved": 4,
+        "rejected": 2,
+        "revised": 8
+      },
+      "positive_signals": [
+        {
+          "signal": "plural_subject",
+          "events": 2,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "compact_sequence",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "independent_beats",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "five_card_exemplar",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "question_cover",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "audience_tension",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "performance_evaluation",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "specific_subject",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "concrete_metaphor",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "scene_to_interpretation_to_conclusion",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "spoken_naturalness",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "imagegen_required",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "coded_visual_rejected",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "textless_generated_base",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "one_line_when_fit",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "grammatical_cohesion",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "avoid_arbitrary_breaks",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "exact_tense",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "completed_usage",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "preserve_user_wording",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "remove_unnecessary_labels",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "visual_first",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "exact_text_only_when_needed",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "short_assertive_title",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "organizational_responsibility",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "remove_redundancy",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "direct_question",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "punctuation_precision",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "physical_metaphor",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "automatic_sorting",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "one_input_three_paths",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "action_visible_before_copy",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "metadata_isolation",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "workflow_separation",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "preserve_supplied_upload_copy",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "approval_learning_loop",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "candidate_ranking",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "delta_capture",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "iterative_automation",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        }
+      ],
+      "rejected_signals": [
+        {
+          "signal": "abstract_control_room_rejected",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "visual_intuitiveness_required",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "subtle_server_metaphor_rejected",
+          "events": 1,
+          "episodes": 1
+        },
+        {
+          "signal": "action_must_be_visible",
+          "events": 1,
+          "episodes": 1
+        }
+      ],
+      "approved_examples": {
+        "body-02": [
+          {
+            "field": "copy_structure",
+            "final": "야근 비유 → 토큰 활동량 해석 → 성과 판단",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "concrete_metaphor",
+              "scene_to_interpretation_to_conclusion",
+              "spoken_naturalness"
+            ]
+          },
+          {
+            "field": "visual_origin",
+            "final": "ImageGen late-night office scene with deterministic text composition",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "imagegen_required",
+              "coded_visual_rejected",
+              "textless_generated_base"
+            ]
+          }
+        ],
+        "body-03": [
+          {
+            "field": "line_breaks",
+            "final": "each complete sentence stays on one line when it fits",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "one_line_when_fit",
+              "grammatical_cohesion",
+              "avoid_arbitrary_breaks"
+            ]
+          },
+          {
+            "field": "highlight_copy",
+            "final": "그래야 많이 썼어도 더 밀어줄 일과, 적게 썼어도 멈춰야 할 일이 갈립니다.",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "exact_tense",
+              "completed_usage",
+              "preserve_user_wording"
+            ]
+          },
+          {
+            "field": "visual_labels",
+            "final": "textless dashboard visual",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "remove_unnecessary_labels",
+              "visual_first",
+              "exact_text_only_when_needed"
+            ]
+          }
+        ],
+        "body-04": [
+          {
+            "field": "title",
+            "final": "토큰 절약은 직원들에게 맡기면 안 된다",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "short_assertive_title",
+              "plural_subject",
+              "organizational_responsibility"
+            ]
+          },
+          {
+            "field": "body_copy",
+            "final": "직원들에게 “왜 이렇게 컴퓨터를 오래 썼냐” “전기값이 왜 이렇게 많이 나왔냐”고 따지시나요?",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "remove_redundancy",
+              "direct_question",
+              "punctuation_precision",
+              "plural_subject"
+            ]
+          },
+          {
+            "field": "visual_concept",
+            "final": "automatic logistics sorter routing one request package to three compute capacities",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "physical_metaphor",
+              "automatic_sorting",
+              "one_input_three_paths",
+              "action_visible_before_copy"
+            ]
+          }
+        ],
+        "cover": [
+          {
+            "field": "title",
+            "final": "토큰 많이 쓴 직원이\n일 잘한 걸까?",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "question_cover",
+              "audience_tension",
+              "performance_evaluation",
+              "specific_subject"
+            ]
+          }
+        ],
+        "sequence": [
+          {
+            "field": "page_count",
+            "final": "5 cards including cover and closing",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "compact_sequence",
+              "independent_beats",
+              "five_card_exemplar"
+            ]
+          }
+        ],
+        "workflow": [
+          {
+            "field": "metadata_authority",
+            "final": "card-news and YouTube upload packages remain separate authoritative workflows",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "metadata_isolation",
+              "workflow_separation",
+              "preserve_supplied_upload_copy"
+            ]
+          },
+          {
+            "field": "approval_learning",
+            "final": "각 회차의 제목·본문 선택과 수정 델타를 패턴화해 다음 카드뉴스 후보 생성과 순위화에 반영",
+            "episode": "kim-jihyun-tokenomics",
+            "signals": [
+              "approval_learning_loop",
+              "candidate_ranking",
+              "delta_capture",
+              "iterative_automation"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "promotion_policy": {
+    "hard_rule": "explicit user instruction applies immediately",
+    "default_pattern": "promote after the same signal appears in at least 3 independent episodes",
+    "latest_instruction_wins": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "fixture_kind": "synthetic_contract_fixture",
+  "thesis_id": "spare-capacity-to-jevons-to-memory",
+  "pages": [
+    {"function": "cover"},
+    {"function": "problem_and_reframe"},
+    {"function": "efficiency_mechanism"},
+    {"function": "jevons_implication"},
+    {"function": "guest_quote"}
+  ]
+}

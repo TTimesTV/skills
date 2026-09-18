@@ -1,0 +1,48 @@
+{
+  "approval_date": "2026-08-29",
+  "user_approval": "ㅇㅋ 이게 템플릿이야. 이중학, 박영선, 원맨은 ㅇㅋ 됏지",
+  "format": "TTimes 원맨 해설형",
+  "video_id": "dUVHJOpzTBI",
+  "files": {
+    "01_cover.png": {
+      "sha256": "d39835b582ff30a69ebf6cd664b5f6b8b78b9bf4d2fbbdedbc64730a3c080c90",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 873584
+    },
+    "02_deformable.png": {
+      "sha256": "e96a8b374438b9759b205a938c24e7eac7041935490444d7d09de782f9c2e21e",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 860929
+    },
+    "03_safe_retry.png": {
+      "sha256": "3486a0b3c1c47ec0713d42639dd396c5160749d57049f68a54b305969dc12de6",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 975661
+    },
+    "04_training.png": {
+      "sha256": "84e11ad28cfd88ecedef840b6992a14fb8da6b407f10ddba93882536ecc64519",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 1055816
+    },
+    "05_closing.png": {
+      "sha256": "819d2cfd8451afb2bd69e64a25550177679da3ec18d1fa4bf87e86c5594e05b8",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 863752
+    }
+  }
+}

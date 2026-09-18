@@ -1,0 +1,59 @@
+{
+  "approval_date": "2026-08-31",
+  "status": "USER_APPROVED_TEMPLATE_EXEMPLAR",
+  "format": "TTimes 일반 대담형",
+  "episode": "김지현 토크노믹스",
+  "approval_scope": "cover, body geometry, typography, paragraph rhythm, ImageGen visual policy, highlight treatment, closing architecture",
+  "files": {
+    "01_cover.png": {
+      "sha256": "fc9c923730b8159a6004198abc220aa2ff97ddd2d92173608ca89b2bd3f2fa83",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 1087557,
+      "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED"
+    },
+    "02_body.png": {
+      "sha256": "d1dde572b53e6fff01982e16302e619b09380a0f41ec3232ee043acc8249a5c5",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 585672,
+      "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED"
+    },
+    "03_body.png": {
+      "sha256": "cd0e4d20bb98c22838e6d5c8783223e5907f7fc5aa49f7066c2ac195ae7e3291",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 516998,
+      "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED"
+    },
+    "04_body.png": {
+      "sha256": "17af61b58646313920fc70fe2cc93d868a78faf6be6b83e2d321b475e40af276",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 786708,
+      "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED"
+    },
+    "05_closing.png": {
+      "sha256": "7f277f9ec0523d2ca0b9436fb0f65f2bb0df1b634152a94c44b5f311db761456",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes": 63384,
+      "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED"
+    }
+  },
+  "source_lineage": {
+    "cover": "exact user-supplied _list_ + deterministic title/logo",
+    "body_visuals": "image_generate textless visual + deterministic Korean composition",
+    "closing": "deterministic LinkedIn-blue editorial background + verified quote/profile/logo"
+  }
+}

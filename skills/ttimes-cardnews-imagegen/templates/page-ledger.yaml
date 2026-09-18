@@ -1,0 +1,66 @@
+project:
+  title: ""
+  source_docx: ""
+  source_sha256: ""
+  target_ratio: "2:3"
+  target_pixels: [1200, 1800]
+
+pages:
+  - stable_id: "CARD-001"
+    display_page: 1
+    source_blocks: [1]
+    section: "intro"
+    story_function: "question"  # question|claim|evidence|mechanism|counterpoint|implication|transition|conclusion
+    template: "S0"              # S0|S1|D1|P1|Q1|V1|C1
+
+    exact_text:
+      title: ""
+      body:
+        - ""
+      emphasis:
+        - ""
+      quote: ""
+      speaker: ""
+      source_credit: ""
+
+    visual:
+      function: "ILLUSTRATE"    # PROVE|IDENTIFY|ILLUSTRATE
+      form: "generated"         # photo|video|chart|map|document|generated
+      brief: ""
+      must_show: []
+      must_avoid: []
+      source_asset: ""
+      source_url: ""
+      source_time: ""
+      crop: ""
+      generated_disclosure_internal: true
+
+    evidence:
+      fact_state: "PENDING"     # VERIFIED|QUALIFIED|PENDING|CONFLICT|N/A
+      source_state: "UNRESOLVED" # VERIFIED|IDENTIFIED|UNRESOLVED|N/A
+      rights_state: "UNKNOWN"   # CLEARED|LICENSED|PENDING|UNKNOWN|N/A
+      unit: ""
+      period: ""
+      denominator: ""
+
+    render:
+      mode: "IMAGEGEN_BASE_EXACT_OVERLAY" # IMAGEGEN_FULL|IMAGEGEN_BASE_EXACT_OVERLAY
+      style_references: []
+      generated_base: ""
+      final_card: ""
+      video_card: ""
+
+    qa:
+      exact_text: false
+      dimensions: false
+      visual: false
+      evidence: false
+      sequence: false
+      notes: []
+
+revisions:
+  - note: "P15. ..."
+    target_display_page: 15
+    target_stable_id: ""
+    status: "OPEN"              # OPEN|RESOLVED|REJECTED|NEEDS_DECISION
+    resolution: ""

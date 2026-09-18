@@ -1,0 +1,16 @@
+{
+  "name": "ttimes-one-person",
+  "production_format": "F1",
+  "visual_source": "exact_article_list_image",
+  "cover_title_px": 80,
+  "cover_logo": {"position": "upper-right", "x": 836, "y": 55, "width": 176},
+  "person_required": false,
+  "series_badge": "verified_named_series_only",
+  "title_plate": false,
+  "lower_field": "restrained_dark_gradient",
+  "approved_cover_pair_required": true,
+  "body_logo": false,
+  "closing_logo": "bottom-center",
+  "page_count": "variable",
+  "status": "WORKING_PROFILE_PENDING_FIRST_USER_APPROVAL"
+}

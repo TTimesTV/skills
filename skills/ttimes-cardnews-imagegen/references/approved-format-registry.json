@@ -1,0 +1,35 @@
+{
+  "registry_version": "1.2.0",
+  "approved_on": "2026-08-31",
+  "formats": {
+    "lee-junghak-people-and-technology": {
+      "status": "USER_APPROVED_TEMPLATE",
+      "cover_reference": "../../ttimes-square-carousel-cover/references/assets/approved-lee-junghak-ai-slop-cover.png",
+      "body_reference_root": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+      "notes": "승인된 이중학–윤명훈 사람과 기술 골격"
+    },
+    "park-youngsun-tech-talk": {
+      "status": "USER_APPROVED_TEMPLATE",
+      "cover_reference": "../../ttimes-square-carousel-cover/references/assets/approved-park-tech-talk-mlcc-fcbga-cover.png",
+      "body_reference_root": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+      "notes": "승인된 박영선 테크토크 골격"
+    },
+    "one-person-explainer": {
+      "status": "USER_APPROVED_TEMPLATE",
+      "reference_root": "assets/approved-one-person-laundry",
+      "approval_manifest": "assets/approved-one-person-laundry/approval_manifest.json",
+      "notes": "540:540, 경계형 순번판, 74/35, TTimes 빨강 제목, 노랑 형광펜, 자연스러운 단일 장면 일러스트"
+    },
+    "general-interview": {
+      "status": "USER_APPROVED_TEMPLATE",
+      "reference": "general-interview-square-carousel-template.md",
+      "production_profile": "general-interview-production-profile-20260831.json",
+      "reference_root": "assets/approved-general-interview-linkedin",
+      "approval_manifest": "assets/approved-general-interview-linkedin/approval_manifest.json",
+      "frozen_exemplar": "assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/approval_manifest.json",
+      "notes": "LinkedIn UI 팔레트, exact _list_ 표지, 500:580 본문, 92×92 경계 순번판, 74/35, ImageGen 코어 비주얼, 일반 본문 비볼드, exact 강조문 형광펜+밑줄, 실제 인용 마지막"
+    }
+  },
+  "pending_formats": {},
+  "change_policy": "네 승인 골격은 임의 재설계 금지. 골격 변경은 사용자 재승인 필요."
+}

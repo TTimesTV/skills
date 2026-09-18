@@ -1,0 +1,1273 @@
+{
+  "schema_version": 1,
+  "edition": "team",
+  "import_date": "2026-09-18",
+  "skill_count": 16,
+  "files": [
+    {
+      "path": "skills/ttimes-article-selection/SKILL.md",
+      "bytes": 12324,
+      "sha256": "1d686a11bc962dcc4638c3bf9917c0b8d62742f46927087dd815787d0ea95a4e"
+    },
+    {
+      "path": "skills/ttimes-audio-rough-cut-rendering/references/retained-context-alignment-and-join-qc.md",
+      "bytes": 2584,
+      "sha256": "90f8f10da9895020b1370b4e4318ec3085973b08c46aa82f769a15264055f561"
+    },
+    {
+      "path": "skills/ttimes-audio-rough-cut-rendering/SKILL.md",
+      "bytes": 8999,
+      "sha256": "3c469afcfa0c7e03cb11ed3c04df194b3d82e2b8c1c748e07cdf66ff5a532b82"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/approved-format-registry.json",
+      "bytes": 2002,
+      "sha256": "3c5de027d85d65c3896ec59e58b29aae5e47394f2ccb81200f32899a74f4d927"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/01_cover.png",
+      "bytes": 1143566,
+      "sha256": "32a916eaa0562585cc37e7b79f4997aebcac99a54e6b4e5083cb750cd2b2a4b8"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/02_body.png",
+      "bytes": 150129,
+      "sha256": "fc4127e101a55803eb2e8f2ead55b720badd92ccdc67f64abffc04afebb5a2a4"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/03_closing.png",
+      "bytes": 216480,
+      "sha256": "f0724f52cdd1751a4412ef325fe4a8b196ff3814a878a76400881f6946d7c82d"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/approval_manifest.json",
+      "bytes": 1180,
+      "sha256": "37c4f5067e3258fe0e0128272ca5cb2dd50f52589d1a00972f53d9267a1f0d51"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/01_cover.png",
+      "bytes": 1087557,
+      "sha256": "fc9c923730b8159a6004198abc220aa2ff97ddd2d92173608ca89b2bd3f2fa83"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/02_body.png",
+      "bytes": 585672,
+      "sha256": "d1dde572b53e6fff01982e16302e619b09380a0f41ec3232ee043acc8249a5c5"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/03_body.png",
+      "bytes": 516998,
+      "sha256": "cd0e4d20bb98c22838e6d5c8783223e5907f7fc5aa49f7066c2ac195ae7e3291"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/04_body.png",
+      "bytes": 786708,
+      "sha256": "17af61b58646313920fc70fe2cc93d868a78faf6be6b83e2d321b475e40af276"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/05_closing.png",
+      "bytes": 63384,
+      "sha256": "7f277f9ec0523d2ca0b9436fb0f65f2bb0df1b634152a94c44b5f311db761456"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/approval_manifest.json",
+      "bytes": 1793,
+      "sha256": "97e2db57e7acc5f582e29f6e2899702b0a2206347889aee9368f67ceb008e650"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-one-person-laundry/01_cover.png",
+      "bytes": 873584,
+      "sha256": "d39835b582ff30a69ebf6cd664b5f6b8b78b9bf4d2fbbdedbc64730a3c080c90"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-one-person-laundry/02_deformable.png",
+      "bytes": 860929,
+      "sha256": "e96a8b374438b9759b205a938c24e7eac7041935490444d7d09de782f9c2e21e"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-one-person-laundry/03_safe_retry.png",
+      "bytes": 975661,
+      "sha256": "3486a0b3c1c47ec0713d42639dd396c5160749d57049f68a54b305969dc12de6"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-one-person-laundry/04_training.png",
+      "bytes": 1055816,
+      "sha256": "84e11ad28cfd88ecedef840b6992a14fb8da6b407f10ddba93882536ecc64519"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-one-person-laundry/05_closing.png",
+      "bytes": 863752,
+      "sha256": "819d2cfd8451afb2bd69e64a25550177679da3ec18d1fa4bf87e86c5594e05b8"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/assets/approved-one-person-laundry/approval_manifest.json",
+      "bytes": 1171,
+      "sha256": "818c4520776c3139d514762179e8ad10c9f4e6877047895298309b8d87314042"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/editorial-approval-ledger.jsonl",
+      "bytes": 16923,
+      "sha256": "7dbf61ddf74fdc2eed7cc207ebf65370d5e09c99197dbe6048aa91260cf69bb0"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/editorial-preference-snapshot.json",
+      "bytes": 27545,
+      "sha256": "bce85d3d030840e63d449dc18b25d8ab0b0f75fc253842640b0e8e3be2eee676"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/general-interview-production-profile-20260831.json",
+      "bytes": 3238,
+      "sha256": "cc74cca47fc67522c5eabbaa541f97c56ed86a9af95763a4f8d7ea6256e5d557"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/general-interview-square-carousel-template.md",
+      "bytes": 7803,
+      "sha256": "c47573e0946cd768f804ee43d8afe6aa350cb36c22c18743d0f5cdd702c50dc5"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/jo-taeho-ep2-general-interview-calibration-20260903.md",
+      "bytes": 7610,
+      "sha256": "86a68ac263d68eaf3595e1ff8f08b556cde0748ee41f99923bcc516e2238f8c4"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/one-person-square-carousel-template.md",
+      "bytes": 6554,
+      "sha256": "6b3e296892688af59c69122afe3a6ad9cef920f1d2f3c5709b73685c484cb30e"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/people-and-technology-square-carousel-template.md",
+      "bytes": 6301,
+      "sha256": "6c82d9d6a5c8b19cb57d367eeb8f8ff4e13a87096427489eee22d53e398b1a47"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/reverse-engineered-ttimes-cardnews.md",
+      "bytes": 4629,
+      "sha256": "aa3461bf35860ab196311da4e600ddeef40a7665b41e51fa13e10ebe9d911806"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/subagent-editorial-conference-protocol.md",
+      "bytes": 4345,
+      "sha256": "3d11750dcde6b453dfb47dcf8c195d6b802d78aa8a503867795d507ab2e797d5"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/ttimes-series-carousel-architectures-2026.md",
+      "bytes": 6738,
+      "sha256": "05ea9cf5681deade9d699ecc1cf60b18360773fde5d85582509701a8becca8c7"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/ttimes-square-global-typography-contract.md",
+      "bytes": 2639,
+      "sha256": "954f95281686f3e60d197116731574009e0b879d9794b38919594c4d07a249ac"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/references/user-approval-pattern-learning.md",
+      "bytes": 4529,
+      "sha256": "6d42f665b1e053e1edf23b27190d2a66f9d62457e7e90d2ea192bfb13ea0601b"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/scripts/build_general_interview_square.py",
+      "bytes": 5162,
+      "sha256": "988f4e5dfdafc22c221c17000e31b5beba1a3fb35f53a265c02d028dcaea10f0"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/scripts/extract_cardnews_manuscript.py",
+      "bytes": 5123,
+      "sha256": "88d79b2ef07e669df4dc909e23bd10bf769eae96adca19791daeee87ca79cdb4"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/scripts/record_editorial_approval.py",
+      "bytes": 6866,
+      "sha256": "6ab707ab255c87085af7b5f7c5b92087e190bd5ca2c00f8bdb8f1a5756891064"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/scripts/validate_square_carousel_roles.py",
+      "bytes": 850,
+      "sha256": "39a47bafbda0f1a2357ea79a0a902e04cb7e910f87f1850eaef1595fff21879b"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/SKILL.md",
+      "bytes": 39359,
+      "sha256": "4943821cf1e85b5cdd896d9dd630441f29279f448a09f43d00c880c16011d4fa"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/templates/imagegen-prompt.md",
+      "bytes": 3849,
+      "sha256": "8ff600580fcf96785929a8b3b3030cd5b087bfa9597d0aee1db5dc65c3f99644"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/templates/page-ledger.yaml",
+      "bytes": 1643,
+      "sha256": "6438114b4f0db0881e8e529416993967768063dd0a4f36e366b004b36e9af642"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/templates/source-manuscript-template.md",
+      "bytes": 1585,
+      "sha256": "1e8233e29053b335eda032113df821dab0f16bd1cc8c92ecc3967d2798c5c23e"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/tests/fixtures/synthetic_kim_jihyun_general_interview_pages.json",
+      "bytes": 304,
+      "sha256": "cabc8609a26f8f8c83a56b9c80fb39946d72b5804011d158e720f4dfe65e0d8d"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/tests/test_approved_format_registry.py",
+      "bytes": 1592,
+      "sha256": "b6ffb203b2c841d6543ee1a350bd4a788cc8deb0280efd55a19ee3401931185a"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/tests/test_general_interview_square_builder.py",
+      "bytes": 1283,
+      "sha256": "95db6839f50a70429586cdb8b99ebbb889cfae777b0a3620e67fc3a61d132f6c"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/tests/test_kim_jihyun_storyline.py",
+      "bytes": 829,
+      "sha256": "21273603508ae041ea24a99b80d6a5a2bf2ae65a39695498308dfc296b9d7fde"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/tests/test_one_person_body_visual_sources.py",
+      "bytes": 2366,
+      "sha256": "0eb10d24171e49bfdc08fbf18b95f14a79b2a973586617829a5dd14fa1734733"
+    },
+    {
+      "path": "skills/ttimes-cardnews-imagegen/tests/test_square_asset_roles.py",
+      "bytes": 1132,
+      "sha256": "6f4435a26b5075c6a862571e7089191513cc241b4b365a53905afb186f0f9677"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/decision-ledger-evidence-contract.md",
+      "bytes": 5609,
+      "sha256": "38c9a5d5395f3dc6cbdeb3004ef20ad8701ed2b0ffd98b61e39ede048f7b5d3b"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/direct-strike-highlight-move-forensics.md",
+      "bytes": 2569,
+      "sha256": "fa2126fab32fe69514b7e2949e2bc41310555940706bbf83810b31509fc316a8"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/docx-deletion-markup-forensics.md",
+      "bytes": 5079,
+      "sha256": "7545ffed65d2a81de20b578b6b78f8980c34f164e540f3336c730bb4c2384f26"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/docx-guided-audio-rough-cut.md",
+      "bytes": 12971,
+      "sha256": "8ee09e004f4f969f16ac3fd026cfb2105e6d0035036055c90ad3bac52b56c9e3"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/fail-closed-deletion-engine.md",
+      "bytes": 3980,
+      "sha256": "d7b2814f614e4dcdd479e85351863621cd2529608bacd8d0574b46eec1051484"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/final-state-rerun-and-validation-report-freshness.md",
+      "bytes": 6155,
+      "sha256": "d10f77f4ab04788917fe9b522d175299618463d4d0a2529d07ef7e932959e9a3"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/generated-summary-ooxml-metrics.md",
+      "bytes": 2682,
+      "sha256": "bc03aa1fbcc85069687cce4cacc14c14932c3d7e0524fd54a85cb2d410df5d0f"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/independent-final-audit.md",
+      "bytes": 6510,
+      "sha256": "5472767f452b9e69486abba749daae9541390f691b53cf1ff1e1ad43411f9707"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/independent-plan-compliance-review.md",
+      "bytes": 4739,
+      "sha256": "2af07a1908a747d22564b686511155f2288f080fb1bdf1cd3a768746be545323"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/integrated-application-ledger.md",
+      "bytes": 4682,
+      "sha256": "ff655f1b6eaee8f67674c44651c74630796f12bb233a40fcf2e6c4f336187c86"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/lee-juhwan-ep1-cut-editing-calibration.md",
+      "bytes": 9701,
+      "sha256": "6d54e4bf4800fadc4b4661fb17d58412f4de5a4b7500ee98b5070dd8da115b25"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/lee-juhwan-series-cut-editing-standardization.md",
+      "bytes": 10139,
+      "sha256": "0313b6183d1815f476b614e221170e2a084e80cd4a16706b8ad4d193080418e5"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/legacy-tracked-docx-engineering.md",
+      "bytes": 22376,
+      "sha256": "7daa4dc4d4db9435e38bd790f3eaafd6d02ba0e6a7905916001365a28068c08a"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/monthly-tech-june-cut-editing-calibration.md",
+      "bytes": 7099,
+      "sha256": "68bb8acbc674e4554ce1ecb52ad8f8792f698b246182a57c3886de45ba933615"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/ooxml-validation.md",
+      "bytes": 3818,
+      "sha256": "1f22d309aec14a34180a23a491adeb663c79c11d950546bbe4ad21e744c59ff7"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/park-namgyu-cut-editing-calibration.md",
+      "bytes": 3196,
+      "sha256": "95008995d8738868a1b2356c6ecf26aad933a5ee9ef3a0fff06f39088488050e"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/park-youngsun-lee-sanggi-adversarial-audit.md",
+      "bytes": 5030,
+      "sha256": "65b5e66a389c2fea8d5e0c23c0f60bdb011feab8523f330f4afdcd3334f5be0f"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/park-youngsun-lee-sanggi-cut-editing-calibration.md",
+      "bytes": 7162,
+      "sha256": "62535a6f3cd2318b081fe63db159273fe80e406997c7dc3cb681560e9513afd9"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/post-save-package-validation-and-source-provenance.md",
+      "bytes": 3651,
+      "sha256": "749251b98cc8f39d31d54a621642bd218da3455385669803a1f9f21419f175d8"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/reference-document-selection-forensics.md",
+      "bytes": 5463,
+      "sha256": "0703e186e80e15b34e36f19d759dd0c84adbf945fc293563caa52bcf0fd1b936"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/runtime-discrepancy-attribution.md",
+      "bytes": 7286,
+      "sha256": "78ba54c20e03f034dfc5cbfd5e6df5aed7eca8ab8707960d041496110c8c86d7"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/speaker-correction-boundaries.md",
+      "bytes": 2924,
+      "sha256": "3784fffdaa010795aab3975e8d1b02c2bb04f6da41cfa40d9668de1c620f2b84"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/structural-boundaries-and-atomic-commit.md",
+      "bytes": 3104,
+      "sha256": "6950ce3c95ab91ffe15b3660662bba2c3ebcdbd9605be40b57ae354068397a85"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/tracked-instruction-paragraphs.md",
+      "bytes": 3761,
+      "sha256": "62cf0f28ec9e2182cbe263acab0fbffccf14e547e4317643c64442618f81c6d4"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/references/workflow-scaling-and-clean-recut.md",
+      "bytes": 6194,
+      "sha256": "a08299cee7fe50692978204a343651db86b3b111a759892a16e2841140ecfdd8"
+    },
+    {
+      "path": "skills/ttimes-cut-editing/SKILL.md",
+      "bytes": 31582,
+      "sha256": "dab4a29f8c949281fedfa6050bd6c55872917cedf6e91ffaeaa951e1610b55a5"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/ai-glasses-caption-calibration.md",
+      "bytes": 2688,
+      "sha256": "ef21ff66ca0dddd6929da82ecab1ba3b87b07a2bd9c3e7132e3cc52e1097ee20"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/atomic-caption-output-calibration-20260826.md",
+      "bytes": 1663,
+      "sha256": "09d2ea5a5771ea5b8c5511ec06d69b745a99f4b182fa1c9bdad45c0a1b7fb739"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/automated-caption-draft-agent-calibration.md",
+      "bytes": 5172,
+      "sha256": "113efe8a65f379e85b0ce8badc263a1e4af9de1cf4524cc4ad16e223f78e158a"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/compact-attribute-matrix-labels.md",
+      "bytes": 1353,
+      "sha256": "6b1a28c254505c967394f910aaa3b48f4ae640f15c9f1fa77c53aa0d255ac965"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/hardware-industry-interview-caption-calibration-20260807.md",
+      "bytes": 2648,
+      "sha256": "4a6db640074f7d77441d60e697db099ae9790a4195c0628ebc73fb799d3d56e9"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/infrastructure-demand-first-hook-calibration.md",
+      "bytes": 4612,
+      "sha256": "4c809a08dd92eea61dbe1a0cb3a9d0f9b39c53aca93770612b8a0dd216279457"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/korean-ai-management-caption-calibration-20260730.md",
+      "bytes": 3173,
+      "sha256": "b2bbb2367d8115f1ee4b060b97b5ca47530900900db6a384029ccc2c8ecac6bd"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/korean-enterprise-ai-caption-calibration-20260803.md",
+      "bytes": 3193,
+      "sha256": "4db06da1a7398e5b7b76fae19c33dd13f5d4bd50762bbc69c360d390ea1e729b"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/lee-jungdae-geo-caption-calibration-20260730.md",
+      "bytes": 9679,
+      "sha256": "c6a1d488beb7d8e8f1829ac1ebfb33a92a7c13f79fdc5438583eff23a506dce7"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/medical-mechanism-shorts-calibration.md",
+      "bytes": 4379,
+      "sha256": "80c5cd50fac87bf063274cfdc6d9d3e43fa83e5414b86682700319209d7e099e"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/short-technical-script-revision-and-ending.md",
+      "bytes": 2925,
+      "sha256": "a9ddb65cc96a57ae6334b8b33c004a298efe72c72d6a2f9e89eb104d2ab97d89"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/shorts-hook-90-point-subagent-upgrade.md",
+      "bytes": 3361,
+      "sha256": "e72e5fe21a46f4e78ec84cc43ba9de8d4612f893ac01f2a30e4e478b19ea15ae"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/token-efficiency-caption-calibration-20260804.md",
+      "bytes": 5904,
+      "sha256": "0daaf2af87948a539781720f408f212e47adb938763c27b8558c45cfe7137c25"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/user-authored-caption-calibration-20260827.md",
+      "bytes": 6400,
+      "sha256": "513607092817d2b761c73b49bfdddf8764525bda785591b5bf14db68f42da21b"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/vertical-technical-shorts-storyboard-sketch.md",
+      "bytes": 3007,
+      "sha256": "4f714b1d5bad783c3906ef12d177d024163ea484b48e8b4bd180544da9c357ba"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/SKILL.md",
+      "bytes": 41286,
+      "sha256": "d4bcd5afc5785be216684f321657a57b246b5553ed308880d185e4c89a1e6354"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/templates/caption-worker-brief-ko.md",
+      "bytes": 2635,
+      "sha256": "e870bc7b5b6738e48022497865712e944327d5cbe213bd3de152bf56c7033007"
+    },
+    {
+      "path": "skills/ttimes-elevenlabs-dubbing-csv/references/english-thumbnail-workflow.md",
+      "bytes": 7832,
+      "sha256": "ed70a0b46ae34bbf332ee952e82e82d725f4cb3c5756b1085f72fabbd3a4242f"
+    },
+    {
+      "path": "skills/ttimes-elevenlabs-dubbing-csv/references/source-media-to-dubbing-cues.md",
+      "bytes": 6849,
+      "sha256": "5aae45dad9acfc418a1b54f2901b0112adcdaeaf54d18348447771985c86b9d4"
+    },
+    {
+      "path": "skills/ttimes-elevenlabs-dubbing-csv/scripts/build_dubbing_csv.py",
+      "bytes": 4910,
+      "sha256": "991b1b8c67e529b31570b0c45c32cf9e34fa96c81bbc4c8b706a15c55188458b"
+    },
+    {
+      "path": "skills/ttimes-elevenlabs-dubbing-csv/scripts/studio_read.py",
+      "bytes": 4450,
+      "sha256": "eae5247939110a1fef0d2751d659170f40aa062ee788e2b295926756d2cd69ce"
+    },
+    {
+      "path": "skills/ttimes-elevenlabs-dubbing-csv/scripts/validate_dubbing_csv.py",
+      "bytes": 7999,
+      "sha256": "fe22ab4cb9976ae1a288586f6bcb2fd1c6d3f686c36cb911eec9d3b827223121"
+    },
+    {
+      "path": "skills/ttimes-elevenlabs-dubbing-csv/SKILL.md",
+      "bytes": 23994,
+      "sha256": "c446210af1465b7dc58857547a3f9ee9af8ffe7c0703107a2473aafebc1c487b"
+    },
+    {
+      "path": "skills/ttimes-factcheck-research/SKILL.md",
+      "bytes": 16000,
+      "sha256": "9286aaf0d2413bcdaab83918b8f6b945e291b065d70b81a09ad44b5bc14a7624"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/references/20260906-paper-motion.md",
+      "bytes": 1408,
+      "sha256": "0848083f74e37d377d2863d8ceba37f38f316952a3cf4ad1e4432bff5fd63589"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/references/20260906-photo-led-revision.md",
+      "bytes": 4557,
+      "sha256": "af1d2eb0864af6224565fb63d04e0b192dc613e84b6a1aa6ef72bbde7b409edb"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/references/20260907-approved-production-rules.md",
+      "bytes": 5355,
+      "sha256": "0a6483f184f3a57472482875bc13fb1e408f80d1135abcfb7b3b0f8ff91780e6"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/references/morning-news-vs-afternoon-youtube.md",
+      "bytes": 2922,
+      "sha256": "0319e695166523ee6c1d07c5cf09112092f49cc983f49753da348ecd6099ede9"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/references/renderer-contract.md",
+      "bytes": 2794,
+      "sha256": "aa9e4ec744e492fac11e8cc4b1d05cecec4c44a149fb62baabc0f89dc1985114"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/scripts/render_editorial_cards.py",
+      "bytes": 8696,
+      "sha256": "239e777c9a2efbbb2063b476cf3edf614fc0216bbab142f5dae2443f2de97803"
+    },
+    {
+      "path": "skills/ttimes-original-cardnews/SKILL.md",
+      "bytes": 8794,
+      "sha256": "e96079dba9333a10afdf2e2968671a28340304f5bfbd57c7a89123fd11e71b9e"
+    },
+    {
+      "path": "skills/ttimes-pd-material-planning-evaluation/references/channel-wide-credit-census.md",
+      "bytes": 9280,
+      "sha256": "788618ac1020a8cd5ad771abb9bc7f8d6b1fcb57bfe0284c6bb7c595a3d9e4b6"
+    },
+    {
+      "path": "skills/ttimes-pd-material-planning-evaluation/references/cross-role-credit-attribution.md",
+      "bytes": 1125,
+      "sha256": "259024c0244f37bbdbae606cd19ce14c9d3e6083f865ba21bc0dcfb3942fbe93"
+    },
+    {
+      "path": "skills/ttimes-pd-material-planning-evaluation/references/formal-review-checklist.md",
+      "bytes": 3387,
+      "sha256": "317de2b32a2b3b1cd0974ec13b1f96bf5049dfdc7364bc596c026d108ac3b28b"
+    },
+    {
+      "path": "skills/ttimes-pd-material-planning-evaluation/scripts/validate_material_review.py",
+      "bytes": 4492,
+      "sha256": "d8bc24840ddd2be236f0515667b027890aab316389bc95e5388fd768eeb9a1af"
+    },
+    {
+      "path": "skills/ttimes-pd-material-planning-evaluation/SKILL.md",
+      "bytes": 21440,
+      "sha256": "975f2bde5ec1151cb91509476037e848544eeb6781e35cd532f47374be3a3c5f"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/2026-07-ttimes-role-automation-calibration.md",
+      "bytes": 2689,
+      "sha256": "347a5fea61c6c4d4c5030c9aa8b5f30224eb4005384d28011161a30ecd597f06"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/ai-generated-engineering-shorts-pipeline.md",
+      "bytes": 8081,
+      "sha256": "26cfbfb04893b57ba3cb953e5a1bbab20586bc15625b03e30bc039995a799cc0"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/approved-highlight-vertical-sample.md",
+      "bytes": 8588,
+      "sha256": "0c99329b4acf66408bfa9a79052bb4a603b5c3cf34bdd9b0cf2e546eb6173cc1"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/channel-wide-pd-credit-and-work-audit.md",
+      "bytes": 6411,
+      "sha256": "d8531eb7616e7a4d687656263edb3bbf82aced0ac8a61320f8b831a874d7ddad"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/final-upload-package-handoff-corrections.md",
+      "bytes": 1045,
+      "sha256": "20e3f0ca8a51550768f5fe7ecad35bb5ed5bdb0ba5556d7f2cc2a01619932054"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/longform-to-shorts-reverse-engineering.md",
+      "bytes": 5096,
+      "sha256": "73f65943e6d77624672c5a76e3123b5c1409239d04ac65e377367b04ef74e578"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/media-production-equipment-budgeting.md",
+      "bytes": 3283,
+      "sha256": "40ea6dcf1e808f40aa16b8275f10de3de85b7ff3235341e64e133b39063017c2"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/mobile-safe-editorial-shorts-shell.md",
+      "bytes": 5259,
+      "sha256": "605a8a7e1ee4a796488fd02c856feae9ba95d4ae10557a6b3fa387b101f094e6"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/narration-first-shorts-bgm-mixing.md",
+      "bytes": 4927,
+      "sha256": "a82fd1473197747f7e9e96e0baa7289347934f05c8f73bff24919fb550159fef"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/team-material-archive.md",
+      "bytes": 1137,
+      "sha256": "767ed912e0ea03a478c2e2594b90e9c21e655cca74e6713d9ca0fada97d20f3f"
+    },
+    {
+      "path": "skills/ttimes-production-automation/SKILL.md",
+      "bytes": 18457,
+      "sha256": "fdc727bb95163cfcdffbb0ca5cc54d530bbc87d12534daa6840744cde8579045"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/assets/park-jongcheon-feedback/profile-user-reference.png",
+      "bytes": 548085,
+      "sha256": "3058de0ceac7fb761857b928926864274fa699889645705485e6fcd93a2e800f"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/background-insert-visual-rhetoric.md",
+      "bytes": 2637,
+      "sha256": "84b43368aa6528c5e2dcf29fc507652c0716a44d68963a3952b45009cd3c6988"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/caption-function-render-timing-standard.md",
+      "bytes": 7861,
+      "sha256": "7769d7c1c9df2d2326a7f3778ff6dc09d94924eafcdc4a5b4871f42737f5b125"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/caption-material-archive-contract.md",
+      "bytes": 2687,
+      "sha256": "dcd90d3cdfd445e45e5f9644df3e67a43c690ebe5c36d28a0ee8d8bc83f6cd19"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/editorial-selection-and-sequence.md",
+      "bytes": 7746,
+      "sha256": "633a166b813ae6ec7aa4f097b87cffcb45b651d4f4b2affa90c5f54f8bda2246"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/gang-jeongsu-screen-composition-user-calibration.md",
+      "bytes": 4775,
+      "sha256": "6850b57ca805d5adff20abefdc85051b679d8d2a98cc992a72f10c62190207dd"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/gold-corpus/(자료-완료) 임승찬-윤우진.docx",
+      "bytes": 90209,
+      "sha256": "eef724639f81ceded894acc61fcaf8c6627d364df8929692dc1b0f0dbe68b138"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/im-seungchan-yoon-woojin-management-interview-user-calibration.md",
+      "bytes": 12010,
+      "sha256": "69d085965efeb95a8ebde6ff12f0f8d6fd07b1a7786c3af58cf6cffe52f92ac3"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/integrated-layer-collision-standard.md",
+      "bytes": 6753,
+      "sha256": "cd21c998ecece7afd65ff70fcc43cfa5d8df3e18fc1f9f49817d10830419a555"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/local-dependency-gates.md",
+      "bytes": 1009,
+      "sha256": "bcf6e6653a887c35441b4a3e425ed866835a5814cecdf3b51f4f6cc4f241f02a"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/material-taxonomy-and-footage-brief.md",
+      "bytes": 8673,
+      "sha256": "37470de5235852e5892356cbb5feac973cc51f399f62a7bf76a0b4e3832e4f6d"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/nissan-ao-solar-scene-and-search-analysis.md",
+      "bytes": 5578,
+      "sha256": "b88ce95c922201c884ce60f093589d65e9de16a5fc6857f3901b1d29ffa94bf4"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/numbered-asset-intent-audit.md",
+      "bytes": 5114,
+      "sha256": "8cda3086e6475829e9ffc2e6b097521c65663bbd1fc7f8118d37ce7b357a7f3a"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/palantir-ontology-official-video-research.md",
+      "bytes": 6595,
+      "sha256": "7419be2161d4c30dfd4bc51c688da83ae2150c221da5d9a8a4b14cd59c81acb9"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-jongcheon-live-feedback-20260916.md",
+      "bytes": 2280,
+      "sha256": "6f300b43a440b723d5a25170fca6af0ff70a4aea9578cbae90867a71dab869da"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-asset-03-flood-analysis.md",
+      "bytes": 4028,
+      "sha256": "861da6255403b8af64d71c0fbdae5799632e5747d84d127f4efc689aa8a73782"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-asset-20-user-correction.md",
+      "bytes": 1218,
+      "sha256": "5999dfa8878ac9224d11f4b41d15f44839978cfc36efa83fefb2f29764287bf8"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-asset-38-user-correction.md",
+      "bytes": 1026,
+      "sha256": "43befebfc041d2c6a47b42f18ad983a6a6613e15a30c5c4b8f166933e86fa49f"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-asset-47-user-correction.md",
+      "bytes": 660,
+      "sha256": "f7de67e9caa9f7d14c1c1205c63a8d83cc8421776977bbdc4f87949ee19e4f6a"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-asset-48-user-correction.md",
+      "bytes": 1491,
+      "sha256": "a32881a6994103733665bf40528cd1b3a9ee925e0e4405ebb6f5a878d045032c"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-assets-43-44-user-correction.md",
+      "bytes": 900,
+      "sha256": "273d45d8062448b06927064b04ecbf87d433e98cad95935d1af9b5a14a02dd16"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/park-namgyu-screen-composition-user-calibration.md",
+      "bytes": 5862,
+      "sha256": "791130a5d04f75a01d4e007ca494a0cc86a54a158a581de70cef939387366977"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/sharepoint-complete-material-corpus-20260902.md",
+      "bytes": 4106,
+      "sha256": "7ad5e614b80784cd96e3ec1ad162f7501e447fe1e4911bd720b7e09aa606b39d"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/synced-cut-docx-structure.md",
+      "bytes": 3735,
+      "sha256": "f6c0c6099f752b788bf14c1e70499f6d8388e0cfc0f8453291e46a3cfdceaad0"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/unseen-transcript-calibration.md",
+      "bytes": 4332,
+      "sha256": "675bffc40ec6516aa1398c53be7b07a16194f5c526d7bb812c9a5b0725d0ab64"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/visual-caption-selection-decision-standard.md",
+      "bytes": 9583,
+      "sha256": "0cbfa6321f1b771a2e9f0aa93a8f85ab8e4f44879ba4a6c99adb0c47f1c6ffff"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/word-review-framing-20260917.md",
+      "bytes": 5654,
+      "sha256": "848c67d5fcb5cd9a56c1d424d60761df6d77281c1ffb2e90525eab4ee572e019"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/SKILL.md",
+      "bytes": 56222,
+      "sha256": "56e270c28900ada7a485ae183d921e72ff7a93e27536234983455e433e86a578"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/templates/inline-docx-instruction-example.md",
+      "bytes": 3699,
+      "sha256": "33acd878568bbdfb920c60ee764ca29ce2308115155534d83a1d1875f1b756eb"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/templates/screen-composition-record.yaml",
+      "bytes": 3066,
+      "sha256": "ef2b57e0c4f7dda99de14244017c51c0d31040ad2d62aa96707edfee37945eb9"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-95pt-accountability-subagent-meeting.md",
+      "bytes": 3416,
+      "sha256": "49edc613482d379631b0a344ccad455bc595f13877de314c2ed0d9835445fe3b"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-95pt-accountable-subagent-caption-workflow.md",
+      "bytes": 4236,
+      "sha256": "4bd26f5cd29d5d83252959c92dd678d7909e8754d4f2ba12a88d7335fbab3104"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-ai-caption-peer-review-and-particle-lessons.md",
+      "bytes": 4126,
+      "sha256": "9f9c3dcba7e0eae231ee5b0d1eb602bfa75a7f5fbeaa5959820fc52de2583cea"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-gem1-gem2-part3-50-76-asr-to-captions.md",
+      "bytes": 4209,
+      "sha256": "2ee325633d75379cb479aab7a267d68f6df21c53b6aa87bad9f5ca1e9e2e4fa0"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-human-readability-peer-review-rules.md",
+      "bytes": 4512,
+      "sha256": "83a37cd7f767b85bb3407b7235b9e9b4e01140aad5cc304eb8bd3dbe04ac2405"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-k-startup-cue-refinement-and-delivery-preferences.md",
+      "bytes": 3762,
+      "sha256": "908817d74a0493d1d8ae0be354dcd0c90dd423f3d38a20ee17beaa06a8fe8a06"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-k-startup-first-script-srt-trial.md",
+      "bytes": 3360,
+      "sha256": "e72f040bf1e00cf3ac0ce96caafa3929e7e9d13e78cdbaa7b84c5112132330c6"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-kim-jihyun-full-recheck-and-sentence-boundary.md",
+      "bytes": 4528,
+      "sha256": "90ee9b0d7e989d18c49beb2a6c1a15016cadd03b1e3dce67c9ddaf9a55d23bd3"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-park-jongcheon-reference-style-and-human-readability.md",
+      "bytes": 4445,
+      "sha256": "caf48167d0a85b12e00c0fb954e9a151868905a41926df40c50bb80c4572062f"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-park-style-gem1-gem2-full-srt-workflow.md",
+      "bytes": 3687,
+      "sha256": "5c81bc9b5673449c9b5b5478af9dd6c9182e908231f3ad32ede1b1d9a1ad95bd"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-part-asr-gem1-gem2-chunk-workflow.md",
+      "bytes": 3566,
+      "sha256": "9d384588dbf946b8164b2a011c5a9b162a60828cbb3bfff55b995799233ab031"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-predicate-attachment-caption-workflow.md",
+      "bytes": 3823,
+      "sha256": "8108fe971b837b91f15cca1f1d1f763fadfd635d49e29d750ecb80c18775e18f"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-predicate-attachment-srt-workflow.md",
+      "bytes": 4765,
+      "sha256": "002212e02f666f3231a7c60d918a8612cdc098bda52d922ad1d820db9955bbb7"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-sentence-first-kim-jihyun-rebuild.md",
+      "bytes": 4211,
+      "sha256": "92fd0a2a2051213b4df40559b1b907b47a53e4a690f10295b1f7cab9509806fa"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-small-sentence-adhesive-segmentation.md",
+      "bytes": 5363,
+      "sha256": "e9c32d95ce30947a0350bddd7c32a24c2dc20815e10b22b60816155232762c1a"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-space-industry-long-youtube-srt-delivery.md",
+      "bytes": 7581,
+      "sha256": "a65d8c5b5edc6a14929dce032873a682a880bd291cbacdc784cb100580b36efa"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-transcript-preserving-v4-caption-workflow.md",
+      "bytes": 4568,
+      "sha256": "57bda43ab6abebfcbecf9d2107cafbf1d390ed71a8474fc016009b76664a4d38"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-08-ttimes-caption-work-method-examples.md",
+      "bytes": 7633,
+      "sha256": "0bc68bcbb92af3b29e47454860514d70c83fb53bff3fc745de401d2aa6c304ea"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-60-85-asr-cue-body-validation.md",
+      "bytes": 4292,
+      "sha256": "6545eb3b3cc93198f0cba2f41231118d17fe787acbc76ce22fc10e30ead2babb"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-approved-sample-style-30-60-asr-cue-body.md",
+      "bytes": 3175,
+      "sha256": "8cc159f528d2150a33196b9a22cd05c17a356875220a5d853e552bc9dd3d2448"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-drive-mp3-chunked-mlx-recovery.md",
+      "bytes": 1947,
+      "sha256": "992d01402866c7a147c748e9100d6f34c6822c74585725b86595f63729a36f1d"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-existing-srt-readability-audit.md",
+      "bytes": 2875,
+      "sha256": "745c2405a6d7cff8dfbb5b7ab2fa41cfe51a24967eaf436ca6763ce21de54c0b"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-kim-jihyun-segmentation-redo-and-realignment.md",
+      "bytes": 5274,
+      "sha256": "bb7c5eb6a4c4c0d693a951d2a998e90ae2d537de4da6bd8a74d987332ca8469c"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-kimjihyun-1cut-chunked-asr-main-prelim.md",
+      "bytes": 3007,
+      "sha256": "b0e90f693130b7737ba603a999a78daab164d10dab7101e38fcd3901052a82d8"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-kimjihyun-2cut-youtube-no-caption-srt.md",
+      "bytes": 3173,
+      "sha256": "1fe48144f385bd32a81a2d81585ae275c58821108de634533d936500bf61d919"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-kimjihyun-segmentation-redo-and-fuzzy-realign.md",
+      "bytes": 5757,
+      "sha256": "a905e4eee843892760c9e0025e85396c38e14a238b21639499285cacce17eda6"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-segmentation-first-redo-after-45pt-failure.md",
+      "bytes": 3096,
+      "sha256": "1c6f7ee7c29d78d86c5e481ee1104e9d3856262cbfe7015b2247dd5a8f522717"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-10-approved-sample-name-ledger-length-exception.md",
+      "bytes": 2624,
+      "sha256": "b8afe9bb53dd284794f1753c4bde83846c30f2ff0fcdd8bb7d0bb55e73f16ce3"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-10-boundary-plus-intracue-source-review.md",
+      "bytes": 3233,
+      "sha256": "01eebaf970c6b3709f1aee12052f07e2e518ddddd1c83d3376ed35f1582703c9"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-10-long-no-caption-ai-chip-review-workflow.md",
+      "bytes": 5696,
+      "sha256": "b61a33e69ab3be4f91df14185827c0cfdfb13f977129ff5c99df39227fd173d9"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-13-long-technical-dialogue-post-alignment-feedback.md",
+      "bytes": 3743,
+      "sha256": "132dcf87299b9621de342ab8b09323e38579d2ba4ab1f86928b2d12075989077"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-13-technical-dialogue-sample-fidelity-and-ledger.md",
+      "bytes": 3278,
+      "sha256": "b433ba1c692fde6cc42652c0c35efe38d423d785472e29f4835bd109783261ee"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-20-long-interview-alignment-selection-and-frozen-order.md",
+      "bytes": 4339,
+      "sha256": "51234fe98bdb9a1dc0dc7b2330b9e755b28da71b1a7d67be6567480e2b26ceab"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-20-long-interview-local-asr-repair.md",
+      "bytes": 4408,
+      "sha256": "7d0574f77a5a29c6d8385ce73a4c398142a642f6f7d15411648c0354a9a3a51d"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-21-approved-cut-back-half-body.md",
+      "bytes": 3086,
+      "sha256": "98cda0ebbe2a2e84ba2aaad20029dd609898d75978fb4f0adc2f382df2fcb203"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-21-approved-cut-front-range-token-preservation.md",
+      "bytes": 3041,
+      "sha256": "547ee8f8a76a0431b7bfc164fa9425255e65e1461dccc8b2d54ed1029bd68ad8"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-21-no-sample-approved-cut-transcript-srt.md",
+      "bytes": 5659,
+      "sha256": "1072ad29f5c620f17528379bedfcc8f67915faf00b6a69084fd6418c700b3dc7"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-21-review-convergence-and-freeze-discipline.md",
+      "bytes": 6693,
+      "sha256": "04044d1d94a0d2530a379583fdf3193e26c2dd12edcef018aaebf411e0cb48e9"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-23-bounded-20min-body-draft.md",
+      "bytes": 3648,
+      "sha256": "30cb3678621e75d289efb9c8781ad22fcab371ba5f4436cfbab93e6bdeed6073"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-23-front-half-zero-convergence-question-answer-scan.md",
+      "bytes": 2176,
+      "sha256": "5c8419fb20baee450e160baa792ebfe235fbd49115b070291648ec84ac283ef2"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-23-long-interview-scope-review-semantic-timing.md",
+      "bytes": 4108,
+      "sha256": "78a46385598aef259231519939dba9549651b5655fca31ca0444dca45eaf5191"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-23-no-caption-technical-interview-body-review-timing.md",
+      "bytes": 4190,
+      "sha256": "2e3e194732146b67a8642114708e5f4556b291cb240e1720bb22e0d298f4f6e3"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-youtube-plan-routing-and-dual-asr-sample.md",
+      "bytes": 5084,
+      "sha256": "bd9e96e2749e353ef2a2f2b29f4f0815dd551152571ffe99dd00df2612957a3e"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/approved-cut-transcript-middle-range-body.md",
+      "bytes": 3414,
+      "sha256": "54cf7e9c47efc007a3a1e30df9d5cc3ab8a703be617f824c6e2051a0f78e365c"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/asr-speech-coverage-gap-audit.md",
+      "bytes": 2794,
+      "sha256": "8d492e78bc6b3c3c03798fe7fc86f143be2a72be8965cd03712b1bfdcb555f80"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/body-first-normalization-and-stale-review-guard.md",
+      "bytes": 5371,
+      "sha256": "437e957c8c6a15891d792507f90ee3fca7e8faca907b6eca774c833f41cdb9b5"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/bounded-raw-asr-range-body-first-draft.md",
+      "bytes": 2651,
+      "sha256": "c94282eb72aa8f7b8bf38fe626331e4e4ff3ee630ac51e29be4b3b80fb15cdf7"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/bounded-subagent-source-slice-containment.md",
+      "bytes": 2856,
+      "sha256": "5f70de76bd997c089a9172de2ba2e07ea2140260f19da40541c2c91fd7884203"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/combined-youtube-timestamps-and-spoken-captions.md",
+      "bytes": 4059,
+      "sha256": "882ada19a4ec81514116012c56d633995d50b916e30952ef44125e4750b4c171"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/editorial-srt-workflow-2026-07.md",
+      "bytes": 4824,
+      "sha256": "b18ff26f67923885092017560db0896cffc014324b8adb6244d6318772e9573a"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/exhaustive-bounded-final-segmentation-regression-audit.md",
+      "bytes": 3217,
+      "sha256": "d485647cfb36449873a13b470d91dd98f98f0ff63808407d2390235a4f761ef0"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/finite-segmentation-convergence-and-severity.md",
+      "bytes": 3119,
+      "sha256": "6e9240fd6a86e20adf910e233caa6e2072c8879100e4f5137a5c0a779f1b0b87"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/full-length-srt-mlx-chunked-alignment-20260720.md",
+      "bytes": 3952,
+      "sha256": "9b623ec269467a51887ae1dccbe780a4755a6d15f10964dec1550192e9cc13b5"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/immutable-full-candidate-final-audit.md",
+      "bytes": 11650,
+      "sha256": "b999e0cc5b38f03da5106f356f2ff232ec3bdedde35b172b99ec3171030c8fd5"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/late-section-post-source-correction-segmentation-audit.md",
+      "bytes": 3162,
+      "sha256": "f630b5d1f496c90b8fe7316dec20d1deb386015a0a1568f71f2d3c3153125cbc"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/local-dependency-gates.md",
+      "bytes": 1752,
+      "sha256": "f9e4d03078daf3a9b38b7db97ec6fad703730ed93efb3501849e762d79e4eee9"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/long-form-exact-slices-and-finite-review.md",
+      "bytes": 3677,
+      "sha256": "b14c4347aebb9335d75299af080d712fd412d2aeb2c8ee24166b475cdd6b9b84"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/long-form-subagent-partitioning-and-scope-gates.md",
+      "bytes": 3113,
+      "sha256": "cdfe550c319d60cc8eb7a54b7bfa1209b81de528bf6c3e277be1e33646f18055"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/plan-and-predicate-attachment.md",
+      "bytes": 2304,
+      "sha256": "79bea54695a2dba0eeba7864b1e8e8f13677754eca70b126aacb70306478d581"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/post-merge-segmentation-regression-audit.md",
+      "bytes": 3279,
+      "sha256": "83db18417f0f8fabb74117da76dac396274d76f2444fd6f467b74bb77b60cab6"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/protected-phrase-adjacency-audit.md",
+      "bytes": 4207,
+      "sha256": "6688727edf70f87e05991d70b300ce35463dd2d2165906e9a4471d4acdf8edb6"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/pure-speaker-boundary-manifest-corrections.md",
+      "bytes": 2546,
+      "sha256": "d0d2c9aeac8400abf930aa8a0d1faee6f6961114bdc43e198379961622ad186f"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/reaction-filler-cleanup-existing-srt.md",
+      "bytes": 3200,
+      "sha256": "407b3f6d889d359d970d69c7853f910cf3223fd8ca29438c9d2abdd3a4a7788b"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/segmentation-as-artistic-architecture-and-realignment-20260709.md",
+      "bytes": 2801,
+      "sha256": "5900091376ce896ae8f6dc70610182c7e9aa70fc00e7fd3950788c96341b9328"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/ttimes-youtube-description-chapters.md",
+      "bytes": 2577,
+      "sha256": "e1ad81d9d41097c0780f9e6523eafc1885f7cefc00feebec890eb00c4d4ffb87"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-acquisition.md",
+      "bytes": 6469,
+      "sha256": "89de28e5041d965589aab3d1f3ed98bb060a7e2629299ca8061368802f048a22"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-cases.md",
+      "bytes": 10972,
+      "sha256": "4376a2ba82125729a201c478db2239704399ac284a61f7adc220b1f9daa69ec8"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-editorial.md",
+      "bytes": 16203,
+      "sha256": "023ac45ba13b14246137ef24cc231cf89ea3d3ae0357dc9cb01f3c526bf6dbd6"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-modes.md",
+      "bytes": 16339,
+      "sha256": "24711793dbc28a90fe71ed137fc693afd5694235be93a98539641a5ec1ad760b"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-review.md",
+      "bytes": 20560,
+      "sha256": "65bbbaf0d5e0a560575e4ff92f23a911ba8bfdc3fb2169bea031694759d7575c"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-segmentation-recovery.md",
+      "bytes": 7719,
+      "sha256": "0116e513637226fd340f08f7771dc1674c652aef890a9f9161e3b507ac42be8d"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/workflow-timing-archive.md",
+      "bytes": 9989,
+      "sha256": "82c5cd7390dd96e6c9744db7ae062faa263d027895ce2fd88d9426a792ad39b7"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/scripts/audit_caption_body.py",
+      "bytes": 2980,
+      "sha256": "1a1fb33f68aed55b7f2627d454d89fc1f91c781db0e0bf0e0aa20fa2495f51fc"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/scripts/audit_protected_phrase_splits.py",
+      "bytes": 4421,
+      "sha256": "95b25e1eafa1640ec2ee1cee0b03cc48bdaf2abaef1049d3403f639015eabd68"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/SKILL.md",
+      "bytes": 13139,
+      "sha256": "7c0b87827f9910ca7ea9dda44c0395df64796ea551a6277375f8f9d6e62a8984"
+    },
+    {
+      "path": "skills/ttimes-shorts-rendering/SKILL.md",
+      "bytes": 15137,
+      "sha256": "bce76367df82996de8e201f7a6a909538a32b9f0f562548f64c9470a29262143"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/approved-ai-slop-cover.md",
+      "bytes": 3288,
+      "sha256": "7206c9321de0e32c185b71a04b80a9707438deda9964dee0616a2ef9d724c07e"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/approved-cover-pair-global-grammar.md",
+      "bytes": 2788,
+      "sha256": "77b9167318e0bcc3438a08bf9ac366450766e3edb920f1d65226d6df2b112e86"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/approved-park-youngsun-tech-talk-cover.md",
+      "bytes": 4096,
+      "sha256": "74e4bb54477ad8ed04bd1ac76b89482bd13cbad5561a9b30fab88b6efff5bc7d"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/assets/approved-lee-junghak-ai-slop-cover.png",
+      "bytes": 1243777,
+      "sha256": "2e8c1ab7cf5a1eadb1f2905f7e368bc53f19f46d344fdc61350f05b1965c717d"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/assets/approved-park-tech-talk-mlcc-fcbga-cover.png",
+      "bytes": 1064991,
+      "sha256": "70551267b29eb731490c1eb056bb5ca4f06e6f2ebf6a8cfc913380b5d27e1d07"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/general-interview-cover-profile.json",
+      "bytes": 543,
+      "sha256": "352c9adb2bb37a1f99b8e1b8a74fd29e6b79c6475e503920035e57fa026e19ef"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/one-person-cover-profile.json",
+      "bytes": 541,
+      "sha256": "be85e95257c2d48c7d157937e005d4bc5526c2be7a839fde6170ca7c8946244c"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/recent-thumbnail-classification-20260829.md",
+      "bytes": 3507,
+      "sha256": "88ebb9ca01bc62baf9215359fd87064d4c457f3055e1a1042f6e09de4acfb6de"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/references/ttimes-2026-video-format-taxonomy.md",
+      "bytes": 11886,
+      "sha256": "a9593288cf3c75be3d3d51fc5280ad88f9df41090d4b55b45c6d24561fc13eec"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/scripts/build_cover.py",
+      "bytes": 11456,
+      "sha256": "0f91a5989a69e88929a867d20ae1e88a7764eb325a512df5a17c629b885c05f9"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/SKILL.md",
+      "bytes": 15771,
+      "sha256": "e5002bafe5c7d07dbb9a6b6b521ae34f298c88f8fed5704dcee8361be8ee449e"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/tests/test_approved_cover_pair.py",
+      "bytes": 553,
+      "sha256": "a665be7ff8c068967b3e796b26f81ade25fe68d5bf8355924171e4bcc6c8e963"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/tests/test_general_interview_profile.py",
+      "bytes": 2014,
+      "sha256": "fb5977ea3da75ec4e6cf471ecdaf6a0f179e0a26e00c0168f305fcc6c9065b88"
+    },
+    {
+      "path": "skills/ttimes-square-carousel-cover/tests/test_one_person_cover_profile.py",
+      "bytes": 619,
+      "sha256": "9b11240a6de1fa17ab63e8db652b64d159dff2f65de0fdee3d7461f941914895"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/references/calibration-case.md",
+      "bytes": 668,
+      "sha256": "a686869a42b237488ba5405665b8a0e0072321d173e4dcd8dceec2674f2b2195"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/references/first-cut-prefix-shift-workflow.md",
+      "bytes": 2698,
+      "sha256": "c66c6a576372351e641518d6fb055a6fdd91fd050684b791e819baf55c278e78"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/references/producer-declared-cut-cc-prefix-only-handoff.md",
+      "bytes": 390,
+      "sha256": "75126398c9ce56fb5a401ead20dc4e43a09a6e59281469791aa9a05cad2f2f79"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/references/recent-sample-analysis.md",
+      "bytes": 4546,
+      "sha256": "f905fc799eabfa6a326a7fb886766cca402b6408a209ce9d9422677d74b78c7a"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/scripts/extract_youtube_cc.py",
+      "bytes": 7402,
+      "sha256": "96278b24d320950c2a015577db63d423c292bc940c28f7dd642d7e78f9c93788"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/scripts/README.md",
+      "bytes": 1594,
+      "sha256": "7fae9c7065f792dfbde9df55cac54604cf6ca68ca76efd898fe90c37432809e1"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/scripts/shift_first_cut_timestamps.py",
+      "bytes": 4055,
+      "sha256": "f0fee01a01380e6e4f8db3bfdf8d700895153c966477d67a8f6ca8a5ffff4785"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/scripts/verify_timestamps.py",
+      "bytes": 2185,
+      "sha256": "7e8104720c211e86958355f7bdf513371c8d3efb270805d0e834492595cc0782"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/SKILL.md",
+      "bytes": 4177,
+      "sha256": "ad4db5278160726ab250e93eee21bc5699c0432ed3e6fe28f29401c17f1417cd"
+    },
+    {
+      "path": "skills/ttimes-youtube-timestamps/workflows/final-cc.md",
+      "bytes": 1892,
+      "sha256": "7d631fdcd32255224cb7adfa28d94e12860ed553d2e69d29d714fdd24ef1406e"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/references/pinned-comment-templates.md",
+      "bytes": 3434,
+      "sha256": "b75297689eac21ad1af8896e8e97b55da0592ae782a7c7a7c9c88ebd8e956217"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/references/user-approved-output-contract-20260715.md",
+      "bytes": 3788,
+      "sha256": "80281e86bc5eb52f2581fdd4ddd6098ed5c8145955560544ef1da7cc8591e09a"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/scripts/verify_upload_package.py",
+      "bytes": 3080,
+      "sha256": "7805d6c05c7ef5c95d13b8109b0840df80d73eae979f8ab716a47b6d67975168"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/SKILL.md",
+      "bytes": 13679,
+      "sha256": "7070cf51ab45dac2d6a9be50b6e18d2dca99b6cc042d5ee2745b8b453b46dc6c"
+    }
+  ]
+}

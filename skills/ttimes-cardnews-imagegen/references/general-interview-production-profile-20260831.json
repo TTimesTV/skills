@@ -1,0 +1,91 @@
+{
+  "profile": "ttimes-general-interview-linkedin-v2",
+  "status": "USER_APPROVED_TEMPLATE",
+  "locked_on": "2026-08-31",
+  "approval_exemplar": "assets/approved-general-interview-linkedin/kim-jihyun-tokenomics-20260831/approval_manifest.json",
+  "canvas": [1080, 1080],
+  "palette": {
+    "blue": "#0A66C2",
+    "pale_blue": "#DCE6F1",
+    "slate": "#38434F",
+    "offwhite": "#F3F6F8",
+    "white": "#FFFFFF"
+  },
+  "cover": {
+    "source": "exact user-supplied _list_",
+    "title_font_px": 80,
+    "logo_position": "top-right",
+    "allowed_treatments": ["exact title color", "text shadow", "directional gradient"],
+    "forbidden": ["title plate", "highlighter", "profile box", "source tint"]
+  },
+  "body": {
+    "visual_height_px": 500,
+    "allowed_visual_height_px": [480, 520],
+    "information_surface_height_px": 580,
+    "left_margin_px": 70,
+    "number_badge": {
+      "box": [58, 453, 150, 545],
+      "size_px": [92, 92],
+      "border_px": 4,
+      "fill": "#FFFFFF",
+      "stroke_and_number": "#0A66C2"
+    },
+    "title": {
+      "font": "Noto Sans KR Black",
+      "font_px": 74,
+      "preferred_lines": 1,
+      "minimum_horizontal_scale": 0.88,
+      "overflow_rule": "if one line needs scale below 0.88, use two grammatical lines"
+    },
+    "body_text": {
+      "font": "Noto Sans KR Variable",
+      "font_px": 35,
+      "weight": 560,
+      "bold_regular_body": false,
+      "target_characters_with_spaces": [95, 115],
+      "line_policy": "keep supplied sentence on one line when it fits; preserve Korean grammatical cohesion",
+      "paragraph_gap_px": 17
+    },
+    "highlight": {
+      "font_px": 35,
+      "weight": 720,
+      "background": "#DCE6F1",
+      "text": "#38434F",
+      "underline": "#0A66C2",
+      "underline_px": 3,
+      "padding_px": {"x": 8, "top": 7, "bottom": 8},
+      "exact_span_only": true
+    },
+    "optical_spacing": {
+      "two_line_title_number_to_title_px": 33,
+      "two_line_title_title_to_body_px": 33,
+      "bottom_safe_margin_px": [55, 75]
+    },
+    "logo": false
+  },
+  "body_visual": {
+    "new_visual_default": "image_generate",
+    "generated_text": false,
+    "composition": "one coherent scene or one clear information structure",
+    "exact_korean_overlay": "deterministic post-composition",
+    "forbidden": ["coded illustration as final core visual", "fake readable UI", "collage", "broadcast capture without evidentiary need"]
+  },
+  "closing": {
+    "background": "#0A66C2 editorial field",
+    "quote_font": "Noto Sans KR Black",
+    "quote_font_px": 50,
+    "profile_font": "Noto Sans KR Black",
+    "profile_font_px": 30,
+    "quote_alignment": "center",
+    "highlight_padding_px": {"x": 23, "y": 14},
+    "profile_separator": " · ",
+    "official_logo": "bottom-center",
+    "quote_source": "audio/video verified guest speech"
+  },
+  "sequence": {
+    "page_count": "variable by independent editorial beats",
+    "prototype_gate": ["cover", "representative body", "closing"],
+    "metadata_isolation": "card-news copy must never overwrite YouTube upload metadata"
+  },
+  "change_policy": "Do not alter the skeleton without new explicit user approval. Episode visuals, exact copy, and semantic highlight location may change within this profile."
+}

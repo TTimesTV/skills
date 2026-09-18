@@ -1,0 +1,23 @@
+{
+  "name": "ttimes-general-interview",
+  "visual_source": "exact_article_list_image",
+  "typography_source": "matching_youtube_thumbnail",
+  "title_plate": false,
+  "rounded_panel": false,
+  "guest_profile": false,
+  "source_label": false,
+  "cover_title_px": 80,
+  "cover_logo": {
+    "position": "upper-right",
+    "x": 836,
+    "y": 55,
+    "width": 176
+  },
+  "allowed_overlays": [
+    "official_logo",
+    "glyph_color",
+    "text_shadow",
+    "directional_gradient"
+  ],
+  "approval_gate": ["cover", "representative_body", "closing"]
+}
