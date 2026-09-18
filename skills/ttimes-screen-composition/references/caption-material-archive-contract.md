@@ -24,4 +24,4 @@
 - 확보한 클립은 ffprobe와 실제 재생으로 확인하고 SHA-256을 기록한다. 링크만 기록한 항목과 실제 파일을 보관한 항목을 구분한다.
 - 외부 계정 연결·자동 업로드·개인 보관함 동기화는 이 공유 스킬의 범위에 포함하지 않는다.
 - 전체 원본 장기 보관, 편집 여유분 길이와 파일 정리는 현재 작업의 지시를 따른다.
-- 세부 기록 항목은 `../../ttimes-production-automation/references/team-material-archive.md`를 참조한다.
+- 세부 기록 항목은 `team-material-archive.md`를 참조한다.

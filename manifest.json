@@ -2,7 +2,7 @@
   "schema_version": 1,
   "edition": "team",
   "import_date": "2026-09-18",
-  "skill_count": 16,
+  "skill_count": 15,
   "files": [
     {
       "path": "skills/ttimes-article-selection/SKILL.md",
@@ -541,63 +541,8 @@
     },
     {
       "path": "skills/ttimes-pd-material-planning-evaluation/SKILL.md",
-      "bytes": 21440,
-      "sha256": "975f2bde5ec1151cb91509476037e848544eeb6781e35cd532f47374be3a3c5f"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/2026-07-ttimes-role-automation-calibration.md",
-      "bytes": 2689,
-      "sha256": "347a5fea61c6c4d4c5030c9aa8b5f30224eb4005384d28011161a30ecd597f06"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/ai-generated-engineering-shorts-pipeline.md",
-      "bytes": 8081,
-      "sha256": "26cfbfb04893b57ba3cb953e5a1bbab20586bc15625b03e30bc039995a799cc0"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/approved-highlight-vertical-sample.md",
-      "bytes": 8588,
-      "sha256": "0c99329b4acf66408bfa9a79052bb4a603b5c3cf34bdd9b0cf2e546eb6173cc1"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/channel-wide-pd-credit-and-work-audit.md",
-      "bytes": 6411,
-      "sha256": "d8531eb7616e7a4d687656263edb3bbf82aced0ac8a61320f8b831a874d7ddad"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/final-upload-package-handoff-corrections.md",
-      "bytes": 1045,
-      "sha256": "20e3f0ca8a51550768f5fe7ecad35bb5ed5bdb0ba5556d7f2cc2a01619932054"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/longform-to-shorts-reverse-engineering.md",
-      "bytes": 5096,
-      "sha256": "73f65943e6d77624672c5a76e3123b5c1409239d04ac65e377367b04ef74e578"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/media-production-equipment-budgeting.md",
-      "bytes": 3283,
-      "sha256": "40ea6dcf1e808f40aa16b8275f10de3de85b7ff3235341e64e133b39063017c2"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/mobile-safe-editorial-shorts-shell.md",
-      "bytes": 5259,
-      "sha256": "605a8a7e1ee4a796488fd02c856feae9ba95d4ae10557a6b3fa387b101f094e6"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/narration-first-shorts-bgm-mixing.md",
-      "bytes": 4927,
-      "sha256": "a82fd1473197747f7e9e96e0baa7289347934f05c8f73bff24919fb550159fef"
-    },
-    {
-      "path": "skills/ttimes-production-automation/references/team-material-archive.md",
-      "bytes": 1137,
-      "sha256": "767ed912e0ea03a478c2e2594b90e9c21e655cca74e6713d9ca0fada97d20f3f"
-    },
-    {
-      "path": "skills/ttimes-production-automation/SKILL.md",
-      "bytes": 18457,
-      "sha256": "fdc727bb95163cfcdffbb0ca5cc54d530bbc87d12534daa6840744cde8579045"
+      "bytes": 21405,
+      "sha256": "dbf8b2b4b5c3be0b26c64af83206926087725ec670c1f7e9fa7537546469387e"
     },
     {
       "path": "skills/ttimes-screen-composition/assets/park-jongcheon-feedback/profile-user-reference.png",
@@ -616,8 +561,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/references/caption-material-archive-contract.md",
-      "bytes": 2687,
-      "sha256": "dcd90d3cdfd445e45e5f9644df3e67a43c690ebe5c36d28a0ee8d8bc83f6cd19"
+      "bytes": 2641,
+      "sha256": "3113e75b98c9bad98aad6a0695a394453cadca68438565f0654c998ddaad39d8"
     },
     {
       "path": "skills/ttimes-screen-composition/references/editorial-selection-and-sequence.md",
@@ -718,6 +663,11 @@
       "path": "skills/ttimes-screen-composition/references/synced-cut-docx-structure.md",
       "bytes": 3735,
       "sha256": "f6c0c6099f752b788bf14c1e70499f6d8388e0cfc0f8453291e46a3cfdceaad0"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/team-material-archive.md",
+      "bytes": 1137,
+      "sha256": "767ed912e0ea03a478c2e2594b90e9c21e655cca74e6713d9ca0fada97d20f3f"
     },
     {
       "path": "skills/ttimes-screen-composition/references/unseen-transcript-calibration.md",
@@ -1126,8 +1076,8 @@
     },
     {
       "path": "skills/ttimes-shorts-rendering/SKILL.md",
-      "bytes": 15137,
-      "sha256": "bce76367df82996de8e201f7a6a909538a32b9f0f562548f64c9470a29262143"
+      "bytes": 15102,
+      "sha256": "900d5ee79abe52e84e7f0b4c7c46c74c3b44b5be9c76285e3006218ef69817fb"
     },
     {
       "path": "skills/ttimes-square-carousel-cover/references/approved-ai-slop-cover.md",

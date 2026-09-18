@@ -1,6 +1,6 @@
 # TTimes Skills
 
-티타임즈 제작 업무를 위한 팀 공유용 스킬 16개를 관리하는 저장소입니다. 각 스킬의 지침, 참고자료, 실행 스크립트, 템플릿, 예제와 기존 테스트를 함께 보관합니다.
+티타임즈 제작 업무를 위한 팀 공유용 스킬 15개를 관리하는 저장소입니다. 각 스킬의 지침, 참고자료, 실행 스크립트, 템플릿, 예제와 기존 테스트를 함께 보관합니다.
 
 ## 스킬 목록
 
@@ -15,7 +15,6 @@
 | [ttimes-factcheck-research](skills/ttimes-factcheck-research/SKILL.md) | 수치·인용·기술 주장 팩트체크 |
 | [ttimes-original-cardnews](skills/ttimes-original-cardnews/SKILL.md) | 취재·리서치 기반 오리지널 카드뉴스 |
 | [ttimes-pd-material-planning-evaluation](skills/ttimes-pd-material-planning-evaluation/SKILL.md) | 영상 전체의 PD 자료 기획 평가 |
-| [ttimes-production-automation](skills/ttimes-production-automation/SKILL.md) | 제작 단계·역할·자동화 범위 설계 |
 | [ttimes-screen-composition](skills/ttimes-screen-composition/SKILL.md) | 최종 컷에 맞춘 자막·자료 화면구성 |
 | [ttimes-script-and-srt](skills/ttimes-script-and-srt/SKILL.md) | 영상·음성·YouTube 기반 한국어 원고와 SRT |
 | [ttimes-shorts-rendering](skills/ttimes-shorts-rendering/SKILL.md) | 가로 영상 하이라이트를 세로 쇼츠로 렌더링 |

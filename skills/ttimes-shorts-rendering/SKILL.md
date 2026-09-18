@@ -12,7 +12,6 @@ metadata:
     - pillow
     - qa
     related_skills:
-    - ttimes-production-automation
     - reference-matched-media-templates
     - ttimes-cut-editing
   author: Hermes Agent
