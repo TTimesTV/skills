@@ -64,6 +64,10 @@ If two modes are explicitly requested together, separate the outputs under short
 
 Completion criterion: the response shape matches the current turn's trigger, not the previous turn's task.
 
+### Interview card-news default — 2026-09-29
+
+For interview/YouTube-based card-news manuscripts, load `references/interview-cardnews-article-quotes-20260929.md`. The user's current default is **attributed article-style prose + verified key speech in quotation marks**, ending with **a speaker quote and name/role**. This supersedes older preferences against article-style attribution or for an all-body closing in this task family. Do not add advice/inferences the speaker did not express or merge host speech into the guest's account. Preserve the approved visual template and distinguish approved copy from verified audio/speaker attribution.
+
 ### General-interview card-news wording calibration
 
 For TTimes general-interview card-news copy, also load `../ttimes-cardnews-imagegen/references/jo-taeho-ep2-general-interview-calibration-20260903.md`.

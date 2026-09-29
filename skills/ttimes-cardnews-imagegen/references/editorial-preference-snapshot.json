@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_from": "references/editorial-approval-ledger.jsonl",
-  "event_count": 32,
+  "generated_from": "skills\\ttimes-cardnews-imagegen\\references\\editorial-approval-ledger.jsonl",
+  "event_count": 33,
   "formats": {
     "TTimes 일반 대담형": {
       "event_count": 18,
@@ -970,6 +970,62 @@
               "candidate_ranking",
               "delta_capture",
               "iterative_automation"
+            ]
+          }
+        ]
+      }
+    },
+    "interview-cardnews": {
+      "event_count": 1,
+      "episode_count": 1,
+      "status_counts": {
+        "revised": 1
+      },
+      "positive_signals": [
+        {
+          "signal": "explicit-hard-rule",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "article-style-attribution",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "verified-speech-quotes",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "speaker-quote-closing",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        },
+        {
+          "signal": "no-invented-advice",
+          "events": 1,
+          "episodes": 1,
+          "promoted_default": false
+        }
+      ],
+      "rejected_signals": [],
+      "approved_examples": {
+        "manuscript": [
+          {
+            "field": "prose-and-closing",
+            "final": "출연자 이름을 밝힌 기사체와 실제 발언 인용; 마지막은 출연자 인용문과 이름·직함; 발언에 없는 부연 제외",
+            "episode": "kang-sujin-astra",
+            "signals": [
+              "explicit-hard-rule",
+              "article-style-attribution",
+              "verified-speech-quotes",
+              "speaker-quote-closing",
+              "no-invented-advice"
             ]
           }
         ]

@@ -76,6 +76,10 @@ Do not use for:
 
 ## Production Contract
 
+### 인터뷰 원고 기본값 — 2026-09-29
+
+인터뷰·유튜브 발언 기반 카드뉴스는 `../ttimes-editorial-copy/references/interview-cardnews-article-quotes-20260929.md`를 읽는다. 사용자가 확정한 기본값은 **출연자 이름을 밝힌 기사체 본문 + 실제 핵심 발언의 따옴표 인용**, 마지막은 **출연자 인용문 + 이름·직함**이다. 과거의 기사체·인물 소개 회피나 본문형 마지막 장 선호보다 우선한다. 실제 발언에 없는 조언·해석을 보태거나 진행자 발언을 출연자 말로 합치지 않는다. 현재 회차의 명시 예외와 기존 시각 템플릿은 유지한다. 원고 승인만으로 원음·화자 검증이 완료된 것은 아니다.
+
 ### User-approval learning loop
 
 For title, body-copy, page-count, emphasis, and visual-concept decisions, load `references/user-approval-pattern-learning.md` and `references/editorial-preference-snapshot.json` before proposing candidates. Use same-format repeated approvals to rank proposals, but current explicit instructions always win. Never treat silence as approval.
