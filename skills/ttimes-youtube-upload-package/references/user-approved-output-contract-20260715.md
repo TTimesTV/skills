@@ -45,7 +45,9 @@ Ignore thumbnail/list title, Naver/Daum title, and landing URL by default unless
 
 ## Front-ad state
 
-- Recognized AI-leverage or Excel ads use the exact approved template.
+- `앞광고 1` is the Snowflake World Tour Seoul 2026 recap live seminar campaign supplied on 2026-09-22. Expect recurrence through 2026-10-02 KST inclusive, while still confirming it from CC or a producer statement. Its exact copy and opening chapter live in `pinned-comment-templates.md`.
+- `앞광고 2` is the 2027 IT trend course supplied on 2026-09-23. Its approved opening chapter is `00:00 2027 IT 트렌드 강좌`; its exact copy lives in `pinned-comment-templates.md`.
+- Recognized Snowflake, 2027 IT trend, AI-leverage, Excel, or 2027 AX conference ads use the exact approved template.
 - No front ad means no ad copy and no `=================================` separator.
 - If the user states there is no front ad or no highlight, that direct production fact overrides inference from recent channel habits.
 - Never manufacture `00:16 하이라이트`; chapter 00:00 can be the main program.

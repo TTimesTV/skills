@@ -14,9 +14,9 @@ metadata:
     - ttimes-factcheck-research
     - baoyu-infographic
     - ttimes-editorial-copy
+  version: 0.1.0
   platforms:
   - macos
-  version: 0.1.0
 ---
 
 # TTimes Original Card News

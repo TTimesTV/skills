@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Approved sample freeze, name ledger, and protected length exception
 
 ## Reusable lesson
@@ -18,7 +20,7 @@ A direct user correction such as a reporter/person spelling is authoritative for
 - Keep raw ASR JSON immutable as source evidence unless the workflow explicitly defines a corrected-ASR derivative.
 - Re-scan the workspace for the rejected spelling before final delivery.
 
-Session example: `홍재희` was corrected by the user to `홍재의 기자`. The corrected form had to propagate to sample, baseline, glossary, builder, full body, and final SRT, while raw MLX output remained unchanged.
+Session example: `홍재희` was corrected by the user to `홍재의 기자`. The corrected form had to propagate to sample, baseline, glossary, builder, full body, and final SRT, while raw ASR output remained unchanged.
 
 ## Protected overlength exception
 

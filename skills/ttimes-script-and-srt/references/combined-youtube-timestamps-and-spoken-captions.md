@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Combined YouTube timestamps + spoken captions
 
 Use when the user gives a YouTube URL and asks for both `타임스탬프` and `말자막` in one request.
@@ -35,8 +37,8 @@ Do not attach corrected JSON, validation logs, Markdown duplicates, or an extra 
 
 1. Fetch metadata first: title, channel, duration, language, caption availability.
 2. Attempt native/automatic captions once when available.
-3. If caption download returns a platform rate-limit error such as HTTP 429, do not loop on the same endpoint. Download exact-source audio/video and run MLX Whisper directly.
-4. Use `mlx-community/whisper-large-v3-turbo`, explicit source language, word timestamps, and a narrow initial prompt containing the title and high-risk topic terms.
+3. If caption download returns a platform rate-limit error such as HTTP 429, do not loop on the same endpoint. Download exact-source audio/video and run ElevenLabs directly.
+4. Use the ElevenLabs runtime with explicit source language and word timestamps; keep title and high-risk terms in the correction ledger.
 5. Keep raw ASR immutable; write corrected derivatives separately.
 
 ## Proper-name and term verification

@@ -1,16 +1,59 @@
 ---
 name: ttimes-screen-composition
-description: Use when a TTimes PD must turn an approved final-cut transcript or cleaned DOCX into an editor-facing screen-composition plan that combines editorial captions and visual materials on the same timeline. Standardizes caption function, material taxonomy, verbal footage briefs, simultaneous layers, timing, collisions, evidence, rights, and inline DOCX instructions. Do not use for spoken-caption SRT, cut decisions, rough-cut audio rendering, or exhaustive asset discovery unless explicitly requested.
+description: Use when a TTimes PD must turn an approved final-cut transcript or cleaned
+  DOCX into an editor-facing screen-composition plan that combines editorial captions
+  and visual materials on the same timeline. Standardizes caption function, material
+  taxonomy, verbal footage briefs, simultaneous layers, timing, collisions, evidence,
+  rights, and inline DOCX instructions. Do not use for spoken-caption SRT, cut decisions,
+  rough-cut audio rendering, or exhaustive asset discovery unless explicitly requested.
 license: MIT
 metadata:
-  version: 0.6.0
+  version: 0.6.6
   author: Hermes Agent
   hermes:
-    tags: [ttimes, screen-composition, captions, footage, inserts, editor-handoff, docx]
-    related_skills: [ttimes-editorial-copy, ttimes-script-and-srt, ttimes-cut-editing]
+    tags:
+    - ttimes
+    - screen-composition
+    - captions
+    - footage
+    - inserts
+    - editor-handoff
+    - docx
+    related_skills:
+    - ttimes-editorial-copy
+    - ttimes-script-and-srt
+    - ttimes-cut-editing
 ---
 
 # TTimes Screen Composition
+
+## 회차별 비교 보고서 누적 — 2026-10-13
+
+사용자가 최종 JSON과 이전 제안의 비교를 요청하면 채팅 분석에서 끝내지 않고 회차별 Word 보고서와 근거 대응표를 저장한다. [비교 보고서 보관과 새 사례](references/episode-comparison-archive-20261013.md)에 보관 위치, 버전 구분, 대기 회차와 적용 사례를 기록했다. 실제 초안과 최종 선택을 같은 발화로 비교하며, 다른 컷의 시각이나 CMS 자동 후보를 초안 대신 사용하지 않는다. 같은 회차의 JSON 분할은 하나의 보고서에서 다루고 원본 구분은 유지한다. 새 JSON을 받을 때 해당 회차 보고서와 통합 목록을 갱신하며 이전 버전은 보존한다.
+
+## 설명 그래픽 실제 제작
+
+사용자가 `(그래픽 참고)`, 비교 장표, 개념도, 구조도의 실제 이미지 제작·수정을 요청하면 `ttimes-explainer-graphics`를 함께 사용한다. 화면구성에서는 발화상의 역할과 등장/변경/종료를 결정하고, 그래픽 스킬에서는 승인 사례의 실제 이미지를 참고해 시각 결과를 만든다. 그래픽이 필요하다는 제안만으로 이미지 제작이 끝났다고 하지 않는다. 화면구성만 요청된 경우 모든 그래픽을 자동 생성할 필요는 없다.
+
+## 콘텐츠 다층 분류 — 2026-10-13
+
+화면구성의 주제별 판단과 승인 사례 비교에는 [진행자·게스트·주제의 다층 분류](references/multilayer-content-calibration-20261013.md)를 적용한다. 회차의 인물·주제와 구간의 실제 발화 역할, 자료 기능, 자막 기능, 시간 전개, 제작 조건을 분리한다. 진행자의 재진술·비유도 자막 원천이며 사람 이름만으로 화면 유형을 고정하지 않는다. 하이라이트는 짧은 검색어가 아닌 실제 적용 발화 범위에 연결하되 불필요하게 전 문단으로 늘리지 않는다.
+
+## 강정수 최종본 비교 학습 — 2026-10-07
+
+새 화면 구성과 초안/승인본 비교에서는 [강정수 1·2편 최종 선택 참고](references/kang-jeongsu-final-selection-20261007.md)의 적용 기준을 읽는다. 현재 질문에 대한 답인지 먼저 보고, 제품 동작·체험에는 실제 화면을 검토하며, 대화와 반응을 추상적인 결과 요약으로 지우지 않는다. 자막은 길이보다 주체·행동·비교축을 분명히 하고, 의미가 달라지는 화면은 등장·추가/교체·유지·종료를 발언에 맞춰 결정한다. 질문/소제목은 흐름 안내가 필요한 곳에 선택하며, 확인 메모는 구체적인 자료 선택·교정 또는 명시적인 미확보 상태로 연결한다.
+
+사용자가 후속 비교나 수정 피드백을 주면 같은 발화의 실제 초안과 승인 선택, 근거 수준, 적용 조건을 사례로 누적한다. 원문 컷과 제안 제외, 제작 단계의 진전과 취향을 구분한다. 반복된 선택이나 명시적 지시만 일반 기준으로 반영하고 반례에 따라 수정한다. ‘항상 짧게’, ‘그래픽 축소’, ‘더 강한 단정’, 자막 개수 할당으로 일반화하지 않는다. 상세 근거는 참고서에 두고 본문 규칙을 중복해 늘리지 않는다.
+
+## JEV first-pass judgment — 2026-09-30
+
+Use the configured JEV service for compact first-pass editorial judgments in new composition and draft-to-approved comparisons. Read [JEV judgment workflow](references/jev-judgment-workflow.md) and use `scripts/jev_judge.py`. The user requested JEV to reduce repeated main-model work. Batch meaningful speech beats with adjacent context, cache exact requests, and inspect uncertain or consequential decisions yourself. JEV selects among explicit criteria; it does not establish facts, inspect video, authorize publication, or replace the PD's final choices. Keep Word threaded comments as the default deliverable. Report actual call status and available usage; never claim savings without a measured baseline.
+
+## Approved JSON input and final selection calibration 2026-09-30
+
+When the user supplies a final CMS JSON export and asks to turn it into Word, read [approved JSON to Word](references/approved-json-to-word.md). JSON is an **input authority**, not a change to the default Word deliverable. Restore approved text, exact character anchors, overlapping placements, edits and reuse; do not print every automatic candidate or infer approval from status alone. The reference includes a tested converter for the observed export schema and its limits.
+
+For comparison against earlier proposals and subsequent screen-composition planning, read [three final-selection calibrations](references/final-selection-calibration-20260930.md). Compare actual earlier Word proposals, not unrelated CMS candidates. Learn where the PD selects a reversal, reaction, concrete picture, precise phrase, or reused graphic; do not reduce the lesson to “always shorten” or turn one final choice into a factual or universal design rule.
 
 ## Current review mode — user calibration 2026-09-17
 
@@ -28,7 +71,7 @@ This is a **provisional v0.5 standard** grounded in three materially different u
 
 ## 자막·자료·보관 연결 규칙
 
-자막을 넣는 선과 자료 선정에는 `references/caption-material-archive-contract.md`를 필수로 읽는다. 최소 충분한 화면을 선택하고 원본/편집본 시각을 분리한다. 자료의 출처와 사용 구간은 현재 프로젝트의 자료 목록에 남긴다.
+자막을 넣는 선, 자료 선정, 선택 영상의 Drive/Obsidian 보관 요청에는 `references/caption-material-archive-contract.md`를 필수로 읽는다. 최소 충분한 화면을 선택하고 원본/편집본 시각을 분리한다. 보관 요청이 있는 경우 관련 후보를 검증된 사용자 지정 위치에 보관하고 후보/선택/실사용 상태를 구분한다. 유튜브 원본은 링크·전사 전문·Obsidian 태그/정본 링크로 검색 가능하게 남긴다. 여유분·로컬 보존기간은 미확정이며 자동 삭제하지 않는다.
 
 ## Operational entry: decide the screen, not just the caption
 

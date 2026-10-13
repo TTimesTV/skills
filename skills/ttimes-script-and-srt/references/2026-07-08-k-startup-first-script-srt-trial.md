@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-08 First full TTimes script→SRT pipeline trial
 
 ## Trigger
@@ -18,7 +20,7 @@ Test video: `자원을 효율적으로 안전하게! 유럽서 주목하는 K-�
 
 - `yt-dlp "ytsearch5:<title>" --dump-json` found the exact video from title.
 - Downloaded YouTube Korean captions plus audio.
-- Ran chunked MLX Whisper on the extracted MP3.
+- Ran ASR on the extracted MP3.
 - Used YouTube description/tags/chapters as a glossary source: VivaTech 2026, 비전이노베이션, 비전노즐, 하이온, 동애등에, 액침 냉각유, 에어로원, 포네이처스, 나인와트, 옵티, EDF, ENGIE, 슈나이더 일렉트릭, ESCO.
 - Final validation shape:
   - script lines = 274
@@ -66,7 +68,7 @@ For first-pass trials, tell the user clearly:
 
 ```text
 이번 테스트에서 제일 약한 구간은 11:40쯤 현지 관람객 반응입니다.
-YouTube 자막/MLX 둘 다 외국어 발화를 망가뜨려서 보수적으로 한국어 요지로 정리했습니다.
+YouTube 자막/ASR 둘 다 외국어 발화를 망가뜨려서 보수적으로 한국어 요지로 정리했습니다.
 ```
 
 ## Reusable quality checks

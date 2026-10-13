@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 ### 7. SRT generation
 
 If the user asks for SRT, use an explicit **body-first review gate**. Do not review or rewrite prose inside timestamped SRT blocks when a timecode-free body TXT can be used. The editing order is:
@@ -19,11 +21,11 @@ Before freeze, run the reusable `scripts/audit_caption_body.py` against the time
 Then:
 
 1. Treat the final script non-empty lines as cue bodies.
-2. Align those lines to MLX word timestamps / caption timing substrate.
+2. Align those lines to ElevenLabs word timestamps / caption timing substrate.
 3. Generate an initial SRT.
 4. Run a **cue timing refinement pass** before delivery for this user's 95점 target:
    - Build a normalized script character stream from final script lines.
-   - Build a normalized ASR character stream from MLX word timestamps with char→word index mapping.
+   - Build a normalized ASR character stream from ElevenLabs word timestamps with char→word index mapping.
    - Map each script line's character span to an ASR word-index range using sequence/fuzzy matching.
    - Recalculate cue `start` from the first matched word and cue `end` from the last matched word.
    - Apply small Korean 말자막 padding: start ≈ -0.05~0.08s, end ≈ +0.12~0.22s.
@@ -49,14 +51,31 @@ Then:
    - When repairing only holes, assert all original cue bodies remain an ordered subsequence, renumber, and report only changed intervals, separated into `새 cue 추가` and `기존 cue 타이밍 보완`.
    - See `references/asr-speech-coverage-gap-audit.md` for the failure pattern, audit method, repair classification, and acceptance checks.
 6. Delivery preference for this user:
-   - Before emitting `MEDIA:`, copy the exact final deliverable to `PROJECT_OUTPUT/` and verify source/destination SHA-256 match.
+   - Before emitting `MEDIA:`, copy the exact final deliverable to `~/.hermes/media_cache/` and verify source/destination SHA-256 match.
    - **Filename is an editorial deliverable, not an internal implementation detail.** If the user specifies a basename, preserve it exactly—including Korean, spaces, episode wording, and date prefix. Do not expose internal names such as `gang_jeongsu_ep1_spoken_captions_SRT.txt` or silently substitute a transliterated ASCII slug. Recent approved pattern: `260723_강정수 1편 컷편.txt`; use the analogous `YYMMDD_이름 N편 컷편.txt` when that is the user's requested series convention.
    - If no basename was specified, use the project's established `YYMMDD_title` convention and prefer a concise human-facing title over pipeline labels such as `spoken_captions`, `final_aligned`, or `SRT` unless those words are part of the user's convention.
    - Keep SRT contents in a `.txt` attachment when that is the established mobile-delivery format. Do not tell the user to rename it unless they ask about importing it.
-   - If the exact requested basename fails to deliver, first retry the same hash-verified file from `PROJECT_OUTPUT/`. Use a short ASCII transport fallback only after an actual delivery failure, and label it as a transport fallback rather than treating it as the canonical filename. Never regenerate subtitle content merely to troubleshoot transport.
+   - If the exact requested basename fails to deliver, first retry the same hash-verified file from `~/.hermes/media_cache/`. Use a short ASCII transport fallback only after an actual delivery failure, and label it as a transport fallback rather than treating it as the canonical filename. Never regenerate subtitle content merely to troubleshoot transport.
    - Do **not** attach validation JSON by default.
    - Use ZIP only as a last-resort fallback when the requested `.txt` attachment also fails, or when the user explicitly asks for a bundle; ZIP is annoying on mobile for this user. If zipped, include only the requested deliverable(s), not JSON/debug files.
 
-### 8. Team delivery
+### 8. Obsidian archive — mandatory for reusable source scripts
 
-Deliver the requested final transcript and SRT in the current project's output folder. Include source URL, speakers, scope, and verification status when useful. Reopen the delivered file and verify its body matches the final approved candidate. Personal note-vault archiving and automatic external uploads are outside this shared skill.
+For this user, a completed public interview, debate, keynote, conference, or executive-statement script is not finished when only a DOCX/TXT exists in the work directory. **Archive a searchable Markdown reading copy in the main Obsidian vault before reporting completion.**
+
+Default destination:
+
+```text
+PROJECT_VAULT/30_Finance/Video/YouTube/YYYY/MM/YYMMDD_한국어 제목.md
+```
+
+If the source is not YouTube, use the matching existing source/platform folder under `30_Finance/Video/` rather than inventing a new top-level folder.
+
+The archive must contain:
+
+- source/publisher, publication date, speaker(s), exact source URL(s), duration/scope, and transcript/translation basis;
+- a concise `핵심 요지` and, when useful, a clearly labeled editorial judgment/counterargument section;
+- the **complete final Korean script/transcript**, preserving section and speaker order—not merely a summary, metadata, or link list;
+- foreign-language source status and QA basis; keep raw ASR separately when available.
+
+Verification is mandatory: reopen the Markdown, confirm opening and closing transcript blocks, source URLs, byte/line count, and that the archived body corresponds to the final delivery candidate. Do not claim completion while the script exists only in `ttimes_jobs`, `media_cache`, `/tmp`, or DOCX. Do not wait for a separate user reminder to archive these source scripts.

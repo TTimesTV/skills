@@ -20,7 +20,7 @@
 
 전수분류:
 
-`PROJECT_ROOT/deletion_reason_audit.md`
+`LOCAL_REFERENCE_NOT_DISTRIBUTED`
 
 ## 컷 분포
 

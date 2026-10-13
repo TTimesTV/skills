@@ -62,7 +62,7 @@ Measure:
 For partial deletions, prefer paragraph-constrained alignment over fuzzy-matching each deletion against a broad time window:
 
 1. Use the DOCX timestamp and the next paragraph timestamp only to define a local search window; display timestamps are often floored.
-2. Align the complete source paragraph to the local ASR character stream.
+2. Align the complete source paragraph to the ElevenLabs ASR character stream.
 3. Map each deletion's normalized source offsets through that alignment to ASR word boundaries.
 4. Run an independent prefix/suffix-anchor method as a sensitivity check and report the resulting union-duration range.
 5. Flag low-similarity occurrences, but also state whether they change the interval union. A dubious short occurrence contained inside an adjacent deletion can be semantically wrong yet runtime-neutral.

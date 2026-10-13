@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-08 K-startup TTimes SRT trial — cue refinement and delivery preferences
 
 ## Context
@@ -11,7 +13,7 @@ Workflow used:
 1. Discover exact YouTube video from title with `yt-dlp ytsearch`.
 2. Download Korean YouTube captions (`ko`, `ko-orig`) and source audio.
 3. Verify audio with `ffprobe`.
-4. Run chunked MLX Whisper word timestamps.
+4. Run ASR word timestamps.
 5. Generate a TTimes-style `[스크립트].txt`.
 6. Generate line-preserving SRT from the script.
 7. User judged first SRT roughly 80점: mostly aligned but cue timing/length not precise enough.
@@ -53,7 +55,7 @@ Useful default pads from the trial:
 
 ### 3. Foreign-language reaction segments are high risk
 
-The K-startup video had an English/foreign-language street-reaction segment around 11:40. Korean YouTube captions and MLX Korean ASR both degraded badly. Subagents flagged this as high-risk. Future pipeline should:
+The K-startup video had an English/foreign-language street-reaction segment around 11:40. Korean YouTube captions and ASR Korean ASR both degraded badly. Subagents flagged this as high-risk. Future pipeline should:
 
 - detect non-Korean segments
 - prefer native caption word timings if available

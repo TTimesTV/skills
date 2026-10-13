@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Predicate-attachment TTimes SRT workflow lessons (2026-07-08)
 
 ## Trigger
@@ -17,7 +19,7 @@ Use this order for this user's TTimes / spoken Korean subtitle work:
 
 ```text
 1. MP3/source acquisition and ffprobe confirmation
-2. MLX Whisper ASR with word timestamps
+2. ASR with word timestamps
 3. Build a source-faithful transcript first; do not caption-pack yet
 4. Minimal correction: ASR, particles, obvious grammar, terms, proper nouns, numbers
 5. Sentence/thought boundary split: if a sentence/thought ends, usually move next sentence to next cue
@@ -26,7 +28,7 @@ Use this order for this user's TTimes / spoken Korean subtitle work:
 8. Adhesive-word protection: do not strand discourse markers, degree adverbs, demonstratives, connective endings, auxiliaries
 9. 25-char target / 27-char max; 28+ forbidden
 10. Subagents review only; Main Hermes integrates and owns final script
-11. Align final script to MLX word timestamps
+11. Align final script to ASR word timestamps
 12. Verify and deliver only *_srt.txt unless user asks for script text
 ```
 

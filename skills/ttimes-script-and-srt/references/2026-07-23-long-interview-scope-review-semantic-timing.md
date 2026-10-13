@@ -1,8 +1,10 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 긴 기술 인터뷰: 범위 격리·리뷰 수렴·semantic timing repair
 
 ## 적용 상황
 
-40~60분대 무자막 기술 인터뷰를 `MLX ASR → bounded 초벌 → Main 통합 → immutable review → SRT`로 처리할 때 사용한다.
+40~60분대 무자막 기술 인터뷰를 `ASR → bounded 초벌 → Main 통합 → immutable review → SRT`로 처리할 때 사용한다.
 
 ## 1. Bounded draft의 입력 격리
 

@@ -56,7 +56,7 @@ For each rendered join:
 5. If short-clip ASR repeats or omits text, retry with 6 seconds on each side before calling it a bad join.
 6. Independently verify full-file decode, expected duration, and operation accounting.
 
-Short-clip Whisper hallucination is a review signal, not proof of a bad edit. Longer local context resolved several false alarms in the Park Nam-gyu case.
+Short-clip ElevenLabs hallucination is a review signal, not proof of a bad edit. Longer local context resolved several false alarms in the Park Nam-gyu case.
 
 ## Fail-closed cases
 

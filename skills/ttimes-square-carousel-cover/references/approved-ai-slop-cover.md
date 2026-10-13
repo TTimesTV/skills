@@ -61,7 +61,7 @@ soft black shadow: offset 6/7, blur 6
 
 ## Approved output
 
-- Output path at approval: `PROJECT_ROOT/00_cover_ttimes_list_title.png`
+- Output path at approval: `LOCAL_REFERENCE_NOT_DISTRIBUTED`
 - Skill asset: `assets/approved-lee-junghak-ai-slop-cover.png`
 - Size: `1080×1080`
 - SHA-256: `2e8c1ab7cf5a1eadb1f2905f7e368bc53f19f46d344fdc61350f05b1965c717d`

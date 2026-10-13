@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # TTimes 말자막 원문교정·재분절 워크플로우 — 2026-07 세션 학습
 
 ## 핵심 교훈
@@ -14,7 +16,7 @@
 
 ## 올바른 작업 순서
 
-1. YouTube captions + MLX Whisper ASR + word timestamps 확보.
+1. YouTube captions + ASR + word timestamps 확보.
 2. ASR segment를 그대로 cue로 쓰지 말고, 시간순 원발화 덩어리로 합친다.
 3. 먼저 **원문 교정본**을 만든다.
    - ASR 오인식 수정

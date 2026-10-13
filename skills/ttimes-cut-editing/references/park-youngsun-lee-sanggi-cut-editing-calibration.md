@@ -25,8 +25,8 @@
 
 작업 근거:
 
-- `PROJECT_ROOT/operation_reason_audit.md`
-- `PROJECT_ROOT/adversarial_cut_plan_audit.md`
+- `LOCAL_REFERENCE_NOT_DISTRIBUTED`
+- `LOCAL_REFERENCE_NOT_DISTRIBUTED`
 
 ## 편집 자아
 

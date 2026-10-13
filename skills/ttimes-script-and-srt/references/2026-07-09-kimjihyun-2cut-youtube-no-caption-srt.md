@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-09 김지현 2편 컷 — YouTube no-caption TTimes SRT workflow
 
 ## Trigger
@@ -13,16 +15,9 @@ User provided `https://youtu.be/8w29DoJ1dn0` with `/plan`, then approved executi
 
 1. Create a dedicated workdir under `~/.hermes/work/<date>_<slug>/` with `source/`, `asr/`, `draft/`, `redraft/`, `review/`, `final/`, `scripts/`.
 2. Download audio with `yt-dlp -x --audio-format mp3` and verify duration with `ffprobe`.
-3. Run MLX Whisper directly on the full 27-minute MP3 with word timestamps:
+3. Run ASR directly on the full 27-minute MP3 with word timestamps:
 
-```bash
-mlx_whisper source/<audio>.mp3 \
-  --model mlx-community/whisper-large-v3-turbo \
-  --language ko \
-  --word-timestamps True \
-  --output-format json \
-  --output-dir asr/
-```
+실행 명령은 `elevenlabs-runtime.md`의 검증된 API helper를 사용한다.
 
 4. Validate ASR JSON before editing: segment count, word count, monotonic word timestamps, last word close to source duration.
 5. Build a transcript-close caption body, then postprocess into ~16-char average cue bodies with max 27 chars, no final periods, and living subtitle punctuation (`?`, quotes when useful).
@@ -41,7 +36,7 @@ mlx_whisper source/<audio>.mp3 \
    - `멈추되니까` → `멈추라니까`
    - `슈퍼 의뢰 자세` → `슈퍼 을의 자세`
 
-7. Align final caption body to MLX word timestamps with normalized character-stream fuzzy matching, not proportional time mapping. Validate:
+7. Align final caption body to ASR word timestamps with normalized character-stream fuzzy matching, not proportional time mapping. Validate:
    - SRT cue count == caption body line count
    - SRT bodies exactly equal caption body
    - overlap 0 / nonpositive 0

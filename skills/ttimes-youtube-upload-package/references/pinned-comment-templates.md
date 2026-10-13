@@ -1,6 +1,62 @@
 # User-approved TTimes pinned-comment front-ad templates
 
-These templates were supplied by the user on 2026-07-15. Preserve line breaks, wording, contact details, emoji, and purchase URL. Do not paraphrase.
+These templates were supplied by the user on 2026-07-15, 2026-09-22, and 2026-09-23. Preserve line breaks, wording, contact details, emoji, and purchase URL. Do not paraphrase.
+
+## Front ad 1 — Snowflake World Tour Seoul 2026 recap live seminar
+
+Producer designation: `앞광고 1`.
+
+Campaign expectation: likely recurring through 2026-10-02 KST, inclusive. During that period, inspect the first 90 seconds for this ad first, but do not infer it from the date alone. After 2026-10-02, retain and use this template only when CC or the producer confirms the same campaign.
+
+```text
+데이터는 다 모아뒀는데, 왜 AI가 못 찾죠? 🥲
+문제는 모델이 아니라, 말이 통하는 데이터입니다. 🤩
+
+✔️AI가 이해할 수 있는 데이터는 무엇이 다른가?
+✔️코드를 모르는 현업이 데이터를 쓰게 하려면?
+✔️보안과 거버넌스를 포기하지 않는 AI 플랫폼이란?
+총 19시간 30여 개 세션에서 발표된 기업들의 생생한 사례.
+
+실제로 부딪힌 병목과 해결법만 골라 90분에 담았습니다.
+
+['스노우플레이크 월드투어 서울 2026' 리캡 라이브 세미나]
+📍시간 : 10월 2일(금) 오후 2시~3시 30분
+📍가격: 무료
+📍장소 : 온라인 라이브
+📍참가신청: https://event-us.kr/m/135620/61702
+```
+
+Approved opening chapter:
+
+```text
+00:00 스노우플레이크 리캡 라이브 세미나
+```
+
+## Front ad 2 — 2027 IT trend course
+
+Producer designation: `앞광고 2`.
+
+Reference video: `https://www.youtube.com/watch?v=4p6gq8J_tCc`
+
+```text
+AI 에이전트가 모든 것을 집어삼킨다!
+내년 전략 수립을 위한 AI 10대 아젠다 강좌 오픈
+∙ 에이전트는 2027년 어디까지 가능할까?
+∙ 깊어질 AI 병목, 부의 지도는 어떻게 바뀐까?
+∙ 내 업무와 조직을 어떻게 재설계해야 하나?
+∙ 우리는 어떤 역량으로 살아남아야 하나?
+
+📍 강사 : 김지현 테크라이터
+📍 기업 구매 문의 :  02-724-7718, ttimes6000@gmail.com
+📍 개인 구매 : 검색창에 '티타임즈 라이브클래스' 검색
+👉 강좌구매 바로가기 : https://ttimes.liveklass.com/cu/NA2jC6xJ
+```
+
+Approved opening chapter:
+
+```text
+00:00 2027 IT 트렌드 강좌
+```
 
 ## AI leverage course
 

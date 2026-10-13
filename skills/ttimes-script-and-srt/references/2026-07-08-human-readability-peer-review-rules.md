@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Human readability + peer-review lessons (2026-07-08)
 
 ## Trigger
@@ -168,7 +170,7 @@ When the user says “이거 해봐” for a YouTube TTimes SRT, do not stop aft
 
 ```text
 metadata/captions/audio
-→ MLX ASR
+→ ASR
 → glossary + draft
 → peer review by text/readability/distortion
 → integrate user-style rules

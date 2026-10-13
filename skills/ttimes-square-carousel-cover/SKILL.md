@@ -1,6 +1,9 @@
 ---
 name: ttimes-square-carousel-cover
-description: Build an approved TTimes-style 1:1 carousel cover by using the exact article `_list_` image as the visual source, the corresponding TTimes/YouTube thumbnail as typography calibration, the official TTimes logo, and deterministic Korean title composition. Use this instead of regenerating or reinterpreting the cover with ImageGen.
+description: Build an approved TTimes-style 1:1 carousel cover by using the exact
+  article `_list_` image as the visual source, the corresponding TTimes/YouTube thumbnail
+  as typography calibration, the official TTimes logo, and deterministic Korean title
+  composition. Use this instead of regenerating or reinterpreting the cover with ImageGen.
 license: MIT
 metadata:
   hermes:
@@ -15,7 +18,6 @@ metadata:
     related_skills:
     - ttimes-cardnews-imagegen
     - practical-image-workflows
-  author: Hermes Agent
   version: 1.6.0
 ---
 
@@ -247,7 +249,7 @@ python scripts/build_cover.py \
 
 The example colors reproduce the approved AI-slop cover only. For a new cover, the editorial/visual classification step must choose new `--color` values. The builder auto-fits size and mild horizontal compression unless explicitly overridden.
 
-If `--font` is omitted, the script checks common macOS font locations; on other systems supply --font explicitly. Fail closed if no suitable Black Korean font exists; do not silently use a materially different face.
+If `--font` is omitted, the script checks common font locations. Fail closed if no suitable Black Korean font exists; do not silently use a materially different face.
 
 ## 7. QA Gate
 

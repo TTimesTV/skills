@@ -1,6 +1,8 @@
 ---
 name: ttimes-elevenlabs-dubbing-csv
-description: Build TTimes dubbing cues from Studio CSV or source media, then produce the complete Korean-to-English dub, background mix, US SRT, and English thumbnail package.
+description: Build TTimes dubbing cues from Studio CSV or source media, then produce
+  the complete Korean-to-English dub, background mix, US SRT, and English thumbnail
+  package.
 metadata:
   hermes:
     tags:
@@ -18,13 +20,17 @@ metadata:
     requires_toolsets:
     - terminal
     - file
+  version: 1.4.0
   platforms:
   - macos
   - linux
-  version: 1.4.0
 ---
 
 # TTimes ElevenLabs Dubbing CSV
+
+## 이 컴퓨터의 전사 경로
+
+전사·말자막 타이밍·부분 재전사·화자 구분은 ElevenLabs Scribe v2 API와 기존 env만 사용한다. 실행 전 `skills/ttimes-script-and-srt/references/elevenlabs-runtime.md`를 읽는다. 인증·잔액·서비스 오류는 원인을 보고하고 중단한다. 이 규칙이 과거 사례보다 우선한다.
 
 ## When to Use
 
@@ -118,7 +124,7 @@ Rules:
 
 ### C. Source-media bootstrap mode
 
-For this user, the model contract is fixed: use MLX Whisper locally for transcription and targeted re-transcription, use local `pyannote/speaker-diarization-community-1` for speaker diarization, and use GPT Sol only for Korean correction and English translation. Do not upload source audio for cloud diarization. Do not substitute Qwen3-ASR or a local LLM merely for speed or local execution. Verify speaker mapping independently.
+For this user, transcription, targeted re-transcription, and speaker diarization use ElevenLabs Scribe v2 API with the existing env. Read `skills/ttimes-script-and-srt/references/elevenlabs-runtime.md` before execution. Use GPT Sol for Korean correction and English translation; verify speaker mapping independently.
 
 Use this when no Studio CSV exists. Read and follow:
 
@@ -205,7 +211,7 @@ Review targets:
 Dubbing Studio normally preserves and remixes the source background. Plain TTS API output is dry voice plus silence. To reproduce the Studio feel locally:
 
 1. acquire the exact published source audio;
-2. if a public YouTube download is blocked, request a source file supplied for the current task;
+2. with explicit user permission, browser cookies may be used for a blocked public YouTube download;
 3. separate vocals from the background/SFX bed (for example, Demucs `htdemucs --two-stems=vocals`);
 4. mix the English dub with `no_vocals`, preserving music, transitions, effects, and room tone;
 5. duck the background only while English speech is active;

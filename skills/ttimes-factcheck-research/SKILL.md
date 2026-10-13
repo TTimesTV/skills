@@ -1,6 +1,12 @@
 ---
 name: ttimes-factcheck-research
-description: Use when a TTimes script, cut transcript, caption, article, graphic, title, thumbnail, or screen-composition claim needs publication-grade verification or contains numbers, dates, rankings, market share, quotations, technical claims, causal claims, or commercialization status. Proactively detect material claims, run bounded source-grounded research, distinguish fact-checking from context research, and return a PD-ready verdict plus corrected copy without silently changing the approved cut.
+description: Use when a TTimes script, cut transcript, caption, article, graphic,
+  title, thumbnail, or screen-composition claim needs publication-grade verification
+  or contains numbers, dates, rankings, market share, quotations, technical claims,
+  causal claims, or commercialization status. Proactively detect material claims,
+  run bounded source-grounded research, distinguish fact-checking from context research,
+  and return a PD-ready verdict plus corrected copy without silently changing the
+  approved cut.
 license: MIT
 metadata:
   hermes:
@@ -20,7 +26,6 @@ metadata:
     - ttimes-article-selection
     - caption-layering-workflow
     - ttimes-screen-composition
-  author: Hermes Agent
   version: 1.0.0
 ---
 

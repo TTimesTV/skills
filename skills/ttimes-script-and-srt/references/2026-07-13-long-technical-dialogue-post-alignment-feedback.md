@@ -1,19 +1,21 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Long technical dialogue: post-alignment feedback and factual-slip handling
 
 ## Trigger
 
-Use this pattern for a 30–50 minute Korean technical dialogue with no YouTube captions, especially when MLX ASR contains scientific terms, proper nouns, numbers, and malformed spoken clauses.
+Use this pattern for a 30–50 minute Korean technical dialogue with no YouTube captions, especially when ASR contains scientific terms, proper nouns, numbers, and malformed spoken clauses.
 
 ## Proven workflow
 
 1. Download and verify source duration and tail audio.
-2. Run chunked MLX Whisper with word timestamps and no previous-text conditioning.
+2. Run ASR with word timestamps through the API.
 3. Build and triple-review a 0–3 minute sample before full segmentation.
 4. Freeze the approved sample as an exact prefix with line count, SHA256, and any approved 28-character exception.
 5. Keep raw ASR immutable; maintain a correction ledger with `from`, `to`, and `basis`.
 6. Build a transcript-close full-body baseline, record cue/character/number inventories, then use chunk reviewers for all-boundary plus all-cue/source checks.
 7. After Main substantially rewrites the body, run a freshness review against the actual delivery candidate. Old line numbers are hints only; apply findings by exact current string.
-8. Fuzzy-align the frozen body character stream to MLX word characters, map each cue to matched word ranges, and generate initial timings.
+8. Fuzzy-align the frozen body character stream to ASR word characters, map each cue to matched word ranges, and generate initial timings.
 9. Audit ASR word-midpoint coverage and every speech-containing gap. Classify each unmatched span as previous-thought residue, next-thought connector/correction, meaningful omitted text, or true silence. Never fill by blind midpoint.
 10. Run a post-alignment short-duration audit. Cues under about 0.7 seconds often reveal body problems, not merely timing problems. Merge or rewrite protected chunks in the body, then regenerate all timing from the beginning.
 11. Re-run body/SRT exact-match, monotonicity, overlaps, duration, coverage, terminology, and approved-prefix checks after every body change.

@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-08 long YouTube → TTimes script/SRT delivery lessons
 
 ## Context
@@ -10,7 +12,7 @@ Pipeline used:
 2. `yt-dlp --write-auto-subs --write-subs --sub-langs 'ko,ko-orig,ko.*,en'` for captions; English subtitle download may hit 429, but Korean captions were available.
 3. `yt-dlp -x --audio-format mp3` for source audio.
 4. `ffprobe` verified duration about 3263s.
-5. Chunked MLX Whisper (`chunk_mlx_whisper_merge.py`, 300s chunks) produced word timestamps.
+5. ASR produced word timestamps. For current execution, use the ElevenLabs runtime reference.
 6. Generated a TTimes-style script, then a line-preserving SRT with cue timing refinement.
 
 ## Technique that worked
@@ -19,7 +21,7 @@ For 95점 cue sync, the successful refinement pattern was:
 
 - Generate script lines first.
 - Build a normalized script character stream from all final script lines.
-- Build a normalized ASR character stream from MLX word timestamps, with char→word index mapping.
+- Build a normalized ASR character stream from ASR word timestamps, with char→word index mapping.
 - Use sequence/fuzzy matching to map each script line span to first/last ASR word indices.
 - Set cue `start` from first matched word and `end` from last matched word.
 - Apply light Korean 말자막 padding (`start` about -0.055s, `end` about +0.13~0.19s).
@@ -30,7 +32,7 @@ This is the same pattern that upgraded the earlier K-startup test from roughly 8
 
 ## Major workflow correction from user
 
-The user explicitly corrected that for this class of TTimes/YouTube → script → SRT work, **subagents must always be used**. This is not optional even if YouTube captions exist, MLX ASR looks good, or sequence/cue matching scores are high.
+The user explicitly corrected that for this class of TTimes/YouTube → script → SRT work, **subagents must always be used**. This is not optional even if YouTube captions exist, ASR looks good, or sequence/cue matching scores are high.
 
 The user defined the quality score for this task class as mainly:
 
@@ -44,7 +46,7 @@ Recommended subagent roles:
 
 - A: term/proper-noun/number/unit correction review.
 - B: line-length/readability/segmentation review.
-- C: omission/distortion review against YouTube captions + MLX ASR.
+- C: omission/distortion review against YouTube captions + ASR.
 
 For 40–50+ minute dialogue videos, use at least A+B; C is strongly recommended.
 

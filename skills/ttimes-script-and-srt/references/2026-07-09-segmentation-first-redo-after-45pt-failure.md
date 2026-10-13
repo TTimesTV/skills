@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Segmentation-first redo after a 45-point failure
 
 ## Session signal
@@ -64,7 +66,7 @@ Do not immediately regenerate the full 85-minute file.
    - very short cue list
 6. Ask the user whether the sample rhythm is OK before processing the whole file.
 7. Only after approval, split the full job into parts (e.g. 10-minute chunks), have subagents review part drafts, then Main integrates.
-8. Align final caption bodies to MLX word timestamps at the end.
+8. Align final caption bodies to ASR word timestamps at the end.
 
 ## Example: better 0–3 min sample shape
 

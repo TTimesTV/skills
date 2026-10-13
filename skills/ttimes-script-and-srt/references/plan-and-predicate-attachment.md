@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Session lesson: `/plan` + predicate attachment for TTimes spoken captions
 
 Use this note when regenerating Korean spoken-dialogue SRTs after quality failures or rule changes.
@@ -7,7 +9,7 @@ Use this note when regenerating Korean spoken-dialogue SRTs after quality failur
 The successful workflow was not just better line wrapping. Quality improved after the task was forced through a `/plan`-style sequence before file generation:
 
 1. Decide what to reuse vs discard.
-   - Reuse: MP3/downloaded source, MLX Whisper/ASR word timings, confirmed term corrections, high-confidence prior review findings.
+   - Reuse: MP3/downloaded source, ElevenLabs/ASR word timings, confirmed term corrections, high-confidence prior review findings.
    - Discard: bad script segmentation and SRT cue bodies when readability fails.
 2. Rebuild transcript/cues under a single ordered rule set.
 3. Run subagents only after the brief encodes the true failure mode.

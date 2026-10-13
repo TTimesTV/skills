@@ -1,13 +1,15 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Long no-caption AI-chip video: review-intensive SRT workflow
 
-Use for 40–60+ minute Korean YouTube dialogue/keynote videos with no native captions and dense company/product/number terminology.
+For long media, use the existing ASR runtime and validate non-empty JSON, word timestamps, and speech-tail coverage. Split only for service constraints or confirmed missing intervals; preserve absolute offsets and rebuild affected derivatives.
 
 ## Durable workflow
 
-1. **Prefer chunked MLX from the start when prior long-file collapse risk is high.**
-   - 5-minute mono 16 kHz chunks.
-   - `word_timestamps=True`.
-   - `condition_on_previous_text=False`.
+1. **Prefer ASR from the start when prior long-file collapse risk is high.**
+   - 원본 파일 업로드를 기본으로 하고 서비스 제한이나 누락 구간이 있을 때만 분할한다.
+   - `timestamps_granularity=word`.
+   - `timestamps_granularity=word`.
    - Merge word/segment timestamps by chunk offset.
    - Verify the last real spoken phrase and final ASR word reach the audio tail; a successful process exit alone is not ASR integrity.
 
@@ -24,7 +26,7 @@ Use for 40–60+ minute Korean YouTube dialogue/keynote videos with no native ca
 4. **Targeted clip re-ASR for ambiguous high-risk phrases.**
    - Locate the timestamp in the close transcript.
    - Extract a 12–25 second clip with context before and after.
-   - Re-run MLX with a narrow initial prompt containing nearby entities/terms.
+   - Re-transcribe the narrow interval through ElevenLabs; retain nearby entities/terms in the correction ledger.
    - Preserve the actual colloquial wording when the clip confirms it, even if a polished paraphrase sounds cleaner.
    - If the short ASR still cannot disambiguate a phrase, leave it for manual/subagent review rather than inventing meaning.
 

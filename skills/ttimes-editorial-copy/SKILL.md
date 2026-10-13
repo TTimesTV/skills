@@ -1,13 +1,27 @@
 ---
 name: ttimes-editorial-copy
-description: Use when writing or revising TTimes on-screen editorial copy from interview speech, including emphasis captions, one-line explainer captions, selective question captions, quote cards, and short technical labels. Classifies the requested output mode before answering, preserves the source beat's actual contrast and causality, returns copy-only blocks when the PD asks for captions, and separates explanation, transcript cleanup, and fact-checking from screen-copy delivery.
+description: Use when writing or revising TTimes on-screen editorial copy from interview
+  speech, including emphasis captions, one-line explainer captions, selective question
+  captions, quote cards, and short technical labels. Classifies the requested output
+  mode before answering, preserves the source beat's actual contrast and causality,
+  returns copy-only blocks when the PD asks for captions, and separates explanation,
+  transcript cleanup, and fact-checking from screen-copy delivery.
 license: MIT
 metadata:
   version: 1.0.14
   author: Hermes Agent
   hermes:
-    tags: [ttimes, captions, editorial-copy, emphasis, explainer, broadcast]
-    related_skills: [caption-layering-workflow, ttimes-screen-composition, ttimes-factcheck-research]
+    tags:
+    - ttimes
+    - captions
+    - editorial-copy
+    - emphasis
+    - explainer
+    - broadcast
+    related_skills:
+    - caption-layering-workflow
+    - ttimes-screen-composition
+    - ttimes-factcheck-research
 ---
 
 # TTimes Editorial Copy

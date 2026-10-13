@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-09 김지현 1편 컷 — chunked ASR, Main 선납품본, late subagent integration
 
 ## Context
@@ -6,10 +8,10 @@ YouTube: `https://youtu.be/k29tnwrTHq0` (`김지현 1편_컷편`, 41:57). User r
 
 ## Durable lessons
 
-1. **No-caption long YouTube videos can make full-file MLX Whisper collapse even when it exits 0.**
-   - In this case full-file MLX produced timestamp disorder and a hallucinated repeated phrase loop around `챕터가 챕터...`.
+1. **No-caption long YouTube videos can make ASR collapse even when it exits 0.**
+   - In this case ASR produced timestamp disorder and a hallucinated repeated phrase loop around `챕터가 챕터...`.
    - Treat this as ASR substrate failure, not as text to patch.
-   - Switch to 5-minute chunked MLX with `--condition-on-previous-text False`, then merge word timestamps.
+   - Re-transcribe only the affected interval through ElevenLabs and merge word timestamps with the source offset.
 
 2. **Validate ASR substrate before caption work.**
    - Check `words > 0`, last word timestamp ≈ source duration, no backward timestamps, no repeated filler/phrase loops.

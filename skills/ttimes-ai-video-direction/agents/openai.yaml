@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI 영상 카메라 연출"
+  short_description: "카메라 구도·무빙과 실제 공간을 설계하고 영상 생성 실패를 진단"
+  default_prompt: "$ttimes-ai-video-direction을 사용해 참고 자료와 생성 모델을 확인하고, 카메라 구도·움직임·현실성을 중심으로 영상 생성 프롬프트를 설계해줘."
+policy:
+  allow_implicit_invocation: true

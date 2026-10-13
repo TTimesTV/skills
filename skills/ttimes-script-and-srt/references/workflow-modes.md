@@ -77,15 +77,25 @@ When the immutable candidate also contains a later **source-correction generatio
 
 For a **bounded final segmentation regression audit** such as `전반 cue 1~983 + seam 983-984`, do not limit the fresh verdict to predecessor diff windows or protected-phrase regex hits. After the all-cue/all-boundary read, enumerate every adjacent pair whose merged visible length is within the current maximum and manually judge whether the existing split unnecessarily separates a subject/topic/adverbial/reason clause from its predicate or leaves a non-sentence fragment. Separately scan every cue for a question mark followed by more text to catch packed question→answer or echo→answer beats while excluding indirect quotations such as `"...?"라고`. Classify each hit with its previous/next cue: a reporting suffix is a non-finding, but a completed question followed by the start of its answer is blocking when a token-preserving ≤27 redistribution cleanly separates the beats. Recheck predecessor-fix and later source/term-edit windows with both outer seams, but count only current-hash defects. Verifying that every prior proposal still exists is necessary but does not certify zero new findings, and an assignment label such as `0건 수렴검수` is an acceptance target—not a verdict to force. If a bilingual term or long name has no clean token-preserving ≤27 alternative, document the tradeoff as a non-finding rather than proposing a new broken boundary. Scope arithmetic, candidate-generation passes, and reporting checks: `references/exhaustive-bounded-final-segmentation-regression-audit.md`. Concrete residual-question example and convergence gate: `references/2026-07-23-front-half-zero-convergence-question-answer-scan.md`.
 
-### 0c. Speaker-diarized DOCX mode is a separate deliverable
+### 0c. Speaker-diarized Clova Note DOCX mode
 
-If the user asks to replace Clova Note, preserve speaker names/timestamps, create a 컷편집 원고, or generate a cleaned work DOCX, do **not** force the source into subtitle-body lines. 로컬 `media-localization-workflows` 의존성이 없으므로 이 경로가 실행된 것처럼 주장하지 말고 `references/local-dependency-gates.md`의 synced-DOCX `external_dependency` gate를 반환한다:
+If this user asks `싱크 뽑아줘`, `워딩 뽑아줘`, `클로바노트처럼`, to preserve speaker names/timestamps, or to create a pre-cut wording DOCX, do **not** force the source into subtitle-body lines. Use ElevenLabs Scribe v2 through the API:
 
-- MLX Whisper ASR + separate speaker diarization
-- source-close speaker/timestamp DOCX for pre-cut review
-- Word Track Changes rough-cut handoff
-- cut MP3 → separate 말자막 SRT and cleaned DOCX
+1. Acquire the exact source and verify duration.
+2. Extract an upload-efficient mono audio file when practical.
+3. Call `POST /v1/speech-to-text` with `model_id=scribe_v2`, `language_code=ko`, `diarize=true`, `timestamps_granularity=word`, `tag_audio_events=false`, and `no_verbatim=false`. Set `num_speakers` only when direct evidence supports it.
+4. Preserve the raw API JSON separately.
+5. Map speaker IDs to real names from introductions, title, and stable interview roles.
+6. Apply the 2026-10-12 default in SKILL.md: remove empty acknowledgements such as repeated “네 네”, “그렇죠 그렇죠” from the delivered sync text, including standalone phatic turns. Preserve meaningful answers, agreement/disagreement, emphasis, and source wording; keep raw ASR immutable. Group surviving speech by speaker turn, merging a continuous explanation across removed phatic interruptions when appropriate. Treat ASR segment boundaries as timing metadata, not paragraph boundaries. Split for a meaningful speaker change, a clearly separate topic, or a substantial audible pause. Use the earliest surviving word's floored source start time; never shift later timestamps to close removed-text gaps.
+7. Create one DOCX block per resulting turn: bold `화자명 MM:SS`, then one source-faithful long-form body paragraph. Do not repeat the speaker header mid-paragraph. Use the established Clova Note-style TTimes typography. Before delivery, scan adjacent blocks with the same speaker and merge any that were split solely because of an ASR boundary.
+8. Follow the `documents` skill for DOCX rendering and full-page visual QA. Deliver only the DOCX unless the user requests additional files.
 
-The pre-cut DOCX must preserve repetitions, restarts, reactions, and rough fragments that may become cut points. The later SRT may be tightly segmented, but the DOCX should retain sentence and speaker-turn continuity. Share one terminology/correction ledger across both outputs; never reuse SRT line breaks as DOCX paragraph architecture.
+Prefer `ELEVENLABS_API_KEY`/`XI_API_KEY` from the environment. When the user has explicitly authorized API use, an existing local `.env` may be located and loaded without printing or copying the secret. A key ID is not an API secret; current usable keys begin with `sk_`. If no valid key exists, ask the user to configure one rather than switching to the web UI.
+
+Word Track Changes rough-cut handoff and cut-MP3 말자막/SRT remain separate downstream jobs.
+
+The pre-cut DOCX retains meaningful repetitions, restarts, reactions, and rough fragments while removing empty acknowledgements under the current user default. Preserve all tokens only when explicitly requested. The later SRT may be tightly segmented, but the DOCX should retain sentence and speaker-turn continuity. Share one terminology/correction ledger across both outputs; never reuse SRT line breaks as DOCX paragraph architecture.
+
+Example: `이제현 06:38` beginning “그 KIST 네 개가 하나의 스테이지고요” and `이제현 06:54` beginning “가끔 이제 전체 보기를 하면” describe one maze game without another speaker intervening. Render one `이제현 06:38` header and one continuous paragraph ending “…다시 돌아와요.” Do not emit a second `이제현 06:54` block.
 
 When a cut manifest corrects a diarization boundary by moving a sentence between speaker blocks, implement and test that operation first as a deep-copying pure data transform, separate from DOCX/OOXML and CLI code. Validate exact integer IDs (`bool` excluded), unique source text, target duplication, mode/policy, declaration order, and input immutability; integration tests must read protected fixtures without writing them. See `references/pure-speaker-boundary-manifest-corrections.md` for the contract, TDD sequence, and SHA-based fixture-safety gate.

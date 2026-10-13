@@ -1,9 +1,11 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 긴 인터뷰 SRT 정렬기 선택과 승인 본문 순서 보존
 
 ## 적용 상황
 
 - 20분 이상 한국어 인터뷰
-- 승인된 timecode-free cue body를 MLX word timestamps에 정렬
+- 승인된 timecode-free cue body를 ASR word timestamps에 정렬
 - cue body는 사용자 승인으로 동결되어 있으나 일부 어순이 실제 발화와 조금 다름
 - `overlaps=0`, `exact_body_match=true`만으로 타이밍 품질을 판단할 수 없는 경우
 
@@ -69,7 +71,7 @@ AI를 도입하기 전에
 
 일괄 midpoint bridge는 금지한다. ASR word가 있는 gap만, 최대 허용 폭을 제한하고, 다음 cue 시작보다 작은 guard를 남겨 이전 cue end를 확장한다.
 
-## Local ASR repair와 정렬
+## ASR repair와 정렬
 
 - 20~30초 반복 환각은 좁은 clip + second model로 재전사한다.
 - merged `segments`뿐 아니라 `words`도 교체한다.
@@ -86,7 +88,7 @@ AI를 도입하기 전에
 - Main 필수 작업:
   - 실제 파일·hash 검증
   - 5분/범위 경계 연결
-  - local ASR repair interval 재작성
+  - ASR repair interval 재작성
   - terminology ledger 적용
   - whole-body source/segmentation/term review
   - frozen sample prefix equality

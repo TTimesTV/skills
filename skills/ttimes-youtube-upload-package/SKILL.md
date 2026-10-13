@@ -1,8 +1,11 @@
 ---
 name: ttimes-youtube-upload-package
-description: 'Build the TTimes YouTube upload package from a video URL and YouTube CC: comma-separated hashtags, separate body timestamps, and a final pinned-comment block with inferred front-ad copy when present. Also preserves supplied publishing metadata fields in labeled-bundle mode.'
+description: 'Build the TTimes YouTube upload package from a video URL and YouTube
+  CC: comma-separated hashtags, separate body timestamps, and a final pinned-comment
+  block with inferred front-ad copy when present. Also preserves supplied publishing
+  metadata fields in labeled-bundle mode.'
 metadata:
-  version: 1.4.2
+  version: 1.4.4
 ---
 
 # TTimes YouTube Upload Package
@@ -111,6 +114,48 @@ Load and follow the `ttimes-youtube-timestamps` skill first.
 Read the first 90 seconds of YouTube CC and classify one of these states.
 
 For **detection only**, normalize obvious CC/ASR variants and timing debris before matching. Examples include `AI 전함`↔`AI 전환`, `진호`↔`진화`, `T타임즈`↔`티타임즈`, duplicated second labels such as `0:1111초`, and spacing variants. This normalization must never alter the user-approved pinned-comment template: copy the approved wording, line breaks, contact details, and URL exactly from `references/pinned-comment-templates.md`.
+
+### Front ad 1 — Snowflake World Tour Seoul 2026 recap live seminar
+
+This is the producer-designated `앞광고 1`. Expect it to recur through **2026-10-02 KST, inclusive**, but still confirm it from CC or a direct producer statement rather than from the date alone. After that date, keep the template available and use it only when the CC or producer explicitly confirms the same campaign.
+
+Signals include several of:
+
+- `데이터는 다 모아뒀는데, 왜 AI가 못 찾죠?`
+- `AI 에이전트가 당장 쓸 수 있는 데이터는 다릅니다`
+- `총 19시간 30여 개 세션`
+- `90분으로 압축`
+- `스노우플레이크 월드투어 서울 2026`
+- `리캡 라이브 세미나`
+
+Use the exact template in `references/pinned-comment-templates.md` under `Front ad 1 — Snowflake World Tour Seoul 2026 recap live seminar`.
+
+The approved opening chapter is:
+
+```text
+00:00 스노우플레이크 리캡 라이브 세미나
+```
+
+### Front ad 2 — 2027 IT trend course
+
+This is the producer-designated `앞광고 2`.
+
+Signals include several of:
+
+- `2027년 AI 에이전트가 모든 것을 집어삼킨다`
+- `AI 에이전트가 바꿀 2027년 완벽 가이드`
+- `내년 사업 전략 수립`
+- `AI 10대 아젠다`
+- `김지현 테크라이터`
+- `에이전트는 2027년 어디까지 가능할까?`
+
+Use the exact template in `references/pinned-comment-templates.md` under `Front ad 2 — 2027 IT trend course`.
+
+The approved opening chapter is:
+
+```text
+00:00 2027 IT 트렌드 강좌
+```
 
 ### A. AI leverage course
 

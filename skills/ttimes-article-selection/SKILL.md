@@ -1,6 +1,10 @@
 ---
 name: ttimes-article-selection
-description: Use when selecting news articles, headline screenshots, or supporting reports for TTimes scripts and screen composition. Choose the article whose headline most directly proves the exact spoken claim, using the user's outlet hierarchy and matching actor, action, scope, certainty, and visual pairing rather than merely finding a topically related article.
+description: Use when selecting news articles, headline screenshots, or supporting
+  reports for TTimes scripts and screen composition. Choose the article whose headline
+  most directly proves the exact spoken claim, using the user's outlet hierarchy and
+  matching actor, action, scope, certainty, and visual pairing rather than merely
+  finding a topically related article.
 license: MIT
 metadata:
   hermes:
@@ -15,7 +19,6 @@ metadata:
     - caption-layering-workflow
     - ttimes-screen-composition
     - evidence-research-strategy
-  author: Hermes Agent
   version: 1.0.0
 ---
 

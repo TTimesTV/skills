@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Sentence-first rebuild lesson: 김지현 AI 리더십 SRT (2026-07-08)
 
 ## Trigger
@@ -10,7 +12,7 @@ For this user's long Korean spoken-caption jobs, the order should be:
 
 ```text
 1. MP3/download/source verification
-2. MLX Whisper ASR with word timestamps
+2. ASR with word timestamps
 3. transcript-close stable text, before caption packing
 4. minimal correction only: ASR, particles, names, products, numbers
 5. sentence/thought-ending first split
@@ -18,7 +20,7 @@ For this user's long Korean spoken-caption jobs, the order should be:
 7. 25-char target / 27-char max adjustment
 8. subagents as reviewers only
 9. Main Hermes integrates high-confidence fixes
-10. line-preserving MLX word-timestamp SRT rematch
+10. line-preserving ASR word-timestamp SRT rematch
 11. validation
 12. deliver only *_srt.txt unless asked otherwise
 ```

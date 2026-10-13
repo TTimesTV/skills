@@ -1,23 +1,48 @@
 {
   "schema_version": 1,
-  "edition": "team",
-  "import_date": "2026-09-18",
-  "skill_count": 15,
+  "edition": "team-portable",
+  "import_date": "2026-10-14",
+  "skill_count": 21,
   "files": [
     {
+      "path": "skills/ttimes-ai-video-direction/agents/openai.yaml",
+      "bytes": 417,
+      "sha256": "44d7498b2731d25011aa567bebd8aa48215740e7f9fc1e9798417454b0c4f820"
+    },
+    {
+      "path": "skills/ttimes-ai-video-direction/references/camera-and-realism.md",
+      "bytes": 4976,
+      "sha256": "b54c734728ce2c4586c393862376a37f020825b36a99c482a4d1ab5be3b800f0"
+    },
+    {
+      "path": "skills/ttimes-ai-video-direction/references/research.md",
+      "bytes": 4786,
+      "sha256": "61434302f81315c70503efde6e4b8b916542881a040310486a41c860d4d9f521"
+    },
+    {
+      "path": "skills/ttimes-ai-video-direction/references/workflows-and-prompts.md",
+      "bytes": 5662,
+      "sha256": "325e0474ec83bbf3b4c580ccade4c268a57aa2ef420e141c2d7f71fa3d02d329"
+    },
+    {
+      "path": "skills/ttimes-ai-video-direction/SKILL.md",
+      "bytes": 8325,
+      "sha256": "bdc6c5f30b9aebde3a42bfbc8f01bf780058091f0728e371726c0ff9a7e252cf"
+    },
+    {
       "path": "skills/ttimes-article-selection/SKILL.md",
-      "bytes": 12324,
-      "sha256": "1d686a11bc962dcc4638c3bf9917c0b8d62742f46927087dd815787d0ea95a4e"
+      "bytes": 12309,
+      "sha256": "cf5ba3485186caa1cb7d104b3fef30f9c2172933926613649f5dab1250cf426d"
     },
     {
       "path": "skills/ttimes-audio-rough-cut-rendering/references/retained-context-alignment-and-join-qc.md",
-      "bytes": 2584,
-      "sha256": "90f8f10da9895020b1370b4e4318ec3085973b08c46aa82f769a15264055f561"
+      "bytes": 2587,
+      "sha256": "3fb2d57290b902f6516b2608fd46fbd7566a2570bca3f820fba3ba0917d6fa6c"
     },
     {
       "path": "skills/ttimes-audio-rough-cut-rendering/SKILL.md",
-      "bytes": 8999,
-      "sha256": "3c469afcfa0c7e03cb11ed3c04df194b3d82e2b8c1c748e07cdf66ff5a532b82"
+      "bytes": 11253,
+      "sha256": "8a2b9c567307c5d953b108e35962e095d2c626cf1280a8511216d29e46385412"
     },
     {
       "path": "skills/ttimes-cardnews-imagegen/references/approved-format-registry.json",
@@ -106,13 +131,13 @@
     },
     {
       "path": "skills/ttimes-cardnews-imagegen/references/editorial-approval-ledger.jsonl",
-      "bytes": 16923,
-      "sha256": "7dbf61ddf74fdc2eed7cc207ebf65370d5e09c99197dbe6048aa91260cf69bb0"
+      "bytes": 19479,
+      "sha256": "24d3a99b02fda08489cd197ab2de6106a2263a688925a76491d67ed89eab82ae"
     },
     {
       "path": "skills/ttimes-cardnews-imagegen/references/editorial-preference-snapshot.json",
-      "bytes": 27545,
-      "sha256": "bce85d3d030840e63d449dc18b25d8ab0b0f75fc253842640b0e8e3be2eee676"
+      "bytes": 29080,
+      "sha256": "6f12fcdf4a9af14f487b86586862829cbd84094405a97fcd328096cfbd1a1fa7"
     },
     {
       "path": "skills/ttimes-cardnews-imagegen/references/general-interview-production-profile-20260831.json",
@@ -186,8 +211,8 @@
     },
     {
       "path": "skills/ttimes-cardnews-imagegen/SKILL.md",
-      "bytes": 39359,
-      "sha256": "4943821cf1e85b5cdd896d9dd630441f29279f448a09f43d00c880c16011d4fa"
+      "bytes": 40030,
+      "sha256": "bd386a0103ab27f44d45a66a5987d64fb98042d960bb2f1958cfa9d1a29cc84b"
     },
     {
       "path": "skills/ttimes-cardnews-imagegen/templates/imagegen-prompt.md",
@@ -235,6 +260,11 @@
       "sha256": "6f4435a26b5075c6a862571e7089191513cc241b4b365a53905afb186f0f9677"
     },
     {
+      "path": "skills/ttimes-clip-library/SKILL.md",
+      "bytes": 6484,
+      "sha256": "ff79fcf0bf09f7527f49660be490b50b746b6ea9606962846d05895c0898f040"
+    },
+    {
       "path": "skills/ttimes-cut-editing/references/decision-ledger-evidence-contract.md",
       "bytes": 5609,
       "sha256": "38c9a5d5395f3dc6cbdeb3004ef20ad8701ed2b0ffd98b61e39ede048f7b5d3b"
@@ -251,8 +281,8 @@
     },
     {
       "path": "skills/ttimes-cut-editing/references/docx-guided-audio-rough-cut.md",
-      "bytes": 12971,
-      "sha256": "8ee09e004f4f969f16ac3fd026cfb2105e6d0035036055c90ad3bac52b56c9e3"
+      "bytes": 12977,
+      "sha256": "85c2eb48f8ca23662b5643c1805e0dd30c49af9d1975b975102971e4ea538bf2"
     },
     {
       "path": "skills/ttimes-cut-editing/references/fail-closed-deletion-engine.md",
@@ -286,13 +316,13 @@
     },
     {
       "path": "skills/ttimes-cut-editing/references/lee-juhwan-ep1-cut-editing-calibration.md",
-      "bytes": 9701,
-      "sha256": "6d54e4bf4800fadc4b4661fb17d58412f4de5a4b7500ee98b5070dd8da115b25"
+      "bytes": 9686,
+      "sha256": "2c85be05f564f13b463b75678a68c35895ca4dcdfcd3233378f3701ac651af2a"
     },
     {
       "path": "skills/ttimes-cut-editing/references/lee-juhwan-series-cut-editing-standardization.md",
-      "bytes": 10139,
-      "sha256": "0313b6183d1815f476b614e221170e2a084e80cd4a16706b8ad4d193080418e5"
+      "bytes": 10140,
+      "sha256": "b419e59e4d264b2fa7a196da824e9f8c3472360d2656ffda1f64a1c8c55c680b"
     },
     {
       "path": "skills/ttimes-cut-editing/references/legacy-tracked-docx-engineering.md",
@@ -301,8 +331,8 @@
     },
     {
       "path": "skills/ttimes-cut-editing/references/monthly-tech-june-cut-editing-calibration.md",
-      "bytes": 7099,
-      "sha256": "68bb8acbc674e4554ce1ecb52ad8f8792f698b246182a57c3886de45ba933615"
+      "bytes": 7093,
+      "sha256": "4fd0502e658dcf02d3a14e5b5226674e5ebb440f6da5e7f282e3a737bdd868c7"
     },
     {
       "path": "skills/ttimes-cut-editing/references/ooxml-validation.md",
@@ -321,8 +351,8 @@
     },
     {
       "path": "skills/ttimes-cut-editing/references/park-youngsun-lee-sanggi-cut-editing-calibration.md",
-      "bytes": 7162,
-      "sha256": "62535a6f3cd2318b081fe63db159273fe80e406997c7dc3cb681560e9513afd9"
+      "bytes": 7144,
+      "sha256": "f8da8c6d6b06bc6d49dba5a4fbfb6b0e3512d54ae868a9248c9977bc8d6e1453"
     },
     {
       "path": "skills/ttimes-cut-editing/references/post-save-package-validation-and-source-provenance.md",
@@ -336,8 +366,8 @@
     },
     {
       "path": "skills/ttimes-cut-editing/references/runtime-discrepancy-attribution.md",
-      "bytes": 7286,
-      "sha256": "78ba54c20e03f034dfc5cbfd5e6df5aed7eca8ab8707960d041496110c8c86d7"
+      "bytes": 7291,
+      "sha256": "6225fed5b1b6b310506e1490f440c10519e7371d37ff603f48de8258eb4935aa"
     },
     {
       "path": "skills/ttimes-cut-editing/references/speaker-correction-boundaries.md",
@@ -361,8 +391,8 @@
     },
     {
       "path": "skills/ttimes-cut-editing/SKILL.md",
-      "bytes": 31582,
-      "sha256": "dab4a29f8c949281fedfa6050bd6c55872917cedf6e91ffaeaa951e1610b55a5"
+      "bytes": 31565,
+      "sha256": "690567e2355d2146600ffe3492f47c5d7f4a749cafd83b4e1f27012f67faac2c"
     },
     {
       "path": "skills/ttimes-editorial-copy/references/ai-glasses-caption-calibration.md",
@@ -393,6 +423,11 @@
       "path": "skills/ttimes-editorial-copy/references/infrastructure-demand-first-hook-calibration.md",
       "bytes": 4612,
       "sha256": "4c809a08dd92eea61dbe1a0cb3a9d0f9b39c53aca93770612b8a0dd216279457"
+    },
+    {
+      "path": "skills/ttimes-editorial-copy/references/interview-cardnews-article-quotes-20260929.md",
+      "bytes": 3721,
+      "sha256": "76ecb78904f54ea16df9a6cbcde5acfdeedcf1b6e82a41f7098f3f07478a73ed"
     },
     {
       "path": "skills/ttimes-editorial-copy/references/korean-ai-management-caption-calibration-20260730.md",
@@ -441,8 +476,8 @@
     },
     {
       "path": "skills/ttimes-editorial-copy/SKILL.md",
-      "bytes": 41286,
-      "sha256": "d4bcd5afc5785be216684f321657a57b246b5553ed308880d185e4c89a1e6354"
+      "bytes": 41987,
+      "sha256": "3c9c168b3d7be22d0bd66ad1356863bbe9891ad9f1de83daec9c2ccf157e7c65"
     },
     {
       "path": "skills/ttimes-editorial-copy/templates/caption-worker-brief-ko.md",
@@ -456,8 +491,8 @@
     },
     {
       "path": "skills/ttimes-elevenlabs-dubbing-csv/references/source-media-to-dubbing-cues.md",
-      "bytes": 6849,
-      "sha256": "5aae45dad9acfc418a1b54f2901b0112adcdaeaf54d18348447771985c86b9d4"
+      "bytes": 6856,
+      "sha256": "1f5c44ed3b8285a13a092a3d465c7034c9c424e974fc9f91e7859473c372c791"
     },
     {
       "path": "skills/ttimes-elevenlabs-dubbing-csv/scripts/build_dubbing_csv.py",
@@ -476,38 +511,118 @@
     },
     {
       "path": "skills/ttimes-elevenlabs-dubbing-csv/SKILL.md",
-      "bytes": 23994,
-      "sha256": "c446210af1465b7dc58857547a3f9ee9af8ffe7c0703107a2473aafebc1c487b"
+      "bytes": 24254,
+      "sha256": "3aad49ad043483cef44a1dc9ea1db64e47626a51713c8e4a5b3400e783a7df09"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/agents/openai.yaml",
+      "bytes": 340,
+      "sha256": "2f955a9e53ffb76874d732fb54cd03939580adab0a70e8cc03a51222ab591da8"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/assets/agent-handoff.png",
+      "bytes": 1263889,
+      "sha256": "32389dcd775113ded192e8d924ae6df8e52b99d5d996a1fe7d0d5a2b22ec9687"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/assets/cloud-store-compute-execute.png",
+      "bytes": 1518322,
+      "sha256": "5c415f655d865bf7047a3962842feb8a0791c06f759209ca70c31a27f2bb8e55"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/assets/good-enough.png",
+      "bytes": 1123491,
+      "sha256": "2348d62f2f12b4d4ad0a4e67ce21b8b7db135a498b8dba12dc0ad8a7ed788716"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/assets/model-agent-years.png",
+      "bytes": 1362821,
+      "sha256": "22d95675f504b6f610c2f660bea638b1aafba2fa02fe76960e7991b6f65a6554"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/assets/muse-system.png",
+      "bytes": 1288595,
+      "sha256": "49589fe188d4bf7017133e83585d66ab0e4f96bef1724b31596da75d3348ddc3"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/references/graphic-sources.json",
+      "bytes": 1087,
+      "sha256": "e816ae24b174282172582cbdb1c8eebf9e6eab772b229b5ea313136efdcf53fb"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/references/kang-jeongsu-20261007.md",
+      "bytes": 5621,
+      "sha256": "8fe0cae1be64f2c83828284c2770647f783f8194328b511632e35948714ee675"
+    },
+    {
+      "path": "skills/ttimes-explainer-graphics/SKILL.md",
+      "bytes": 6673,
+      "sha256": "7809aa84c18970a23d6e8f919170feb3bf17c5bc4d2778387a3d98ee8abd35a9"
     },
     {
       "path": "skills/ttimes-factcheck-research/SKILL.md",
-      "bytes": 16000,
-      "sha256": "9286aaf0d2413bcdaab83918b8f6b945e291b065d70b81a09ad44b5bc14a7624"
+      "bytes": 15989,
+      "sha256": "4b1551c7548ec09ab0723be63fdd54fc683a279f309234ff417ac05b017a9831"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/references/eum-jaehoon-gft.md",
+      "bytes": 1282,
+      "sha256": "72cef93ac9ba987ed705fcdb10f3cdaed6d90674344ddb5c887e612e550e3233"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/references/guests.md",
+      "bytes": 812,
+      "sha256": "e17ad860776861c34e19c3967d6b3479ebc86162e3f06fa4579da67ac8bffaef"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/references/jung-dohee-sk.md",
+      "bytes": 1354,
+      "sha256": "a864cdc8601f6b9d8eca26712c36050f174e425a8d7c63fdbe2256b3b509221e"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/references/kang-jungsoo.md",
+      "bytes": 1036,
+      "sha256": "1b06c2121ca8974b354fde6644f1d27739e2e4aecaa0c0e637d1a01583346502"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/references/kim-jihyun-sk.md",
+      "bytes": 1206,
+      "sha256": "ef13e111ed4fba91507f9bf18983993411c6928e635cbdd92f9948f4c74d405b"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/references/lee-keonbok-microsoft.md",
+      "bytes": 4786,
+      "sha256": "672291a9aa2701cc3414343317f23beff796fe168acbfd191e7eda75fe8c5c0c"
+    },
+    {
+      "path": "skills/ttimes-guest-profile/SKILL.md",
+      "bytes": 5667,
+      "sha256": "1843f5520c24242c102d3e7d7ce65905b4b709659e788a635da2714db71d5839"
     },
     {
       "path": "skills/ttimes-original-cardnews/references/20260906-paper-motion.md",
-      "bytes": 1408,
-      "sha256": "0848083f74e37d377d2863d8ceba37f38f316952a3cf4ad1e4432bff5fd63589"
+      "bytes": 1424,
+      "sha256": "c1840c21335933562f133be8f25e0d012760f5d7e6496d171d84a62f3d8b47ad"
     },
     {
       "path": "skills/ttimes-original-cardnews/references/20260906-photo-led-revision.md",
-      "bytes": 4557,
-      "sha256": "af1d2eb0864af6224565fb63d04e0b192dc613e84b6a1aa6ef72bbde7b409edb"
+      "bytes": 4573,
+      "sha256": "b3f7dee34385803c967695de1091e8b4d7c043277fc1c8fcbe63441ce1faa33f"
     },
     {
       "path": "skills/ttimes-original-cardnews/references/20260907-approved-production-rules.md",
-      "bytes": 5355,
-      "sha256": "0a6483f184f3a57472482875bc13fb1e408f80d1135abcfb7b3b0f8ff91780e6"
+      "bytes": 5373,
+      "sha256": "4cd08ec1a04835421e8c0400d7ed68cfb8ffd8390f20b2ec1bb567b9c1f423ca"
     },
     {
       "path": "skills/ttimes-original-cardnews/references/morning-news-vs-afternoon-youtube.md",
-      "bytes": 2922,
-      "sha256": "0319e695166523ee6c1d07c5cf09112092f49cc983f49753da348ecd6099ede9"
+      "bytes": 2862,
+      "sha256": "0dbfce7e06bc0a32fad89d0edbb95bbd99a2a144e5b3c642b88210dc97bc1ced"
     },
     {
       "path": "skills/ttimes-original-cardnews/references/renderer-contract.md",
-      "bytes": 2794,
-      "sha256": "aa9e4ec744e492fac11e8cc4b1d05cecec4c44a149fb62baabc0f89dc1985114"
+      "bytes": 2735,
+      "sha256": "0b261c8c229284d3f81da045874acc2f442d238a904b5462425a2758d06aef32"
     },
     {
       "path": "skills/ttimes-original-cardnews/scripts/render_editorial_cards.py",
@@ -517,12 +632,12 @@
     {
       "path": "skills/ttimes-original-cardnews/SKILL.md",
       "bytes": 8794,
-      "sha256": "e96079dba9333a10afdf2e2968671a28340304f5bfbd57c7a89123fd11e71b9e"
+      "sha256": "70fcf8776b35b4c4984b56546233469d8196de8df99fb716f8b006eb68cd7901"
     },
     {
       "path": "skills/ttimes-pd-material-planning-evaluation/references/channel-wide-credit-census.md",
-      "bytes": 9280,
-      "sha256": "788618ac1020a8cd5ad771abb9bc7f8d6b1fcb57bfe0284c6bb7c595a3d9e4b6"
+      "bytes": 9293,
+      "sha256": "a2ff4e011ed5b8938b85e3259e1bf2c98b505cee555deed88e23d2d313ca5f29"
     },
     {
       "path": "skills/ttimes-pd-material-planning-evaluation/references/cross-role-credit-attribution.md",
@@ -541,13 +656,78 @@
     },
     {
       "path": "skills/ttimes-pd-material-planning-evaluation/SKILL.md",
-      "bytes": 21405,
-      "sha256": "dbf8b2b4b5c3be0b26c64af83206926087725ec670c1f7e9fa7537546469387e"
+      "bytes": 21417,
+      "sha256": "9e41a8cf82f59f20717d4316478fa6533109861d407c6f14815da43fb1031f2a"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/2026-07-ttimes-role-automation-calibration.md",
+      "bytes": 2696,
+      "sha256": "487fab194a7c9c98920e34e3326182f070c91bee9e78c1f1fd53326e171a6c2d"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/ai-generated-engineering-shorts-pipeline.md",
+      "bytes": 8081,
+      "sha256": "26cfbfb04893b57ba3cb953e5a1bbab20586bc15625b03e30bc039995a799cc0"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/approved-highlight-vertical-sample.md",
+      "bytes": 8587,
+      "sha256": "4e18ee49b45f870d1cd90edd2725f161afcbe4cf767a706f71e0393f720c049c"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/channel-wide-pd-credit-and-work-audit.md",
+      "bytes": 6411,
+      "sha256": "d8531eb7616e7a4d687656263edb3bbf82aced0ac8a61320f8b831a874d7ddad"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/final-upload-package-handoff-corrections.md",
+      "bytes": 1045,
+      "sha256": "20e3f0ca8a51550768f5fe7ecad35bb5ed5bdb0ba5556d7f2cc2a01619932054"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/longform-to-shorts-reverse-engineering.md",
+      "bytes": 5096,
+      "sha256": "73f65943e6d77624672c5a76e3123b5c1409239d04ac65e377367b04ef74e578"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/media-production-equipment-budgeting.md",
+      "bytes": 3283,
+      "sha256": "40ea6dcf1e808f40aa16b8275f10de3de85b7ff3235341e64e133b39063017c2"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/mobile-safe-editorial-shorts-shell.md",
+      "bytes": 5259,
+      "sha256": "605a8a7e1ee4a796488fd02c856feae9ba95d4ae10557a6b3fa387b101f094e6"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/narration-first-shorts-bgm-mixing.md",
+      "bytes": 4927,
+      "sha256": "a82fd1473197747f7e9e96e0baa7289347934f05c8f73bff24919fb550159fef"
+    },
+    {
+      "path": "skills/ttimes-production-automation/references/youtube-clip-archive-obsidian-drive.md",
+      "bytes": 3863,
+      "sha256": "9a0497d3f63ff87cba7ccdf9fc9f5372d8f447d00bfdcc6122057434d9700871"
+    },
+    {
+      "path": "skills/ttimes-production-automation/SKILL.md",
+      "bytes": 19375,
+      "sha256": "31512614f1fe7359deda0cf6a19dae51cdec57ed3c6d97bcb8d4df6d15d58045"
+    },
+    {
+      "path": "skills/ttimes-production-ledger/SKILL.md",
+      "bytes": 7948,
+      "sha256": "64d531261b2d39b10ba932a3fd0298510c4d8d0d5eb0fec34b1066ff948bab87"
     },
     {
       "path": "skills/ttimes-screen-composition/assets/park-jongcheon-feedback/profile-user-reference.png",
       "bytes": 548085,
       "sha256": "3058de0ceac7fb761857b928926864274fa699889645705485e6fcd93a2e800f"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/approved-json-to-word.md",
+      "bytes": 7761,
+      "sha256": "da05e0e2fb79e79424f84015cd51e730e6237a2dd629f135f113a1ca6c5928b9"
     },
     {
       "path": "skills/ttimes-screen-composition/references/background-insert-visual-rhetoric.md",
@@ -561,13 +741,23 @@
     },
     {
       "path": "skills/ttimes-screen-composition/references/caption-material-archive-contract.md",
-      "bytes": 2641,
-      "sha256": "3113e75b98c9bad98aad6a0695a394453cadca68438565f0654c998ddaad39d8"
+      "bytes": 2770,
+      "sha256": "6a7268bfb853f086cd0e4c8158683fc391577019e2ee7dee996bede4f436a565"
     },
     {
       "path": "skills/ttimes-screen-composition/references/editorial-selection-and-sequence.md",
       "bytes": 7746,
       "sha256": "633a166b813ae6ec7aa4f097b87cffcb45b651d4f4b2affa90c5f54f8bda2246"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/episode-comparison-archive-20261013.md",
+      "bytes": 4870,
+      "sha256": "6ceaa2303a8ec48156c180562f522272e1a8ea58c10a7440dc312a8d41658074"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/final-selection-calibration-20260930.md",
+      "bytes": 7358,
+      "sha256": "ad0f98cd0ab6ba72a83fd16191f4a5c1c3837f43dc9e7454c18d7c673c15e224"
     },
     {
       "path": "skills/ttimes-screen-composition/references/gang-jeongsu-screen-composition-user-calibration.md",
@@ -590,6 +780,16 @@
       "sha256": "cd21c998ecece7afd65ff70fcc43cfa5d8df3e18fc1f9f49817d10830419a555"
     },
     {
+      "path": "skills/ttimes-screen-composition/references/jev-judgment-workflow.md",
+      "bytes": 3556,
+      "sha256": "6722dbc7855413a0ba780eff557bbd4218ad438875ca611a193e7ce693b2fd8e"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/kang-jeongsu-final-selection-20261007.md",
+      "bytes": 9988,
+      "sha256": "4372e12372b5d47933b10be5ed0b239a5091c2ad1266551655819f477abb5d21"
+    },
+    {
       "path": "skills/ttimes-screen-composition/references/local-dependency-gates.md",
       "bytes": 1009,
       "sha256": "bcf6e6653a887c35441b4a3e425ed866835a5814cecdf3b51f4f6cc4f241f02a"
@@ -598,6 +798,11 @@
       "path": "skills/ttimes-screen-composition/references/material-taxonomy-and-footage-brief.md",
       "bytes": 8673,
       "sha256": "37470de5235852e5892356cbb5feac973cc51f399f62a7bf76a0b4e3832e4f6d"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/multilayer-content-calibration-20261013.md",
+      "bytes": 6957,
+      "sha256": "6df6bbcc0e7a852a990b502ab6249d0a9142abc09c741e8654b6c31332fbd85f"
     },
     {
       "path": "skills/ttimes-screen-composition/references/nissan-ao-solar-scene-and-search-analysis.md",
@@ -656,8 +861,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/references/sharepoint-complete-material-corpus-20260902.md",
-      "bytes": 4106,
-      "sha256": "7ad5e614b80784cd96e3ec1ad162f7501e447fe1e4911bd720b7e09aa606b39d"
+      "bytes": 4752,
+      "sha256": "a876974608b148409e14a1062eaf304507e3763c17c2dd6390e9b65dc0ca1f48"
     },
     {
       "path": "skills/ttimes-screen-composition/references/synced-cut-docx-structure.md",
@@ -671,8 +876,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/references/unseen-transcript-calibration.md",
-      "bytes": 4332,
-      "sha256": "675bffc40ec6516aa1398c53be7b07a16194f5c526d7bb812c9a5b0725d0ab64"
+      "bytes": 4375,
+      "sha256": "3c17d7819ebc328feaee0f7822885d3206a295d8503bc86876f5e43d221d7d14"
     },
     {
       "path": "skills/ttimes-screen-composition/references/visual-caption-selection-decision-standard.md",
@@ -685,9 +890,19 @@
       "sha256": "848c67d5fcb5cd9a56c1d424d60761df6d77281c1ffb2e90525eab4ee572e019"
     },
     {
+      "path": "skills/ttimes-screen-composition/scripts/approved_json_to_docx.py",
+      "bytes": 11129,
+      "sha256": "edfa16a027717227e9aa7d072014255a49ac17b76512dd28ca442cd40fda39a5"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/scripts/jev_judge.py",
+      "bytes": 4197,
+      "sha256": "a09753323862ab85adc7f9421063fb2f9d3c3ef362754d0b106c6787eb0b93f2"
+    },
+    {
       "path": "skills/ttimes-screen-composition/SKILL.md",
-      "bytes": 56222,
-      "sha256": "56e270c28900ada7a485ae183d921e72ff7a93e27536234983455e433e86a578"
+      "bytes": 61617,
+      "sha256": "9dd21eee257487a2df84b798744ef2ba24c3eb97b2a65362f94632a2df836255"
     },
     {
       "path": "skills/ttimes-screen-composition/templates/inline-docx-instruction-example.md",
@@ -706,8 +921,8 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-95pt-accountable-subagent-caption-workflow.md",
-      "bytes": 4236,
-      "sha256": "4bd26f5cd29d5d83252959c92dd678d7909e8754d4f2ba12a88d7335fbab3104"
+      "bytes": 4242,
+      "sha256": "c78c0e4434046523ec01619467379e2d8051d5779a21064872a0d02750507b7c"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-ai-caption-peer-review-and-particle-lessons.md",
@@ -721,33 +936,33 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-human-readability-peer-review-rules.md",
-      "bytes": 4512,
-      "sha256": "83a37cd7f767b85bb3407b7235b9e9b4e01140aad5cc304eb8bd3dbe04ac2405"
+      "bytes": 4849,
+      "sha256": "5def79b7a8cd658307de1f346a19065dae6138b89a368fd22fbe52c685406df5"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-k-startup-cue-refinement-and-delivery-preferences.md",
-      "bytes": 3762,
-      "sha256": "908817d74a0493d1d8ae0be354dcd0c90dd423f3d38a20ee17beaa06a8fe8a06"
+      "bytes": 4087,
+      "sha256": "eac7a52773e2b05f041e826d2cbd1b600d43f317cd937fe82452682a5d2aa614"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-k-startup-first-script-srt-trial.md",
-      "bytes": 3360,
-      "sha256": "e72f040bf1e00cf3ac0ce96caafa3929e7e9d13e78cdbaa7b84c5112132330c6"
+      "bytes": 3685,
+      "sha256": "1142a69cf6bcade0321ff31f421d36b088fb2f8727a7704bf34c98986ed24185"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-kim-jihyun-full-recheck-and-sentence-boundary.md",
-      "bytes": 4528,
-      "sha256": "90ee9b0d7e989d18c49beb2a6c1a15016cadd03b1e3dce67c9ddaf9a55d23bd3"
+      "bytes": 4527,
+      "sha256": "6eb4ac212d022266c67535230afaf39588b9a4b2d52f9b6243dc30e715658a0d"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-park-jongcheon-reference-style-and-human-readability.md",
-      "bytes": 4445,
-      "sha256": "caf48167d0a85b12e00c0fb954e9a151868905a41926df40c50bb80c4572062f"
+      "bytes": 4786,
+      "sha256": "047e1d2c60deb70f089a6837e941a07419a2ce0cd5cbd39580ac322d7ccd9444"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-park-style-gem1-gem2-full-srt-workflow.md",
-      "bytes": 3687,
-      "sha256": "5c81bc9b5673449c9b5b5478af9dd6c9182e908231f3ad32ede1b1d9a1ad95bd"
+      "bytes": 4004,
+      "sha256": "30fc14dafd43214127584493b2b32f345581cb0430ed1f31ae60723c9aeea5ac"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-part-asr-gem1-gem2-chunk-workflow.md",
@@ -761,13 +976,13 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-predicate-attachment-srt-workflow.md",
-      "bytes": 4765,
-      "sha256": "002212e02f666f3231a7c60d918a8612cdc098bda52d922ad1d820db9955bbb7"
+      "bytes": 5094,
+      "sha256": "1a7e4f099d753485b0dd3bdb25fec50be23e5f2509ab0dd190d645d33dd949b1"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-sentence-first-kim-jihyun-rebuild.md",
-      "bytes": 4211,
-      "sha256": "92fd0a2a2051213b4df40559b1b907b47a53e4a690f10295b1f7cab9509806fa"
+      "bytes": 4540,
+      "sha256": "d93024970ccbf0ce61b0841a86196dc62e46c314b1d2135f4087a5b28757b2ac"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-small-sentence-adhesive-segmentation.md",
@@ -776,8 +991,8 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-space-industry-long-youtube-srt-delivery.md",
-      "bytes": 7581,
-      "sha256": "a65d8c5b5edc6a14929dce032873a682a880bd291cbacdc784cb100580b36efa"
+      "bytes": 7915,
+      "sha256": "34a12e791ef0e371f4dfd261b5d566f7e994a58a1fbd7343b61890ee14528333"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-transcript-preserving-v4-caption-workflow.md",
@@ -786,8 +1001,8 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-08-ttimes-caption-work-method-examples.md",
-      "bytes": 7633,
-      "sha256": "0bc68bcbb92af3b29e47454860514d70c83fb53bff3fc745de401d2aa6c304ea"
+      "bytes": 7961,
+      "sha256": "bcb4908ff761afee97cb69870f5129431b247c4ec1e5862cabe7eef96561d0cc"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-60-85-asr-cue-body-validation.md",
@@ -796,13 +1011,18 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-approved-sample-style-30-60-asr-cue-body.md",
-      "bytes": 3175,
-      "sha256": "8cc159f528d2150a33196b9a22cd05c17a356875220a5d853e552bc9dd3d2448"
+      "bytes": 3166,
+      "sha256": "334bf95035cd9d8af57bc644c66c230b74f3364e79d811f614ccdf4e7de227b4"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-drive-mp3-chunked-mlx-recovery.md",
       "bytes": 1947,
       "sha256": "992d01402866c7a147c748e9100d6f34c6822c74585725b86595f63729a36f1d"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/2026-07-09-drive-mp3-transcription-recovery.md",
+      "bytes": 2512,
+      "sha256": "62f5ed744cf035d7ab09fee3b72a939f7cfb43a9e1c4272f14edad9839196bc0"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-existing-srt-readability-audit.md",
@@ -811,18 +1031,18 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-kim-jihyun-segmentation-redo-and-realignment.md",
-      "bytes": 5274,
-      "sha256": "bb7c5eb6a4c4c0d693a951d2a998e90ae2d537de4da6bd8a74d987332ca8469c"
+      "bytes": 5610,
+      "sha256": "730aa0a7fd941a82f366a7a59e54a77990e5a35dd33380cec651acc04c617f1c"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-kimjihyun-1cut-chunked-asr-main-prelim.md",
-      "bytes": 3007,
-      "sha256": "b0e90f693130b7737ba603a999a78daab164d10dab7101e38fcd3901052a82d8"
+      "bytes": 3328,
+      "sha256": "b2646848d84898a8e24b754ffc4a7778b77998af8b582598692a46c8207ef266"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-kimjihyun-2cut-youtube-no-caption-srt.md",
-      "bytes": 3173,
-      "sha256": "1fe48144f385bd32a81a2d81585ae275c58821108de634533d936500bf61d919"
+      "bytes": 3404,
+      "sha256": "3ea2db07b532ef1c7b375e2c406f2cdd7c95635a70bd37436c8abd2162de364e"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-kimjihyun-segmentation-redo-and-fuzzy-realign.md",
@@ -831,13 +1051,13 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-09-segmentation-first-redo-after-45pt-failure.md",
-      "bytes": 3096,
-      "sha256": "1c6f7ee7c29d78d86c5e481ee1104e9d3856262cbfe7015b2247dd5a8f522717"
+      "bytes": 3437,
+      "sha256": "625b94e6b0548fd9031118bc00ef8f09a04aa8aa89ddf20443c48af18ae96b65"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-10-approved-sample-name-ledger-length-exception.md",
-      "bytes": 2624,
-      "sha256": "b8afe9bb53dd284794f1753c4bde83846c30f2ff0fcdd8bb7d0bb55e73f16ce3"
+      "bytes": 2965,
+      "sha256": "86e25b8da5f6246e7aed6a1b59184e86cd55eb0d4efa7897c22c5ef99a29910e"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-10-boundary-plus-intracue-source-review.md",
@@ -846,28 +1066,28 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-10-long-no-caption-ai-chip-review-workflow.md",
-      "bytes": 5696,
-      "sha256": "b61a33e69ab3be4f91df14185827c0cfdfb13f977129ff5c99df39227fd173d9"
+      "bytes": 6263,
+      "sha256": "187ee3f9d95049c2e65a3e5f2ab81aef743c63d2101adeea330f7b60ba2082ce"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-13-long-technical-dialogue-post-alignment-feedback.md",
-      "bytes": 3743,
-      "sha256": "132dcf87299b9621de342ab8b09323e38579d2ba4ab1f86928b2d12075989077"
+      "bytes": 4046,
+      "sha256": "5907e2da804d129c9ba01912bcd6201090d732ad5ed3b2b7dcf8cf9b9dc515b5"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-13-technical-dialogue-sample-fidelity-and-ledger.md",
-      "bytes": 3278,
-      "sha256": "b433ba1c692fde6cc42652c0c35efe38d423d785472e29f4835bd109783261ee"
+      "bytes": 3607,
+      "sha256": "92c81195cf976cb5aae29d50728f24fa2a218a66c7e061cd353b17bd80f7639b"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-20-long-interview-alignment-selection-and-frozen-order.md",
-      "bytes": 4339,
-      "sha256": "51234fe98bdb9a1dc0dc7b2330b9e755b28da71b1a7d67be6567480e2b26ceab"
+      "bytes": 4668,
+      "sha256": "8ee742dbb68548370ad9ef5eca8629d9d2b3b3e2b44a5437ef65bd9907473311"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-20-long-interview-local-asr-repair.md",
-      "bytes": 4408,
-      "sha256": "7d0574f77a5a29c6d8385ce73a4c398142a642f6f7d15411648c0354a9a3a51d"
+      "bytes": 4772,
+      "sha256": "1363ce0bb6653c139d2e2568f58e27466401de2a82716006a399d59489b19390"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-21-approved-cut-back-half-body.md",
@@ -881,8 +1101,8 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-21-no-sample-approved-cut-transcript-srt.md",
-      "bytes": 5659,
-      "sha256": "1072ad29f5c620f17528379bedfcc8f67915faf00b6a69084fd6418c700b3dc7"
+      "bytes": 5941,
+      "sha256": "94d3ccbbd6c5220e19058ee6984008856be0b7d128491a54b6fdb52ec162c337"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-21-review-convergence-and-freeze-discipline.md",
@@ -901,18 +1121,18 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-23-long-interview-scope-review-semantic-timing.md",
-      "bytes": 4108,
-      "sha256": "78a46385598aef259231519939dba9549651b5655fca31ca0444dca45eaf5191"
+      "bytes": 4445,
+      "sha256": "96511b32a5862708a372aa932db04fd03d163aa8974857e9a3a2341435745790"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-23-no-caption-technical-interview-body-review-timing.md",
-      "bytes": 4190,
-      "sha256": "2e3e194732146b67a8642114708e5f4556b291cb240e1720bb22e0d298f4f6e3"
+      "bytes": 4518,
+      "sha256": "80b19fc1680f571b70097f48183daf51bcb75f6d70315822127c4c3f4a6f0fea"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/2026-07-youtube-plan-routing-and-dual-asr-sample.md",
-      "bytes": 5084,
-      "sha256": "bd9e96e2749e353ef2a2f2b29f4f0815dd551152571ffe99dd00df2612957a3e"
+      "bytes": 5322,
+      "sha256": "1efc0a6e046012a15881936f70296502de54af5476053537a6ec3b09203249c1"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/approved-cut-transcript-middle-range-body.md",
@@ -941,13 +1161,18 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/combined-youtube-timestamps-and-spoken-captions.md",
-      "bytes": 4059,
-      "sha256": "882ada19a4ec81514116012c56d633995d50b916e30952ef44125e4750b4c171"
+      "bytes": 4371,
+      "sha256": "f7d7215708aff2db20c7a718800e7c5e083260f543e0dfb5e859e0cbdca4a12a"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/editorial-srt-workflow-2026-07.md",
-      "bytes": 4824,
-      "sha256": "b18ff26f67923885092017560db0896cffc014324b8adb6244d6318772e9573a"
+      "bytes": 5153,
+      "sha256": "62ad8a82456900528c8fdcc4770f8ab7b903ea558bcf6b59bb6f9500730cecdb"
+    },
+    {
+      "path": "skills/ttimes-script-and-srt/references/elevenlabs-runtime.md",
+      "bytes": 2782,
+      "sha256": "6e22f1125c458338346225d5043c5bd3764a023358c360642f9b07f129cb7282"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/exhaustive-bounded-final-segmentation-regression-audit.md",
@@ -965,6 +1190,11 @@
       "sha256": "9b623ec269467a51887ae1dccbe780a4755a6d15f10964dec1550192e9cc13b5"
     },
     {
+      "path": "skills/ttimes-script-and-srt/references/full-length-srt-word-alignment-20260720.md",
+      "bytes": 4332,
+      "sha256": "0463d8be4ff18dae45908ee5d5beb242058dab50f8db18f973d3530b0d2f3964"
+    },
+    {
       "path": "skills/ttimes-script-and-srt/references/immutable-full-candidate-final-audit.md",
       "bytes": 11650,
       "sha256": "b999e0cc5b38f03da5106f356f2ff232ec3bdedde35b172b99ec3171030c8fd5"
@@ -976,13 +1206,13 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/local-dependency-gates.md",
-      "bytes": 1752,
-      "sha256": "f9e4d03078daf3a9b38b7db97ec6fad703730ed93efb3501849e762d79e4eee9"
+      "bytes": 2497,
+      "sha256": "65013d954ef9bb0848b92827d5d1eeec356862e1544d62033e5d1d2096dfd758"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/long-form-exact-slices-and-finite-review.md",
-      "bytes": 3677,
-      "sha256": "b14c4347aebb9335d75299af080d712fd412d2aeb2c8ee24166b475cdd6b9b84"
+      "bytes": 4161,
+      "sha256": "85052c7a1921e4cb2e9408f77fca29252aea0d4af5d6d9c91e0a3edafab16ec3"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/long-form-subagent-partitioning-and-scope-gates.md",
@@ -991,8 +1221,8 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/plan-and-predicate-attachment.md",
-      "bytes": 2304,
-      "sha256": "79bea54695a2dba0eeba7864b1e8e8f13677754eca70b126aacb70306478d581"
+      "bytes": 2644,
+      "sha256": "c4f80c074c4b157e5a24489770da55c7c249ff14e23f3090a5e56e02a8d7c024"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/post-merge-segmentation-regression-audit.md",
@@ -1026,13 +1256,13 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-acquisition.md",
-      "bytes": 6469,
-      "sha256": "89de28e5041d965589aab3d1f3ed98bb060a7e2629299ca8061368802f048a22"
+      "bytes": 5881,
+      "sha256": "70daaaddc187cb06b1ddd2fdbe23449fdbb80672fdde94bdd67da90f25231ed8"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-cases.md",
-      "bytes": 10972,
-      "sha256": "4376a2ba82125729a201c478db2239704399ac284a61f7adc220b1f9daa69ec8"
+      "bytes": 11377,
+      "sha256": "552a244b3b7d1eaf80848faab87879159fb5863ea8a4e948932a459a62db27a8"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-editorial.md",
@@ -1041,23 +1271,23 @@
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-modes.md",
-      "bytes": 16339,
-      "sha256": "24711793dbc28a90fe71ed137fc693afd5694235be93a98539641a5ec1ad760b"
+      "bytes": 18601,
+      "sha256": "59d294a6423a4097ee858b569e4356dc8a81fc4a56ca005728c8f4f2331840cc"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-review.md",
-      "bytes": 20560,
-      "sha256": "65bbbaf0d5e0a560575e4ff92f23a911ba8bfdc3fb2169bea031694759d7575c"
+      "bytes": 20951,
+      "sha256": "38c456b4e9f8c9adbe04787580932230492c50c056999aff6e66afcba6b071aa"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-segmentation-recovery.md",
-      "bytes": 7719,
-      "sha256": "0116e513637226fd340f08f7771dc1674c652aef890a9f9161e3b507ac42be8d"
+      "bytes": 7717,
+      "sha256": "0a7fb9057e17111e3135054836789437a61b4986b0953b51591ed2c80cc12e8e"
     },
     {
       "path": "skills/ttimes-script-and-srt/references/workflow-timing-archive.md",
-      "bytes": 9989,
-      "sha256": "82c5cd7390dd96e6c9744db7ae062faa263d027895ce2fd88d9426a792ad39b7"
+      "bytes": 11456,
+      "sha256": "39444e6010d11a6fbc06e83ed373812644d9e7aeb7f91090797b078eeb4969ae"
     },
     {
       "path": "skills/ttimes-script-and-srt/scripts/audit_caption_body.py",
@@ -1070,19 +1300,24 @@
       "sha256": "95b25e1eafa1640ec2ee1cee0b03cc48bdaf2abaef1049d3403f639015eabd68"
     },
     {
+      "path": "skills/ttimes-script-and-srt/scripts/elevenlabs_transcribe.py",
+      "bytes": 3868,
+      "sha256": "10214dd7baafc1be810f9669d24fdb7c2055e79a1fe24d42863792796bfbcd80"
+    },
+    {
       "path": "skills/ttimes-script-and-srt/SKILL.md",
-      "bytes": 13139,
-      "sha256": "7c0b87827f9910ca7ea9dda44c0395df64796ea551a6277375f8f9d6e62a8984"
+      "bytes": 17487,
+      "sha256": "d040d177280d4df9e37d8628b5b68cd617e55772c9aff8aecc0762b9193f1987"
     },
     {
       "path": "skills/ttimes-shorts-rendering/SKILL.md",
-      "bytes": 15102,
-      "sha256": "900d5ee79abe52e84e7f0b4c7c46c74c3b44b5be9c76285e3006218ef69817fb"
+      "bytes": 15086,
+      "sha256": "dba2836a6536796045bae6516d13e6a2e7a9220caa01bab5a88ad5695b602f4f"
     },
     {
       "path": "skills/ttimes-square-carousel-cover/references/approved-ai-slop-cover.md",
-      "bytes": 3288,
-      "sha256": "7206c9321de0e32c185b71a04b80a9707438deda9964dee0616a2ef9d724c07e"
+      "bytes": 3276,
+      "sha256": "44cc77fa1b4698b5ff483383fc38c2f495496825ab4509344d888d79e4e613b7"
     },
     {
       "path": "skills/ttimes-square-carousel-cover/references/approved-cover-pair-global-grammar.md",
@@ -1131,8 +1366,8 @@
     },
     {
       "path": "skills/ttimes-square-carousel-cover/SKILL.md",
-      "bytes": 15771,
-      "sha256": "e5002bafe5c7d07dbb9a6b6b521ae34f298c88f8fed5704dcee8361be8ee449e"
+      "bytes": 15705,
+      "sha256": "ba4cf4fb594d7c0747f6596a5fe25a1af1dfab4516eaac7b769003e44708d11a"
     },
     {
       "path": "skills/ttimes-square-carousel-cover/tests/test_approved_cover_pair.py",
@@ -1170,6 +1405,11 @@
       "sha256": "f905fc799eabfa6a326a7fb886766cca402b6408a209ce9d9422677d74b78c7a"
     },
     {
+      "path": "skills/ttimes-youtube-timestamps/references/user-approved-chapter-style.md",
+      "bytes": 3107,
+      "sha256": "99c6daadb3a115e0c3fc39e034441a69343cf55c09155cdde5030c3c0975d01e"
+    },
+    {
       "path": "skills/ttimes-youtube-timestamps/scripts/extract_youtube_cc.py",
       "bytes": 7402,
       "sha256": "96278b24d320950c2a015577db63d423c292bc940c28f7dd642d7e78f9c93788"
@@ -1191,8 +1431,8 @@
     },
     {
       "path": "skills/ttimes-youtube-timestamps/SKILL.md",
-      "bytes": 4177,
-      "sha256": "ad4db5278160726ab250e93eee21bc5699c0432ed3e6fe28f29401c17f1417cd"
+      "bytes": 5925,
+      "sha256": "4f8846bffc53c214a9fff75648095fd2904ef98f5896c99b28277cd0118bf126"
     },
     {
       "path": "skills/ttimes-youtube-timestamps/workflows/final-cc.md",
@@ -1201,13 +1441,13 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/pinned-comment-templates.md",
-      "bytes": 3434,
-      "sha256": "b75297689eac21ad1af8896e8e97b55da0592ae782a7c7a7c9c88ebd8e956217"
+      "bytes": 5528,
+      "sha256": "83abe3f8fd13157f56d7b9f93793d2c1426d68261670f931da1eb4728050fe63"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/user-approved-output-contract-20260715.md",
-      "bytes": 3788,
-      "sha256": "80281e86bc5eb52f2581fdd4ddd6098ed5c8145955560544ef1da7cc8591e09a"
+      "bytes": 4316,
+      "sha256": "ab1c87a76cf06fdc2dfe6ee409c9c113f8d63b28c2a194c635cecb0d4d5aab11"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/scripts/verify_upload_package.py",
@@ -1216,8 +1456,8 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
-      "bytes": 13679,
-      "sha256": "7070cf51ab45dac2d6a9be50b6e18d2dca99b6cc042d5ee2745b8b453b46dc6c"
+      "bytes": 15190,
+      "sha256": "7014160b968351ea25ff00c0de9667bdb480c8715258e15b636aca23ccfaa3e0"
     }
   ]
 }

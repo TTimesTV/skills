@@ -1,8 +1,10 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-09 김지현 싱크 — 분절 실패 복구와 재정렬 교훈
 
 ## Context
 
-Long source MP3: `260708_김지현 싱크.mp3`, about 85 minutes. Initial full-file MLX ASR collapsed around 47 minutes into repeated filler (`네`), so chunked MLX ASR was required. The first delivered SRT passed mechanical checks but failed the user's real task: TTimes-style subtitle segmentation.
+Long Drive MP3: `260708_김지현 싱크.mp3`, about 85 minutes. Initial ASR collapsed around 47 minutes into repeated filler (`네`), so targeted re-transcription was required. The first delivered SRT passed mechanical checks but failed the user's real task: TTimes-style subtitle segmentation.
 
 ## Key user correction
 

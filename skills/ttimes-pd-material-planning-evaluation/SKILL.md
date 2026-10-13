@@ -12,9 +12,9 @@ metadata:
     - evidence
     - video-review
     related_skills:
+    - ttimes-production-automation
     - ttimes-screen-composition
     - ttimes-article-selection
-  author: Hermes Agent
   version: 1.0.0
 ---
 

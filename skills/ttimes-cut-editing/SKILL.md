@@ -1,6 +1,9 @@
 ---
 name: ttimes-cut-editing
-description: Use when a TTimes PD must decide what to keep, cut, retake-select, or move in an interview and deliver the editor-facing cut-editing DOCX. Includes editorial judgment plus Track Changes/red move-instruction authoring; excludes actual MP3/timeline rendering.
+description: Use when a TTimes PD must decide what to keep, cut, retake-select, or
+  move in an interview and deliver the editor-facing cut-editing DOCX. Includes editorial
+  judgment plus Track Changes/red move-instruction authoring; excludes actual MP3/timeline
+  rendering.
 license: MIT
 metadata:
   hermes:
@@ -13,7 +16,6 @@ metadata:
     - docx
     related_skills:
     - ttimes-audio-rough-cut-rendering
-  author: Hermes Agent
   version: 1.5.3
 ---
 

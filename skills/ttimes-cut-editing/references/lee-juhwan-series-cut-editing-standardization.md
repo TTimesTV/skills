@@ -188,7 +188,7 @@ Manifest는 source authority이며 validator에 shadow constants를 두지 않�
 
 ## 최종 검증 핸들
 
-- 작업 루트: `PROJECT_ROOT/lee_juhwan_series`
+- 작업 루트: `LOCAL_REFERENCE_NOT_DISTRIBUTED`
 - 1편 source SHA-256: `bc2806a004dccbf9276e5065b22b9916efb1327503a19b9e1d88c8c4c216c8ef`
 - 2편 source SHA-256: `d4d30479c868ef444d64a42f2fea1b34c210baadb94f7515707dcea65a20fae6`
 - pytest: `13 passed`

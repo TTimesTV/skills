@@ -1,6 +1,8 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Long-form no-caption captioning: exact slices and finite review
 
-Use this note for 40–60+ minute technical interviews where Main builds a full spoken-caption body from chunked ASR.
+For long media, use the existing ElevenLabs runtime and validate non-empty JSON, word timestamps, and speech-tail coverage. Split only for service constraints or confirmed missing intervals; preserve absolute offsets and rebuild affected derivatives.
 
 ## 1. Exact bounded drafting
 
@@ -22,7 +24,7 @@ Use this note for 40–60+ minute technical interviews where Main builds a full 
 For damaged names, numeric examples, contract amounts, years, or causal wording:
 
 1. Cut a narrow 12–30 second clip around the phrase.
-2. Re-run a second MLX model with word timestamps and previous-text conditioning off.
+2. Re-run ElevenLabs Scribe v1 for an optional comparison with word timestamps through the API.
 3. Compare primary ASR, auto captions, targeted ASR, sentence syntax, and verified canonical spelling.
 4. Preserve a clip-confirmed spoken slip when the task is source-faithful; correct a proper-name spelling only when the intended canonical entity is clear.
 5. Record the chosen form and evidence in the correction ledger.

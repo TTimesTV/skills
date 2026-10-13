@@ -86,7 +86,7 @@ Recommended sequence:
 5. Search each deletion only inside its block/tolerance window.
 6. Use global monotonic order to prevent later cuts from mapping backward.
 
-For Apple Silicon Korean material, prefer MLX Whisper with a high-accuracy model and `word_timestamps=True`. Preserve raw and normalized words with start/end timestamps.
+For Apple Silicon Korean material, prefer ElevenLabs with a high-accuracy model and `timestamps_granularity=word`. Preserve raw and normalized words with start/end timestamps.
 
 ## 4. Align with retained context, not deleted text alone
 

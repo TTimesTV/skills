@@ -12,9 +12,9 @@ metadata:
     - pillow
     - qa
     related_skills:
+    - ttimes-production-automation
     - reference-matched-media-templates
     - ttimes-cut-editing
-  author: Hermes Agent
   version: 1.0.0
 ---
 
@@ -56,10 +56,10 @@ metadata:
 현재 기준 사례:
 
 ```text
-프로젝트: PROJECT_ROOT/2TdSkEyIUrI
+프로젝트: LOCAL_REFERENCE_NOT_DISTRIBUTED
 최종본: output/260731_키미 K3 티타임즈 쇼츠 최종 레이아웃.mp4
 오버레이: work/title_overlay_ttimes_cta_final.png
-오버레이 생성기: PROJECT_ROOT/create_ttimes_cta_final_overlay.py
+오버레이 생성기: LOCAL_REFERENCE_NOT_DISTRIBUTED
 공식 로고: assets/ttimes_logo_red_white.png
 최종 접촉시트: reports/contact_sheet_ttimes_cta_final.jpg
 ```
@@ -159,7 +159,7 @@ source_audio: preserve
 사용자 Mac에서는 아래 생성기를 기준으로 복사해 새 프로젝트에 맞게 경로와 문구만 바꾼다.
 
 ```text
-PROJECT_ROOT/create_ttimes_cta_final_overlay.py
+LOCAL_REFERENCE_NOT_DISTRIBUTED
 ```
 
 바꿔야 하는 값:
@@ -267,7 +267,7 @@ shasum -a 256 'final.mp4'
 대표 접촉시트 생성기는 다음 경로에 있다.
 
 ```text
-PROJECT_ROOT/make_contact_sheet.py
+LOCAL_REFERENCE_NOT_DISTRIBUTED
 ```
 
 완료 기준: 기술 QA와 시각 QA가 모두 PASS다.

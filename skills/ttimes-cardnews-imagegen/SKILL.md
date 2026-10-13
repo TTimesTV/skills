@@ -1,8 +1,15 @@
 ---
 name: ttimes-cardnews-imagegen
-description: Use when converting a TTimes-style Word manuscript into a sourced 2:3 vertical card-news sequence with image generation. Parses `numbered` manuscript beats, red emphasis runs, section headings, and leading `PXX.` revision notes; expands beats into page-level claims; selects evidence photos/charts versus generated illustrations; uses image_generate for the visual design layer; overlays exact Korean text and data deterministically; and verifies consistency, sources, dimensions, and revision fidelity before delivery.
+description: Use when converting TTimes-style Word manuscripts or interview speech
+  into sourced card-news sequences. Supports numbered manuscript beats, emphasis runs,
+  revision notes, source-faithful article-style copy and verified quotes, approved
+  square interview templates, and vertical report cards. Reuses approved assets, generates
+  new illustrations when needed, overlays exact Korean text deterministically, and
+  verifies layout and sources.
 license: MIT
 metadata:
+  version: 1.11.0
+  author: Hermes Agent
   hermes:
     tags:
     - ttimes
@@ -16,8 +23,6 @@ metadata:
     - ttimes-screen-composition
     - ttimes-factcheck-research
     - docx
-  author: Hermes Agent
-  version: 1.11.0
 ---
 
 # TTimes Card-News Production with ImageGen

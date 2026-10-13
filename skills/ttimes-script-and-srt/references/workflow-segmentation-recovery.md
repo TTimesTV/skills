@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 ## Subtitle segmentation core rule: small-sentence readability
 
 User-approved operating rule (2026-07-08): Before character-count packing, check whether each cue reads like a **small sentence**. A good cue usually contains a noun/target axis plus a verb/judgment/predicate axis, so it can be understood on screen without waiting for the next cue.
@@ -36,9 +38,9 @@ Exceptions: topic-setting fragments can stand alone when they intentionally open
 
 User style calibration note (2026-07-08): The user identified `250708_박종천_AI데이터센터_인지부채_srt.txt` as the best/most accurate feeling output. Its measurable profile was roughly 830 cues, avg visible chars ~17.1, max 33, 133 cues over 25, 67 over 28, and 72 cues <=7. This means the user's preferred 'accurate' feel is not strict mechanical packing; it prioritizes transcript-close wording, natural speech rhythm, meaning-complete cues, and light Gem1/Gem2-style cleanup over aggressive packing or subagent-written rewrites. However, the user later clarified that for future work 25 visible Korean chars should still be the normal target and **27 chars is the practical max**. Apply the combined rule: meaning closure first, 25 target/27 max second. For similar jobs, use the Park Jongcheon file as a style reference: stable transcript-first, Main Hermes owns the full editorial pass, subagents review only, and never let subagents author final caption chunks by part. See `references/2026-07-08-park-jongcheon-reference-style-and-human-readability.md`.
 
-### Long source MP3 chunked-ASR recovery
+### Long Drive MP3 chunked-ASR recovery
 
-If a long source MP3/video full-file MLX run collapses into repeated filler such as `네` in the latter half while the audio still contains real speech, stop using that full-file ASR as the timing/text substrate. Re-run MLX in short chunks, usually 5-minute mono 16 kHz WAV chunks, merge word timestamps by adding each chunk offset, and build the script/SRT from the merged chunked JSON. This is especially important around 45+ minute Korean interview files where previous-text conditioning can drag the model into repeated acknowledgements. See `references/2026-07-09-drive-mp3-chunked-mlx-recovery.md`.
+If transcription contains repeated filler or missing speech, preserve raw JSON and re-transcribe only the affected interval with ElevenLabs. Add the clip offset to word times, replace the affected derived interval, and rebuild stale body/alignment outputs.
 
 Visible-length pitfall: for this user's TTimes bottom caption box, count spaces too when enforcing the 25 target / 27 max. Non-space-only counts can produce cues that pass mechanically but look too wide. If term patches make cue bodies exceed 27 chars, split only the body cue and renumber; never apply broad range regexes to whole SRT text because they can corrupt `-->` timecode lines.
 
@@ -68,4 +70,4 @@ ASR-failure stop rule:
 
 - If source discovery from title is ambiguous, ask for link.
 - If YouTube download fails but captions are accessible, report the limitation and ask whether script-only from captions is acceptable.
-- If MLX fails, try another transcription path only if available; otherwise deliver the blocker honestly.
+- If ElevenLabs fails, report the authentication, quota, or service error; do not switch transcription engines.

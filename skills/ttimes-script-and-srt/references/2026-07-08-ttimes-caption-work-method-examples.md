@@ -1,8 +1,10 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # TTimes caption/SRT working method + examples (2026-07-08)
 
 ## Trigger
 
-During a long user-provided MP3 → Korean TTimes 말자막 → SRT job, the user corrected both workflow and segmentation style repeatedly. This reference captures the durable class-level method and examples to avoid repeating the same mistakes.
+During a long Google Drive MP3 → Korean TTimes 말자막 → SRT job, the user corrected both workflow and segmentation style repeatedly. This reference captures the durable class-level method and examples to avoid repeating the same mistakes.
 
 ## Core working method
 
@@ -10,7 +12,7 @@ This task is not “ASR cleanup” or “character packing.” It is an editoria
 
 ```text
 MP3/video
-→ MLX Whisper ASR + word timestamps
+→ ASR + word timestamps
 → transcript-close stable caption script
 → minimal Gem1-style correction
 → Gem2-style human-readable segmentation

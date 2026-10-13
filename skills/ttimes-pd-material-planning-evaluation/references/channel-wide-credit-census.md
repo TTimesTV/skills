@@ -53,9 +53,9 @@ Name-only hits, adjacent-but-unlinked OCR words, stylistic similarity, repeated 
 ## Caption recovery and transcript provenance
 
 - If a cached automatic-caption URL returns HTTP 429, refresh the video page with `yt-dlp` and request current `ko-orig,ko` JSON3 captions before falling back.
-- If refreshed captions remain rate-limited but the video is already downloaded, local ASR is a valid review aid. Preserve the raw ASR output separately and label the model and fallback reason.
-- Inspect timestamp units before promoting an ASR TSV into the canonical transcript path. Some Whisper TSVs use milliseconds while project ledgers use seconds. Compare the final timestamp with media duration, normalize units, then verify the first and last rows.
-- Treat local ASR as timing/semantic support, not authoritative screen text; cross-check actual video/contact sheets and use only high-confidence timestamps in findings.
+- If refreshed captions remain rate-limited but the video is already downloaded, ElevenLabs ASR is a valid review aid. Preserve the raw ASR output separately and label the model and fallback reason.
+- Inspect timestamp units before promoting an ASR TSV into the canonical transcript path. Some ElevenLabs TSVs use milliseconds while project ledgers use seconds. Compare the final timestamp with media duration, normalize units, then verify the first and last rows.
+- Treat ElevenLabs ASR as timing/semantic support, not authoritative screen text; cross-check actual video/contact sheets and use only high-confidence timestamps in findings.
 
 ## Progress communication and completion language
 

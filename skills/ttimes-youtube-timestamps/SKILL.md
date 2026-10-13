@@ -1,8 +1,10 @@
 ---
 name: ttimes-youtube-timestamps
-description: "Create TTimes-style YouTube description timestamps/chapters from YouTube-provided CC. Use for 티타임즈 타임스탬프, 유튜브 챕터, 설명란 타임라인 — not SRT subtitles. Learned from 10 recent TTimesTV videos and 85 published chapters."
+description: Create TTimes-style YouTube description timestamps/chapters from YouTube-provided
+  CC. Use for 티타임즈 타임스탬프, 유튜브 챕터, 설명란 타임라인 — not SRT subtitles. Learned from 10 recent
+  TTimesTV videos and 85 published chapters.
 metadata:
-  version: 1.4.0
+  version: 1.5.0
 ---
 
 # TTimes YouTube Timestamps
@@ -35,6 +37,15 @@ This delivers a short YouTube-description chapter list. It is not an SRT, subtit
 - A chapter title is concise editorial compression. Keep the central entity or claim, avoid generic labels and final periods, and do not overclaim the adjacent CC.
 - Historical style statistics and calibration examples are evidence, not quotas. See [house-style observation](references/recent-sample-analysis.md) and [calibration case](references/calibration-case.md).
 
+### User-approved chapter density and titles
+
+- For this user's roughly 30–35 minute interviews, aim for fewer than 10 **body** chapters when the content supports it; 9 worked for the approved 34:37 example. Ad/highlight chapters are separate. Do not force 9 onto every duration or topic structure.
+- Avoid repeatedly splitting the body into 1–2 minute sections. Group related explanations under a meaningful topic transition. Do not move a boundary away from the actual CC transition merely to satisfy spacing.
+- Reducing the count alone does not fix the editorial problem: the user found both the original 13 chapters too dense and a subsequent 7-chapter reduction too sparse. Choose boundaries that preserve distinct viewer interests.
+- Titles should tell viewers concretely what they will learn: a recognizable company, competition, decision, mechanism, or consequence. Use natural questions or clear claims supported by that segment, rather than abstract category labels or clickbait.
+- When the passage compares competing sides, make that relationship explicit with `A vs B` and the actual stake. For the approved AI gateway passage, group `시리·제미나이 vs 챗GPT·클로드`; a flat list of four names loses the editorial point. Infer sides from the speech, and do not invent a rivalry in non-comparative passages.
+- Read [approved density and wording example](references/user-approved-chapter-style.md) when drafting or revising this user's chapters. Use its editorial choices for calibration, not its timestamps or chapter count as a template.
+
 ## Delivery and validation
 
 Return the chapter list as one copy-ready fenced plain-text block unless the user asks for explanation or a file:
@@ -60,6 +71,7 @@ The list must start at `00:00`, contain at least three ascending timestamps, and
 | Extract and edit chapters from final YouTube CC | [final CC workflow](workflows/final-cc.md) | operational; usable CC required |
 | Shift a validated first-cut list after a prefix | [first-cut prefix workflow](references/first-cut-prefix-shift-workflow.md) | operational; explicit same-body statement or ordinary match gates required |
 | Understand observed 2026-07 style | [house-style observation](references/recent-sample-analysis.md) | historical; not a quota |
+| Match this user's preferred density and concrete titles | [approved chapter style](references/user-approved-chapter-style.md) | user-approved; applies to drafting and revision |
 | Inspect one prior prefix-shift calibration | [calibration case](references/calibration-case.md) | calibration; not a template duration |
 | Run or interpret helpers | [script contracts](scripts/README.md) | operational |
 

@@ -1,6 +1,8 @@
 ---
 name: ttimes-audio-rough-cut-rendering
-description: Use when implementing an already approved TTimes cut decision ledger, EDL, or authoritative cut DOCX on source audio to produce a rough-cut MP3/WAV. Aligns, cuts, moves, joins, and verifies audio without making new editorial content decisions.
+description: Use when implementing an already approved TTimes cut decision ledger,
+  EDL, or authoritative cut DOCX on source audio to produce a rough-cut MP3/WAV. Aligns,
+  cuts, moves, joins, and verifies audio without making new editorial content decisions.
 license: MIT
 metadata:
   hermes:
@@ -12,11 +14,14 @@ metadata:
     - edit-decision
     related_skills:
     - ttimes-cut-editing
-  author: Hermes Agent
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # TTimes Audio Rough-Cut Rendering
+
+## 이 컴퓨터의 전사 경로
+
+전사·말자막 타이밍·부분 재전사·화자 구분은 ElevenLabs Scribe v2 API와 기존 env만 사용한다. 실행 전 `skills/ttimes-script-and-srt/references/elevenlabs-runtime.md`를 읽는다. 인증·잔액·서비스 오류는 원인을 보고하고 중단한다. 이 규칙이 과거 사례보다 우선한다.
 
 ## Overview
 
@@ -63,6 +68,18 @@ Completion criterion: one immutable source and one approved plan are frozen.
 
 ## What This Skill May Decide
 
+### 사용자 승인 기본값: 공백·호흡 정리 (2026-10-02)
+
+사용자는 앞으로 컷편에 **원고 컷 적용 → 긴 공백·불필요한 호흡 정리 → 접합부 확인**을 기본으로 포함하도록 승인했다. 원고에 표시되지 않거나 ElevenLabs 전사에 나오지 않는 비발화 구간도 이 범위에서는 정리할 수 있다. 이는 새 발화 내용 삭제를 허용하는 규칙이 아니다.
+
+- 원고 컷 적용 후 전체 유지 구간의 파형·음량과 단어 타이밍을 함께 살펴 긴 공백 후보를 찾는다. 전사에 없는 구간을 곧바로 무음으로 간주하지 않는다.
+- 긴 무음은 자연스러운 문장·질문/답변 사이 여백을 남겨 줄인다. 모든 공백을 없애거나 고정 길이로 일괄 압축하지 않는다.
+- 한숨·큰 들숨은 소리가 있으므로 무음 임계값만으로 판정하지 않는다. 주변 음성과 문맥을 확인해 불필요한 경우에만 제거하거나 줄인다. 확인할 수 없는 호흡 후보는 보존하고 검증 한계를 기록한다.
+- 생각하는 여백, 감정·의미를 전달하는 한숨, 자연스러운 발화에 필요한 호흡은 보존한다. 말에 붙은 호흡은 전체 삭제보다 길이 축소를 우선하며 첫 자음과 말끝을 보호한다.
+- 추가 정리는 매니페스트에 `pause_trim` / `breath_trim`, 원본 시작·끝, 남긴 여백, 판단 근거로 기록한다. 최종 시간 매핑과 파생 DOCX/SRT가 있으면 함께 갱신한다.
+- 새 접합부에는 기존 발화 보존 검증을 적용하고, 호흡·리듬 검증은 파형 및 주변 음성 확인으로 수행한다. ASR 통과만으로 비발화 소리 검증까지 완료했다고 보고하지 않는다.
+- 이 기본값은 향후 작업에 적용한다. 이미 납품한 파일을 별도 요청 없이 다시 덮어쓰지 않는다.
+
 Allowed technical decisions:
 
 - transcript-to-audio occurrence alignment
@@ -106,7 +123,7 @@ Completion criterion: every approved operation is represented exactly once.
 
 ### 2. Generate word-timestamp alignment
 
-Prefer MLX Whisper on the user's Apple Silicon environment for Korean audio. Use source language and project names/technical terms as prompt context.
+Use ElevenLabs Scribe v2 API with the existing env for transcription and word timing. Read `skills/ttimes-script-and-srt/references/elevenlabs-runtime.md` before execution.
 
 Do not trust full-file ASR alone for quiet head/tail audio. When the approved plan contains boundary operations there, re-transcribe short clips independently.
 

@@ -15,4 +15,4 @@
 
 원고는 이전 검증된 6장 내용 유지. 정책·연구·사진 전체 출처는 ZIP의 sources.json. 이번 결과는 디자인 후보이며 아직 사용자 최종 승인은 아니다.
 
-작업 경로: `PROJECT_ROOT/v5`
+작업 경로: `LOCAL_REFERENCE_NOT_DISTRIBUTED`

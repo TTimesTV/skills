@@ -23,7 +23,7 @@
 
 전수 원장:
 
-`PROJECT_ROOT/deletion_reason_retained_audit.md`
+`LOCAL_REFERENCE_NOT_DISTRIBUTED`
 
 ## 편집 후 이야기 축
 

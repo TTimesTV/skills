@@ -1,28 +1,55 @@
 ---
 name: ttimes-script-and-srt
-description: "Use when the user wants Hermes to create a TTimes-style Korean subtitle script from MP3/video/YouTube, then optionally generate a line-preserving SRT. Covers source acquisition, MLX Whisper ASR, YouTube captions, term correction, readable line-breaking, subagent review, and final validation."
+description: Use when this user asks to extract 워딩, 전사, or 싱크 from MP3/video/YouTube,
+  including Clova Note-style speaker-timestamped Word output through the ElevenLabs
+  Scribe v2 API; also use for TTimes-style Korean subtitle scripts and line-preserving
+  SRT. If the requested artifact is ambiguous, ask one short clarification instead
+  of routing to dubbing CSV, chapters, or another workflow.
 license: MIT
 metadata:
-  version: 1.0.9
+  version: 1.0.12
   author: Hermes Agent
   hermes:
-    tags: [media, subtitles, srt, ttimes, mlx-whisper, youtube, korean-caption-script]
-    related_skills: [ttimes-youtube-timestamps, ttimes-youtube-upload-package, ttimes-editorial-copy, ttimes-screen-composition]
+    tags:
+    - media
+    - subtitles
+    - srt
+    - ttimes
+    - elevenlabs-scribe
+    - youtube
+    - korean-caption-script
+    related_skills:
+    - ttimes-youtube-timestamps
+    - ttimes-youtube-upload-package
+    - ttimes-editorial-copy
+    - ttimes-screen-composition
 ---
 
 # TTimes Script and SRT Pipeline
+
+## 사용자 기본값: 싱크에서도 빈 맞장구 제거 (2026-10-12)
+
+새 싱크/워딩 DOCX와 말자막 모두 의미 없는 맞장구를 기본으로 걷어낸다. 사용자가 “네 네”, “그렇죠 그렇죠”가 너무 많다고 지적했다. 반복을 한 번씩 반드시 남기는 것이 아니라, 다른 화자의 설명에 끼는 정보 없는 “네”, “그렇죠”, “맞아요”, “맞습니다”는 통째로 생략할 수 있다. 실제 질문의 답, 동의·부정의 입장, 확인·반박, 의미 있는 강조는 보존한다. 문자열 일괄 삭제나 발언 요약은 하지 않는다.
+
+싱크에서는 이것을 말자막의 모든 축약 규칙을 적용할 근거로 확대하지 않는다. 원시 ASR와 단어 시각·화자 정보는 보존하고 납품 본문만 정리한다. 빈 맞장구 블록을 제거한 뒤 같은 화자의 설명이 이어지면 자연스럽게 합치되 남은 첫 발화의 원본 시각을 사용한다. 음원을 자르거나 이후 타임코드를 당기지 않는다. SRT에서 빈 cue를 삭제하면 재번호화하고 대응 TXT도 갱신하며 생존 cue의 원본 시각은 유지한다. 제거한 맞장구 구간을 누락 오류로 판단해 다시 채우지 않는다.
+
+사용자가 명시적으로 추임새까지 완전 축어 전사 또는 승인 본문의 타이밍만 배치를 요청하면 그 범위를 따른다. 이 기본값은 아래 및 과거 참고서의 ‘싱크는 맞장구 전부 보존’ 지침보다 우선한다. 기존 납품 파일은 수정 요청 없이 일괄 변경하지 않는다.
+
+## 이 컴퓨터의 전사 경로
+
+전사·말자막 타이밍·부분 재전사·화자 구분은 ElevenLabs Scribe v2 API와 기존 env만 사용한다. 실행 전 `skills/ttimes-script-and-srt/references/elevenlabs-runtime.md`를 읽는다. 인증·잔액·서비스 오류는 원인을 보고하고 중단한다. 이 규칙이 과거 사례보다 우선한다.
 
 ## Purpose
 
 Create the user's `[스크립트]` from only an MP3/video file or YouTube link/title, then optionally turn that script into a line-preserving SRT.
 
-This skill retains the spoken-caption workflow formerly paired with `media-localization-workflows`. Its unavailable local source-acquisition, ASR, alignment, and sync portions are explicitly gated in `references/local-dependency-gates.md`; do not treat that historical relationship as an installed dependency.
+This skill covers both spoken-caption production and this user's Clova Note-style sync/wording route. For a bare `싱크 뽑아줘` or `워딩 뽑아줘`, use ElevenLabs Scribe v2 through the API, preserve word timestamps and speaker diarization, and deliver a speaker-timestamped Word document. Do not route that request into subtitle segmentation or the ElevenLabs web UI.
 
 ## Core Mental Model
 
 ```text
 source media / YouTube
-→ transcript substrate: YouTube captions if useful + MLX Whisper ASR
+→ transcript substrate: YouTube captions if useful + ElevenLabs ASR
 → term/proper-noun correction
 → TTimes-readable `[스크립트].txt`
 → line-preserving SRT aligned to real audio
@@ -32,12 +59,12 @@ source media / YouTube
 Important distinction:
 
 - `[스크립트]` is the authoritative subtitle body text.
-- MLX Whisper / YouTube captions are substrates to create or time that script.
+- ElevenLabs / YouTube captions are substrates to create or time that script.
 - SRT body lines must equal the final script lines exactly unless the user asks otherwise.
 
 ### User default: 군더더기를 걷어낸 말자막 (2026-09-16)
 
-이 사용자의 말자막은 **음성을 기준으로 뜻과 말투를 살리되, 입말의 군더더기는 기본으로 제거**한다. 새 말자막 작성에서는 별도 요청을 기다리지 않는다. 이 규칙은 아래와 과거 references의 추임새·반복 전부 보존 지침보다 우선한다. 싱크/원문 전사에는 적용하지 않으며, 사용자가 명시한 원문 그대로 보존·이미 승인된 body 그대로 배치 요청은 따른다.
+이 사용자의 말자막은 **음성을 기준으로 뜻과 말투를 살리되, 입말의 군더더기는 기본으로 제거**한다. 새 말자막 작성에서는 별도 요청을 기다리지 않는다. 이 규칙은 아래와 과거 references의 추임새·반복 전부 보존 지침보다 우선한다. 싱크는 위 2026-10-12의 빈 맞장구 정리 기준을 적용하며, 나머지 말자막용 축약 규칙을 일괄 적용하지 않는다. 사용자가 명시한 원문 그대로 보존·이미 승인된 body 그대로 배치 요청은 따른다.
 
 - `어`, `음`, `아`, `뭐` 같은 추임새, `네네`, `그렇죠`, `맞습니다` 같은 단순 맞장구, 더듬음·말 다시 시작하기의 불필요한 반복을 제거한다.
 - **`한`, `좀`, `이제`도 반드시 검토해 군더더기 용법은 제거**한다. `한 3시간` → `3시간`, `한 200명 정도` → `200명 정도`, `좀 더 정리` → `더 정리`, `이제 AI를 쓰면` → `AI를 쓰면`. 수량 앞의 습관적인 `한`을 ‘대략이라는 뜻이 있다’는 이유만으로 일괄 보존하지 않는다. `약간`, `이렇게`, `뭔가` 등도 문맥상 군더더기면 정리한다.
@@ -45,12 +72,16 @@ Important distinction:
 - 내용을 요약하거나 새 문장으로 쓰지 않는다. 의미 있는 연결어·강조 반복·주장 강도는 유지하고, 의미 단위로 나눈 뒤 실제 컷 음성에 맞춘다.
 - 승인 본문을 타이밍만 배치할 때 다시 정리하지 않는다. 이후 사용자가 군더더기 삭제를 요청하면 본문과 SRT를 함께 갱신하고, 본문만 바뀐 cue의 기존 타임코드는 유지한다. 사용자가 지정한 납품 폴더가 있으면 그 SRT도 같은 버전으로 교체한다.
 
+### User preference: 확인이 필요한 부분 전달 형식 (2026-09-30)
+
+말자막 납품 시 미확정 발음·인명·문맥 보정이 남으면 `확인이 필요한 부분` 아래에 `MM:SS 현재 자막`을 한 줄씩 적어 사용자가 바로 교정할 수 있게 한다. 긴 사유 표나 포괄적인 unverified 문구만으로 대신하지 않는다. 예: `00:01 알아서 찾았을 줄 알았는데`. 자동 전사 결과를 유지한 경우 이를 음성으로 확인된 원문이라고 표현하지 않는다. 사용자가 확인한 문구는 본문과 납품 SRT에 함께 반영하고, 본문만 바뀌면 기존 타임코드를 유지한다. 해결된 항목은 확인 목록에서 제외한다.
+
 ### User default: fast output-first order
 
 For this user, the job's core is **minimal transcript correction + artistic spoken-caption segmentation, completed quickly**. Use this order by default:
 
 ```text
-Whisper full transcript + word times
+ElevenLabs full transcript + word times
 → Main creates one complete minimally corrected, fully segmented body output
 → one parallel review generation
 → Main applies only confirmed findings in one batch
@@ -69,7 +100,8 @@ When the user asks for TTimes YouTube `타임스탬프`, `챕터`, or a `00:00 �
 Routing boundary:
 
 - `말자막`, `분절`, `SRT`, `스크립트` → remain in `ttimes-script-and-srt`.
-- **`티타임즈 싱크 작업` → 이 말자막 공정을 중단하고 `external_dependency`로 표시한다.** 로컬에 `media-localization-workflows`가 없으므로, 필요한 승인 컷 원고+컷 MP3와 `화자 MM:SS + source-faithful 장문 본문` DOCX/TXT 계약은 `references/local-dependency-gates.md`에서 확인한다. 싱크는 cue-body 분절·글자 수 제한·SRT가 아니다.
+- **`티타임즈 싱크 작업`, `싱크 뽑아줘`, `워딩 뽑아줘`, `클로바노트처럼` → 말자막 공정을 중단하고 ElevenLabs Scribe v2 API 경로를 사용한다.** 정확한 소스에서 한국어 word timestamps와 speaker diarization을 받고, 화자를 실제 이름으로 검증해 `화자명 MM:SS` 굵은 문단 + source-faithful 장문 본문 문단의 DOCX를 만든다. 웹 UI, 번역 CSV, cue-body 분절, 글자 수 제한, SRT는 사용자가 별도로 요청하지 않는 한 만들지 않는다.
+- **싱크 DOCX의 같은 화자 연속 발화는 하나의 문단으로 묶는다.** ASR의 임의 세그먼트 경계나 새 타임스탬프만으로 `화자명 MM:SS` 블록을 다시 만들지 않는다. 중간에 다른 화자가 끼지 않고 같은 설명이 이어지면 첫 발화 시작 시각을 헤더로 쓰고 본문을 자연스럽게 잇는다. 화자 교체 또는 실제 긴 침묵·명확한 화제 전환이 있을 때만 새 블록을 만든다. 예: `이제현 06:38`의 KIST 미로 설명과 `이제현 06:54`의 전체 보기 설명은 `이제현 06:38` 아래 한 문단이다. 자세한 기준은 `references/workflow-modes.md`의 Clova Note DOCX 모드를 따른다.
 - `유튜브 설명란 챕터`, `타임스탬프만` → stop the SRT workflow and route to `ttimes-youtube-timestamps`.
 - `타임스탬프와 말자막`, `챕터+SRT`, or an equivalent combined request → use both workflows in one job: semantic chapters from `ttimes-youtube-timestamps`, full spoken-caption TXT/SRT from this skill, and deliver them as separate artifacts. Do not substitute the chapter list for the full speech text.
 - **Latest-directive reset:** if discussion begins with old 컷편/말자막 reuse but the user later says `그냥 이 URL로 다시 해`, stop artifact archaeology and offset/reuse experiments immediately. Treat the supplied final URL as the sole audiovisual authority, run the direct final-URL route, and do not keep explaining the abandoned reuse path.
@@ -77,7 +109,7 @@ Routing boundary:
 - `해시태그 + 본문 챕터 + 고정댓글` → route to `ttimes-youtube-upload-package`, which must load the timestamp skill first.
 - A bare media URL plus `/plan` is genuinely ambiguous among 말자막, 컷편집, 화면구성, and upload-package work. Do not infer 화면구성 merely because the surrounding discussion contains insert research or footage selection. If the user has not named the deliverable, ask one short routing question before writing a plan. Once the user says `말자막 작업`, use this skill's **no-sample full-body SRT plan by default** and mark any previously drafted screen-composition plan as superseded. Use a sample only under the explicit exceptions in §2.
 
-For combined chapter+caption requests, if YouTube caption retrieval returns HTTP 429 or another shared platform rate limit, attempt that caption endpoint only once, then switch to exact-source audio plus MLX Whisper instead of retrying the same caption call. Put title/topic terms in a narrow initial prompt, preserve raw ASR separately, and verify mangled person/model/company names with exact-quote search plus official or reputable source evidence before writing corrected derivatives. See `references/combined-youtube-timestamps-and-spoken-captions.md` for the compact acquisition, correction-ledger, deliverable, and validation checklist.
+For combined chapter+caption requests, if YouTube caption retrieval returns HTTP 429 or another shared platform rate limit, attempt that caption endpoint only once, then switch to exact-source audio plus ElevenLabs instead of retrying the same caption call. Put title/topic terms in a narrow initial prompt, preserve raw ASR separately, and verify mangled person/model/company names with exact-quote search plus official or reputable source evidence before writing corrected derivatives. See `references/combined-youtube-timestamps-and-spoken-captions.md` for the compact acquisition, correction-ledger, deliverable, and validation checklist.
 
 The dedicated timestamp skill is authoritative for YouTube CC extraction, first-cut→final prefix-offset shifting, semantic chapter boundaries, exact cue snapping, validation, and copy-ready output. The older `references/ttimes-youtube-description-chapters.md` is compatibility context only and must not override the dedicated skill.
 
@@ -85,6 +117,10 @@ The dedicated timestamp skill is authoritative for YouTube CC extraction, first-
 
 Use when the user says:
 
+- `워딩 뽑아줘`
+- `전사 뽑아줘`
+- `싱크 뽑아줘`
+- `클로바노트처럼 뽑아줘`
 - `이 영상으로 srt 만들어보자`
 - `유튜브로 스크립트 만들어줘`
 - `mp3로 스크립트.txt 만들어줘`
@@ -94,11 +130,13 @@ Use when the user says:
 
 Also use when the user gives only a YouTube title and asks to make SRT; first try to discover the source link via `yt-dlp "ytsearch..."` or other available lookup, and ask only if discovery fails or multiple plausible videos are indistinguishable.
 
+For this user, `워딩 뽑아줘` is an unambiguous direct trigger for the ElevenLabs Scribe v2 API → Clova Note-style speaker/timestamp DOCX route. Do not infer dubbing, translation, CSV, or subtitle segmentation from the mention of ElevenLabs alone. If context makes the desired artifact genuinely unclear, ask one short question such as `클로바노트형 화자·타임코드 Word로 뽑을까요, 아니면 말자막 SRT가 필요하신가요?` before taking a different route.
+
 ## Required Skills / References
 
 Load and follow:
 
-- 소스 획득, MLX Whisper, line-preserving SRT 정렬, synced-DOCX 생산 전에는 `references/local-dependency-gates.md`를 읽는다. `media-localization-workflows`는 로컬에 없으므로 이 경로는 구현된 것처럼 보이지 않게 `external_dependency`로 남긴다.
+- 전사·부분 재전사·화자 구분 전에는 `references/elevenlabs-runtime.md`를 읽고 기존 env를 사용한다. 정렬은 `references/local-dependency-gates.md`의 출력 검증 조건을 따른다.
 - copy-only 강조자막/설명자막은 `ttimes-editorial-copy`, 시간/배치는 `ttimes-screen-composition`으로 처리한다. `caption-layering-workflow`는 로컬에 없으므로 전체 레이어 문법이나 renderer가 있다고 주장하지 않는다.
 
 

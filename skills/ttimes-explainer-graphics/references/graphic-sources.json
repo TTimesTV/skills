@@ -1,0 +1,32 @@
+[
+  {
+    "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+    "reference": "../assets/model-agent-years.png",
+    "sha256": "22D95675F504B6F610C2F660BEA638B1AAFBA2FA02FE76960E7991B6F65A6554",
+    "copy_verified": true
+  },
+  {
+    "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+    "reference": "../assets/good-enough.png",
+    "sha256": "2348D62F2F12B4D4AD0A4E67CE21B8B7DB135A498B8DBA12DC0AD8A7ED788716",
+    "copy_verified": true
+  },
+  {
+    "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+    "reference": "../assets/muse-system.png",
+    "sha256": "49589FE188D4BF7017133E83585D66AB0E4F96BEF1724B31596DA75D3348DDC3",
+    "copy_verified": true
+  },
+  {
+    "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+    "reference": "../assets/cloud-store-compute-execute.png",
+    "sha256": "5C415F655D865BF7047A3962842FEB8A0791C06F759209CA70C31A27F2BB8E55",
+    "copy_verified": true
+  },
+  {
+    "source": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
+    "reference": "../assets/agent-handoff.png",
+    "sha256": "32389DCD775113DED192E8D924AE6DF8E52B99D5D996A1FE7D0D5A2B22EC9687",
+    "copy_verified": true
+  }
+]

@@ -82,10 +82,10 @@ Never overwrite raw diarization or ASR with the corrected candidate.
 Required stack for this user:
 
 ```text
-MLX Whisper transcription (local)
-→ `pyannote/speaker-diarization-community-1` (local)
+ElevenLabs Scribe v2 transcription (API + existing env)
+→ ElevenLabs Scribe v2 diarization (API)
 → same-speaker merge plan
-→ targeted MLX Whisper re-transcription on low-confidence names/numbers/overlaps (local)
+→ targeted ElevenLabs re-transcription on low-confidence names/numbers/overlaps (API)
 → GPT Sol Korean correction and English translation
 ```
 

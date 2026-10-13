@@ -1,14 +1,14 @@
 # Renderer contract — original-editorial-4x5-v1
 
-실행 확인 환경: `PROJECT_ROOT/python` (Pillow 설치), macOS 시스템 한글·영문 폰트.
+실행 확인 환경: `LOCAL_REFERENCE_NOT_DISTRIBUTED` (Pillow 설치), macOS 시스템 한글·영문 폰트.
 
 ```bash
-PROJECT_ROOT/python PROJECT_ROOT/render_editorial_cards.py /absolute/path/cards.json /absolute/path/new_output
+LOCAL_REFERENCE_NOT_DISTRIBUTED
 ```
 
 ## 실제 최초 에피소드
 
-- 원고·출처: `PROJECT_ROOT/cards.json`
+- 원고·출처: `LOCAL_REFERENCE_NOT_DISTRIBUTED`
 - 실제 사진·공식 로고: 같은 작업의 `assets/`
 - 렌더러: 이 스킬의 `scripts/render_editorial_cards.py`
 - 형식 상태: 사용자에게 제시할 후보. 승인 정본 아님.

@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 21분 무자막 기술 인터뷰: body 리뷰와 타이밍 보정 교훈 (2026-07-23)
 
 ## 적용 범위
@@ -7,7 +9,7 @@ YouTube 수동/자동 CC가 없는 20분 안팎의 한국어 기술 인터뷰를
 ## 안정적으로 작동한 본문 경로
 
 1. 실제 컷편 오디오를 16 kHz mono WAV로 동결하고 MP4/WAV 해시를 기록한다.
-2. 5분 청크 MLX Whisper(`condition_on_previous_text=False`)로 전사하고, segment/word timestamp를 절대 시각으로 병합한다.
+2. ElevenLabs API로 전사하고, 분할이 필요했던 경우에만 word timestamp에 원본 오프셋을 더한다.
 3. raw ASR baseline의 줄·문자·단어·마지막 발화 시각을 기록한다.
 4. 7분 안팎의 bounded range 초벌을 병렬 작성할 수 있지만, Main이 실제 파일·해시를 검증하고 범위 경계·용어·문법을 전 구간 통합한다.
 5. candidate를 content-addressed snapshot으로 동결한 뒤 용어/숫자, 모든 인접 경계, 누락·왜곡을 독립 리뷰한다.
@@ -44,4 +46,4 @@ YouTube 수동/자동 CC가 없는 20분 안팎의 한국어 기술 인터뷰를
 - 모든 speech-containing gap이 의미상 판정됨
 - 최소 표시시간 보정 후 semantic timing 재검사
 - FFmpeg/WebVTT 변환으로 SRT 파서 통과
-- Telegram 전달본은 `PROJECT_OUTPUT/`의 ASCII `.txt`, source/destination SHA-256 일치
+- Telegram 전달본은 `~/.hermes/media_cache/`의 ASCII `.txt`, source/destination SHA-256 일치

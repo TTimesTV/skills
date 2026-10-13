@@ -2,7 +2,7 @@
 
 ## Trigger
 
-During a long user-provided MP3 → Korean TTimes-style SRT job, the user rejected the delivered `김지현 AI리더십` subtitle as still carrying ASR/term errors and poor cue joining. The session produced durable workflow/style corrections for this user's subtitle class.
+During a long Google Drive MP3 → Korean TTimes-style SRT job, the user rejected the delivered `김지현 AI리더십` subtitle as still carrying ASR/term errors and poor cue joining. The session produced durable workflow/style corrections for this user's subtitle class.
 
 ## Speed / workflow lesson
 

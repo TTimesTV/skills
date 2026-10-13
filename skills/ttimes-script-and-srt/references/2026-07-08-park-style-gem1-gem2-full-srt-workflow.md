@@ -1,13 +1,15 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # 2026-07-08 Park-style Gem1/Gem2 full SRT workflow
 
 ## Context
 
 User explicitly rejected the heavy “95점 gate / repeated global patch / audit loop” approach for a 75-minute AI-chip MP3 because it became slow and still visibly broken. They asked to revive the earlier Park Jongcheon-style workflow:
 
-1. MP3 download and MLX Whisper transcription.
+1. MP3 download and ASR transcription.
 2. Gem1-style minimal transcript correction.
 3. Gem2-style readable spoken-caption segmentation.
-4. Align the resulting caption-body lines to MLX Whisper word timestamps and deliver an `srt.txt` file.
+4. Align the resulting caption-body lines to ASR word timestamps and deliver an `srt.txt` file.
 
 The user said to deliver the result even if not claiming 95점. In this mode, avoid over-explaining and produce the file.
 
@@ -21,7 +23,7 @@ source MP3 / existing ASR
 → subagents convert chunks with Gem1 minimal correction + Gem2 segmentation
 → Main Hermes concatenates chunk outputs
 → light mechanical validation
-→ align to MLX word timestamps
+→ align to ASR word timestamps
 → deliver SRT-as-.txt + optional script txt
 ```
 
@@ -62,7 +64,7 @@ Main Hermes then owns concatenation, validation, alignment, and delivery.
 ## Alignment/delivery pattern
 
 1. Concatenate non-empty lines from the chunk caption files.
-2. Build a merged `words` JSON from `asr/source_large_v3_turbo.json` if only full MLX JSON exists:
+2. Build a merged `words` JSON from `asr/scribe_v2_raw.json` if only full ASR JSON exists:
    ```json
    {"duration": <last_word_end>, "words": [{"word": ..., "start": ..., "end": ...}, ...]}
    ```

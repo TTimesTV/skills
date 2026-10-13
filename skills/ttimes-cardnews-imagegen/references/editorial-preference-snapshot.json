@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_from": "skills\\ttimes-cardnews-imagegen\\references\\editorial-approval-ledger.jsonl",
+  "generated_from": "LOCAL_REFERENCE_NOT_DISTRIBUTED",
   "event_count": 33,
   "formats": {
     "TTimes 일반 대담형": {
@@ -1018,7 +1018,7 @@
         "manuscript": [
           {
             "field": "prose-and-closing",
-            "final": "출연자 이름을 밝힌 기사체와 실제 발언 인용; 마지막은 출연자 인용문과 이름·직함; 발언에 없는 부연 제외",
+            "final": "출연자 이름을 밝힌 기사체와 실제 발언 따옴표 인용; 마지막은 출연자 인용문과 이름·직함; 발언에 없는 부연 제외",
             "episode": "kang-sujin-astra",
             "signals": [
               "explicit-hard-rule",

@@ -33,10 +33,10 @@
 - 정적 PNG/JPG만 고집하지 않는다. 내용에 적합하고 권리가 확인된 GIF도 가능. GIF 표지는 텍스트/로고를 고정하고 사진/영상 영역만 움직이는 기존 기준을 따른다.
 
 ## 승인본과 재사용 경로
-- 박세준 사용자 ‘good’ 승인본: `PROJECT_ROOT/square_v2`
-- 해당 렌더러: `PROJECT_ROOT/render_square.py`
-- 정지훈 표지/마무리 기준: `PROJECT_ROOT/render_card1.py`, `render_card5.py`
-- 맘다니 최종 수정 산출물: `PROJECT_ROOT/delivery_final`, 후속 수정 스크립트 `revision_photo/`. 파일명만으로 일괄 최종 승인·권리 승인을 추정하지 않는다.
+- 박세준 사용자 ‘good’ 승인본: `LOCAL_REFERENCE_NOT_DISTRIBUTED`
+- 해당 렌더러: `LOCAL_REFERENCE_NOT_DISTRIBUTED`
+- 정지훈 표지/마무리 기준: `LOCAL_REFERENCE_NOT_DISTRIBUTED`, `render_card5.py`
+- 맘다니 최종 수정 산출물: `LOCAL_REFERENCE_NOT_DISTRIBUTED`, 후속 수정 스크립트 `revision_photo/`. 파일명만으로 일괄 최종 승인·권리 승인을 추정하지 않는다.
 - 박세준 `draft_v1`은 잘못된 세로 시안. 재사용 금지. 디자인 승인은 사진 라이선스 검증 완료와 별개다.
 
 ## 납품 QA

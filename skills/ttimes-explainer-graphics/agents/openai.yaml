@@ -1,0 +1,6 @@
+interface:
+  display_name: "티타임즈 설명 그래픽"
+  short_description: "승인된 그래픽 사례를 참고해 비교 장표·개념도·구조도 제작"
+  default_prompt: "Use $ttimes-explainer-graphics to make a TTimes explainer graphic from the approved speech and reference images."
+policy:
+  allow_implicit_invocation: true

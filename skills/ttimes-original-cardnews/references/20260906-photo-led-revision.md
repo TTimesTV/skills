@@ -38,4 +38,4 @@ http://youtube.com/post/UgkxKm5QngWAbZnCMp_S0rlgKSxgg4EcKoeS
 
 표지 GIF 문의는 제작 가능 여부와 플랫폼 재생 가능 여부를 분리한다. YouTube 게시물은 공식 도움말상 GIF 지원, LinkedIn은 GIF 파일 지원이지만 PDF 문서 캐러셀 표지를 움직이게 하는 것과는 다르다. GIF+정지 이미지 묶음의 첫 장 재생은 실제 업로드면 검증 전 확정하지 않는다. 실사 인물의 입·표정을 합성하지 않고 제목/로고 고정과 약한 사진 줌을 우선 검토한다.
 
-재시안 위치: `PROJECT_ROOT/v2`
+재시안 위치: `LOCAL_REFERENCE_NOT_DISTRIBUTED`

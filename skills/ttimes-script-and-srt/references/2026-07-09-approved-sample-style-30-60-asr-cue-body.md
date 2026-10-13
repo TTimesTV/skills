@@ -30,7 +30,7 @@ This is a fast existing-ASR chunk task, not a full SRT/ASR/subagent rebuild.
 
 ## Session outcome profile
 
-Final file: `PROJECT_ROOT/part_30_60_caption_body.txt`
+Final file: `LOCAL_REFERENCE_NOT_DISTRIBUTED`
 
 Validation profile:
 - cue-body lines: 1063

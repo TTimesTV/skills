@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # Park Jongcheon reference-style TTimes caption workflow (2026-07-08)
 
 ## Trigger
@@ -50,7 +52,7 @@ Main Hermes:
 - owns the single editorial rhythm
 - creates the transcript-close Gem1/Gem2-style script
 - integrates corrections
-- aligns to MLX timestamps
+- aligns to ASR timestamps
 
 Subagents:
 - review terms/numbers/proper nouns
@@ -167,5 +169,5 @@ ASR 전체 → strict char packing → subagents author chunks → Main concaten
 Better loop:
 
 ```text
-ASR/media → Main transcript-close stable script → Gem1 minimal correction → Gem2 human-readable segmentation → subagent review only → Main patch → MLX alignment → deliver *_srt.txt
+ASR/media → Main transcript-close stable script → Gem1 minimal correction → Gem2 human-readable segmentation → subagent review only → Main patch → ASR alignment → deliver *_srt.txt
 ```

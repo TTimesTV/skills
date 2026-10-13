@@ -1,3 +1,5 @@
+> 실행 경로(2026-09-22): 전사·부분 재전사는 [ElevenLabs API + 기존 env](elevenlabs-runtime.md)를 따른다. 아래 사례의 청크 크기·과거 실행 결과는 현재 API 실행 지시가 아니다. 장편도 원본 업로드가 기본이며 확인된 누락 구간이나 서비스 제한이 있을 때만 분할한다.
+
 # YouTube `/plan` routing and dual-ASR sample gate
 
 Use this pattern when a user provides a YouTube interview/cut URL and invokes `/plan`, then identifies the job as Korean TTimes 말자막.
@@ -14,7 +16,7 @@ Use this pattern when a user provides a YouTube interview/cut URL and invokes `/
 For 말자막, the user's current default is **no sample gate**:
 
 1. Plan exact-source acquisition.
-2. Plan MLX word-timestamp ASR.
+2. Plan ASR word-timestamp ASR.
 3. Plan full-body transcript-close correction and segmentation.
 4. Add fresh reviews: source fidelity, cue boundary/internal grammar, terminology/numbers, and omission/distortion.
 5. Main integrates the full body, aligns it, and completes all validation gates.
@@ -29,9 +31,9 @@ Before concluding that a playable YouTube source has no downloadable formats:
    ```bash
    python3 -m yt_dlp -F 'URL' --no-warnings
    ```
-3. If public access remains unavailable, use a media file supplied for this task.
+3. If necessary, retry with a browser-cookie source.
 4. Download a named audio format and verify title, duration, size, and bitrate with `ffprobe`.
-5. Ask for the owner-provided MP4/MP3 if the current module cannot fetch the public source. Do not load personal browser credentials.
+5. Ask for the owner MP4/MP3 or Drive link only after the current module and cookie paths fail.
 
 This is a retry pattern, not a durable claim that either CLI entry point is always better.
 
@@ -39,8 +41,8 @@ This is a retry pattern, not a durable claim that either CLI entry point is alwa
 
 For a technical Korean interview sample:
 
-- Primary timing substrate: `mlx-community/whisper-large-v3-turbo` with Korean, word timestamps, and `condition_on_previous_text=False`.
-- Comparison pass: `mlx-community/whisper-large-v3-mlx` on only the sample range.
+- Primary timing substrate: ASR API, source language, word timestamps; use the existing env.
+- Optional comparison for unresolved speech: ASR Scribe v1 on only the affected interval.
 - Targeted pass: cut 12–25 second clips around high-risk names, numbers, book titles, and malformed grammar.
 - A prompt-conditioned ASR output is supporting evidence, not proof; confirm proper nouns with official sources and compare unprompted/contextual outputs.
 - Prefer direct source wording over smoother editorial rewrites. A comparison pass is especially valuable for distinctions such as `모셨습니다/오셨습니다`, `선언적인/선언하는`, missing discourse markers, and restored hedge/filler wording that changes tone.
