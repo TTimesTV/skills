@@ -8,7 +8,7 @@ description: Use when a TTimes PD must turn an approved final-cut transcript or 
   rough-cut audio rendering, or exhaustive asset discovery unless explicitly requested.
 license: MIT
 metadata:
-  version: 0.6.6
+  version: 0.6.7
   author: Hermes Agent
   hermes:
     tags:
@@ -26,6 +26,10 @@ metadata:
 ---
 
 # TTimes Screen Composition
+
+## 최신 비교와 같은 시리즈 적용 — 2026-10-14
+
+초안/승인본 비교와 후속편 재구성에는 [이건복 비교와 김지현 정도희 연속편 적용](references/lee-geonbok-and-series-calibration-20261014.md)을 읽는다. 같은 시리즈의 실제 승인 선택에서 발화 역할·자료 기능·전개 순서를 가져오고 새 편의 역할 변화에 맞춘다. 문구 유지와 위치 이동, 미선택과 원문 컷, 정의와 표시 예외를 따로 판단한다. 새 편 제안은 승인 사례로 승격하지 않는다.
 
 ## 회차별 비교 보고서 누적 — 2026-10-13
 

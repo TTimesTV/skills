@@ -751,8 +751,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/references/episode-comparison-archive-20261013.md",
-      "bytes": 4870,
-      "sha256": "6ceaa2303a8ec48156c180562f522272e1a8ea58c10a7440dc312a8d41658074"
+      "bytes": 4883,
+      "sha256": "6b339b4a8d34e6656be29fe756f2de40b6f6bd2f14440bac988f2ca357def2ca"
     },
     {
       "path": "skills/ttimes-screen-composition/references/final-selection-calibration-20260930.md",
@@ -901,8 +901,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/SKILL.md",
-      "bytes": 61617,
-      "sha256": "9dd21eee257487a2df84b798744ef2ba24c3eb97b2a65362f94632a2df836255"
+      "bytes": 62173,
+      "sha256": "f575e7852f3ae44fca12a5e3bc635251f8cec455f80d3e26dc6292d07a649bd5"
     },
     {
       "path": "skills/ttimes-screen-composition/templates/inline-docx-instruction-example.md",
@@ -1458,6 +1458,11 @@
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
       "bytes": 15190,
       "sha256": "7014160b968351ea25ff00c0de9667bdb480c8715258e15b636aca23ccfaa3e0"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/lee-geonbok-and-series-calibration-20261014.md",
+      "bytes": 4452,
+      "sha256": "17fc72034431bf17acc1ffb1c7e71e1ec2a5e41b82d004d7e49d0e094940cb7f"
     }
   ]
 }
