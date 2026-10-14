@@ -781,8 +781,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/references/jev-judgment-workflow.md",
-      "bytes": 3556,
-      "sha256": "6722dbc7855413a0ba780eff557bbd4218ad438875ca611a193e7ce693b2fd8e"
+      "bytes": 4029,
+      "sha256": "d696ecfab1b208fe23f55292870c7124a4b9cde67b7259330b75011e569b4676"
     },
     {
       "path": "skills/ttimes-screen-composition/references/kang-jeongsu-final-selection-20261007.md",
@@ -901,8 +901,8 @@
     },
     {
       "path": "skills/ttimes-screen-composition/SKILL.md",
-      "bytes": 62173,
-      "sha256": "f575e7852f3ae44fca12a5e3bc635251f8cec455f80d3e26dc6292d07a649bd5"
+      "bytes": 63673,
+      "sha256": "9ac1a2a2e965b19d4a5eed38c0112c574cf363ae10276cb6a7d2581d449e7221"
     },
     {
       "path": "skills/ttimes-screen-composition/templates/inline-docx-instruction-example.md",
@@ -1463,6 +1463,11 @@
       "path": "skills/ttimes-screen-composition/references/lee-geonbok-and-series-calibration-20261014.md",
       "bytes": 4452,
       "sha256": "17fc72034431bf17acc1ffb1c7e71e1ec2a5e41b82d004d7e49d0e094940cb7f"
+    },
+    {
+      "path": "skills/ttimes-screen-composition/references/pd-led-research-review-workflow-20261014.md",
+      "bytes": 7594,
+      "sha256": "1a910cec791d30c9cba14cd1eab26e672c6fb1c0b921d203956270cfcccd1975"
     }
   ]
 }

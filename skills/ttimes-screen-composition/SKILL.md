@@ -8,7 +8,7 @@ description: Use when a TTimes PD must turn an approved final-cut transcript or 
   rough-cut audio rendering, or exhaustive asset discovery unless explicitly requested.
 license: MIT
 metadata:
-  version: 0.6.7
+  version: 0.6.8
   author: Hermes Agent
   hermes:
     tags:
@@ -26,6 +26,12 @@ metadata:
 ---
 
 # TTimes Screen Composition
+
+## 메인 PD 설계와 역할 분담 — 2026-10-14
+
+새 전체 회차의 화면구성은 [PD 설계·자료 조사·독립 검토 절차](references/pd-led-research-review-workflow-20261014.md)를 먼저 읽고 적용한다. 메인 PD가 전체 회차와 연속편 맥락을 읽어 주체·행동·비교축과 화면 목적을 정한 뒤, 자료 조사 에이전트와 독립 검토 에이전트에 맡길 범위를 명시한다. 전체 회차 작업에는 이 역할 분담을 사용하되, 원고를 시간별로 나누어 각 에이전트가 완성본을 독자 결정하게 하지 않는다. 단일 문구·앵커 수정은 메인이 처리한다. 도구가 없으면 같은 절차를 순차 수행하고 실제 다중 에이전트 실행과 구분해 보고한다.
+
+자료 조사는 확정한 화면 목적에 근거하고, 독립 검토는 검토 가능한 초안에 근거한다. 메인이 채택·반려와 전체 호흡을 최종 결정한다. JEV는 명시된 기준의 압축 분류를 맡으며 의미 해석·출처 확인을 대신하지 않는다. 수정 학습에는 결과 문구뿐 아니라 수정 이유·적용 조건·승인 상태를 남긴다. 편집자에게 맡긴 임시 마감이나 사용자의 질문을 이상적인 승인 사례로 학습하지 않는다.
 
 ## 최신 비교와 같은 시리즈 적용 — 2026-10-14
 
@@ -71,7 +77,7 @@ Review checks: original speech unchanged; each proposal anchored precisely; ever
 
 ## Status and evidence
 
-This is a **provisional v0.5 standard** grounded in three materially different user-authored `자료-완료` corpora. The 2026-09-06 update strengthens editorial selection and evaluation; it does not certify unseen-transcript performance.
+The original standard was grounded in three materially different user-authored `자료-완료` corpora; later dated calibrations extend it. A documented workflow update does not certify unseen-transcript performance.
 
 ## 자막·자료·보관 연결 규칙
 
@@ -81,11 +87,11 @@ This is a **provisional v0.5 standard** grounded in three materially different u
 
 For `어느 부분을 어떻게 구성`, `자료·강조·설명·구조 자막 배치`, or `화면구성`, apply this skill **before** drafting isolated captions or searching assets. A taxonomy explanation is not the requested composition artifact.
 
-1. Read approved speech in context, including the previous explanation and next payoff.
+1. Read the whole approved episode and relevant series context first, then each beat with its previous explanation and next payoff. Resolve the subject, action, comparison axis, and qualifications before drafting copy or assigning research.
 2. Name the viewer's specific unresolved need and compare plausible forms, including staying on the speaker.
 3. Select the minimum sufficient composition; state why it belongs on this clause and not its neighbor. `NONE` is a valid decision, not a missing task.
 4. Draft wording through `ttimes-editorial-copy`; use C4/C5 for concept/structure rather than forcing everything into emphasis. The former `caption-layering-workflow` is unavailable locally, so use only the current skill's explicit output contract rather than claiming an external layer grammar or renderer.
-5. Set the actual speech anchors for entry, change, and exit; review continuity across beats before producing the minimal inline Word.
+5. Set the actual speech anchors for entry, change, and exit; review continuity across beats before producing Word in the current review mode (threaded comments by default; inline only when explicitly requested).
 
 Read `references/editorial-selection-and-sequence.md` for the choice protocol and cross-beat memory. Read `references/unseen-transcript-calibration.md` only for training/evaluation runs. Do not load every corpus or run a benchmark for an ordinary caption request.
 
