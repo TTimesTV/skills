@@ -1,24 +1,40 @@
 ---
 name: ttimes-youtube-upload-package
-description: 'Build the TTimes YouTube upload package from a video URL and YouTube
-  CC: comma-separated hashtags, separate body timestamps, and a final pinned-comment
-  block with inferred front-ad copy when present. Also preserves supplied publishing
-  metadata fields in labeled-bundle mode.'
+description: "Prepare TTimes publication packages and provide a manual YouTube Studio checklist, including playlists, end screens, recording date, metadata, monetization and multilingual tracks. Preserve supplied copy and derive chapters from YouTube CC."
 metadata:
-  version: 1.4.8
+  version: 1.6.8
 ---
 
 # TTimes YouTube Upload Package
-
-Prepare copy and a [Studio checklist for the editor](references/studio-setup.md). The editor enters, saves, and verifies the settings in Studio using their own account.
 
 ## Trigger and deliverable
 
 Use when the user asks for `업로드 작업`, `유튜브 업로드 세트`, asks for hashtags and a pinned comment together with timestamps, or supplies a labeled publishing bundle plus a YouTube URL.
 
-Read `references/user-approved-output-contract-20260715.md` for the concrete copy/paste contract and correction history; use `references/pinned-comment-templates.md` for exact approved ad copy.
+Prepare copy and a [Studio checklist for the editor](references/studio-setup.md). The editor enters, saves, and verifies the settings in Studio using their own account.
 
-### URL-only upload request
+The checklist specifies unlisted as the handoff state for a new video. The user handles publication. Keep the current visibility when documenting changes to an existing public video.
+
+Read [current two-block contract](references/user-approved-two-block-contract-20261014.md) for the default deliverable and production-credit lookup. Use `references/pinned-comment-templates.md` for exact approved ad copy. `references/user-approved-output-contract-20260715.md` records historical formatting; its three/six-block defaults are superseded by the current contract.
+
+### Default: title first, then four numbered copy-ready blocks
+
+At the very top, return `유튜브 제목` in its own `text` block, preserving the user's supplied YouTube title. Then return the four numbered blocks below. If the title is absent, identify that missing input without generating a new title unless requested.
+
+1. `유튜브 설명란`: user-supplied introduction verbatim → credits in the order 편집 / 촬영 / 자료 / 진행 / 섬네일 → fixed website and business-contact lines → approximately three relevant `#hashtags` → chapters.
+2. `고정 댓글`: exact approved copy for the ad actually present, if any → separator only with an ad → topic header → identical chapters → fixed thank-you lines.
+3. `해시태그 — 유튜브 태그 입력란용`: exactly ten unique, source-supported tags on one line, comma plus space separated, without `#`. This separate upload-tag block is now part of the default package; keep the three `#hashtags` inside description and CMS as well.
+4. `CMS 미발행 초안 등록용`: copy-ready registration instructions/data for the user's connected CMS workflow. Include supplied article title and body, exactly three hashtags matching the YouTube description, final YouTube URL, list-image status, `표출 설정: 0`, deduplicated internal production contributors with established role titles, five credits, and reference landing URL/title/date. Do not include a separate video ID or embed HTML; embedding is handled by the connected CMS workflow. Follow the exact CMS format in the current contract reference. This clipboard is preparation, not authorization to submit to CMS.
+
+Do not draft an introduction merely from the URL, transcript, thumbnail or title. The user supplies the introduction. If absent, continue chapter/credit work and mark the missing introduction for a draft handoff; do not present a placeholder as publish-ready.
+
+Resolve credits from the shared Google Sheet `월별 일정표`, matching the episode across shooting, editing, materials and thumbnail dates. This source was initially called a calendar by the user, but the verified source is a spreadsheet. Follow the current contract reference for the verified URL and role evidence; ambiguous assignments remain unconfirmed.
+
+When assembling production credits and CMS internal authors, apply [approved names and titles](references/credit-name-titles.md). Preserve full labels such as `박영선 전 장관`, `이중학 동국대 교수`, and `김지현 테크라이터`; confirm the episode assignment separately rather than treating this reference as a presenter roster.
+
+The supplied YouTube title and ten upload tags now have standalone blocks by default. Do not add standalone article or timestamp blocks unless requested. Use supplied article metadata inside the final CMS block without rewriting it. A user request for chapters only still narrows delivery to one chapter block.
+
+### Legacy URL-only split output — only when explicitly requested
 
 Return three copy-ready sections in this fixed order:
 
@@ -42,14 +58,14 @@ If the user follows a URL-only upload request with `타임스탬프만`, `챕터
 
 A request to hurry the timestamp work (`빨리 줘`, `앞에 것만 하라고`, `컷편 기준으로 해`) changes the **timing method**, not the upload-package deliverable. When a labeled publishing bundle or upload-package request is active:
 
-- return both `본문 업로드용 타임스탬프` and `고정 댓글 (댓글용 타임스탬프 포함)` together as soon as chapters validate
+- return the full description and pinned-comment blocks together as soon as the available inputs validate; use separate timestamps only when explicitly requested
 - keep the pinned comment last and use the exact recognized ad template
 - omit the pinned comment only when the user explicitly says `타임스탬프만`, `챕터만`, or `댓글 제외`
 - never make the user ask a second time with `댓글도 줘야죠`
 
 If metadata and tags were already delivered in earlier partial responses, do not repeat them unless requested; finish the remaining pair atomically.
 
-### Labeled publishing bundle + YouTube URL
+### Legacy labeled publishing split — only when explicitly requested
 
 When the user supplies fields such as:
 
@@ -76,7 +92,7 @@ Do not rewrite supplied titles/body, silently substitute the thumbnail title, or
 
 Card-news and upload metadata are separate authorities. A carousel cover title, LinkedIn storyline, body copy, or closing quote from `ttimes-cardnews-imagegen` must never replace supplied `<유튜브 제목>`, `<기사 제목>`, `<네이버 다음 제목>`, `<유튜브 설명/기사/페북>`, or `<랜딩>`. When a final video URL arrives, reuse the saved publishing bundle verbatim and change only derived upload fields such as shifted timestamps, hashtags when requested, and the timestamp-bearing pinned comment. Reuse card-news copy only when the user explicitly supplies it again as an upload metadata field.
 
-The timestamp list is embedded in the pinned comment and also repeated separately for body upload only in labeled-bundle mode.
+In default mode, the timestamp list appears in both the full description and pinned comment. The last block is CMS registration data, not a standalone timestamp list.
 
 ### Metadata-set-first handoff
 
@@ -97,7 +113,7 @@ If the user has already supplied the labeled publishing bundle and the first-cut
 - Reuse the supplied title/body verbatim and the saved tag/front-ad contract.
 - Invoke the timestamp skill's prefix-shift fast path; do not restart semantic chapter research.
 - If the producer explicitly says `컷편 기준으로 타임스탬프를 매기고 앞에 것만 더해`, apply the timestamp skill's producer-declared prefix-only override: use first-cut CC chapters plus the detected final prefix, and do not block on full-final ASR or duration-delta investigation.
-- Once the applicable prefix-shift gate, timestamp validation, and package validation pass, return all six copy-ready blocks immediately.
+- Once the applicable prefix-shift gate and validation pass, return the default publication blocks (or the explicitly requested fields). A missing CMS-only input does not delay the completed YouTube blocks; clearly identify the incomplete CMS field.
 - Do not interleave long diagnostic narration, repeated progress reports, dependency experiments, or requests for information already provided.
 - If a verification issue does not affect whole-second chapters or copy content, record it internally rather than delaying delivery.
 - Escalate only a genuine body mismatch, unknown ad template, missing publishing field, or failed validation.
@@ -119,7 +135,7 @@ For **detection only**, normalize obvious CC/ASR variants and timing debris befo
 
 ### Front ad 1 — Snowflake World Tour Seoul 2026 recap live seminar
 
-This is the producer-designated `앞광고 1`. Expect it to recur through **2026-10-02 KST, inclusive**, but still confirm it from CC or a direct producer statement rather than from the date alone. After that date, keep the template available and use it only when the CC or producer explicitly confirms the same campaign.
+This is the producer-designated `앞광고 1`. The user confirmed the campaign ended on **2026-10-02 KST**. It is no longer a default active campaign. Preserve its historical template; use it only when an actual old video or a direct producer statement confirms this ad.
 
 Signals include several of:
 
@@ -223,7 +239,11 @@ The opening chapter is:
 00:00 2027 AX 전략 컨퍼런스
 ```
 
-### D. No front ad
+### D. PA | AI Connect 2026 conference
+
+Recognize `사람만 관리하던 HR은 끝났다`, people analytics, HR/agent leadership, and Offpiste/ACG/TTimes joint-host signals. Automatic CC may misrecognize `2026` as `2016`; the approved campaign is PA | AI Connect 2026. Use the exact user-supplied template under that name in `references/pinned-comment-templates.md`, including its full tracked application URL. Opening chapter: `00:00 PA | AI Connect 2026 컨퍼런스`. Do not assign a numbered ad designation the user has not supplied.
+
+### E. No front ad
 
 If the final upload begins with highlight or the main program and contains no course ad, omit:
 
@@ -247,9 +267,11 @@ If CC clearly contains another ad but it does not match a saved template:
 - do not invent price, phone, email, purchase URL, benefits, or promotional claims
 - if exact copy is unavailable, ask for the approved template
 
-## Step 2: generate upload tags
+## Step 2: three description hashtags and ten upload tags
 
-Create 12–18 unique upload tags; minimum 10.
+In default mode, put three relevant `#hashtags` on one space-separated line inside the description and reuse those same three in the CMS block. Also provide exactly ten comma-separated, no-`#` tags in the third numbered block for YouTube's tag field. Preserve user-approved hashtags for the same episode when available.
+
+Create exactly ten unique upload tags by default. A different count requires a user request.
 
 Composition:
 
@@ -309,7 +331,11 @@ Formatting rules:
 - Keep one blank line after the topic header and before the thank-you lines.
 - Do not add analysis, evidence notes, CC caveats, or file paths inside the copy block.
 
-## Output shape
+## Output shape — default
+
+Return five fenced `text` blocks in this order: `유튜브 제목` at the top, then `1. 유튜브 설명란`, `2. 고정 댓글`, `3. 해시태그 — 유튜브 태그 입력란용`, `4. CMS 미발행 초안 등록용`. Each is destination text or instructions, not a conversational approval request. This supersedes older output-count and pinned-comment-last defaults. Labels, evidence, uncertainty and file links stay outside the copy blocks, except clearly marked missing fields in an incomplete draft. Respect an explicitly narrower request.
+
+### Explicit legacy split output
 
 For URL-only mode, return three labeled sections in this order:
 
@@ -323,7 +349,9 @@ Every section must use one fenced `text` code block containing only copy-ready c
 
 ## Validation
 
-Save drafts as:
+Save default drafts as `youtube_description.txt`, `final_timestamps.txt` and `pinned_comment.txt`. Validate the chapter list with the timestamp skill's verifier, and verify that description/comment contain exactly the same chapters. Check user-supplied body preservation, credit evidence and actual ad state. Do not force description hashtags through the separate upload-tag validator or generate ten tags merely to satisfy it.
+
+For the default ten comma-separated upload tags, save drafts as:
 
 - `hashtags.txt`
 - `pinned_comment.txt`
@@ -338,8 +366,13 @@ python3 SKILL_DIR/scripts/verify_upload_package.py \
 
 Quality gate:
 
-- [ ] At least 10 unique upload tags, each separated by `, ` and none prefixed with `#`
-- [ ] URL-only mode has three output blocks; labeled-bundle mode has six
+- [ ] Default output has supplied YouTube title first, followed by description, comment, exactly ten upload tags, and the CMS draft (five copy blocks total)
+- [ ] Description introduction is user-supplied and preserved, not newly invented
+- [ ] Production credits follow the current evidence and fixed field order
+- [ ] CMS block preserves supplied article title/body, uses display setting 0, and does not claim registration or image validation without evidence
+- [ ] Description includes fixed website/contact lines and about three `#hashtags`
+- [ ] Upload-tag block has exactly ten unique tags separated by `, `, without `#`
+- [ ] Legacy three/six-block splits are used only when explicitly requested
 - [ ] If the user narrowed the request to `타임스탬프만/챕터만`, package assembly stopped and exactly one validated timestamp block was returned
 - [ ] Pinned comment is always the final section
 - [ ] Supplied YouTube title, article title, and article body are copied exactly

@@ -1451,13 +1451,18 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
-      "bytes": 15360,
-      "sha256": "dac31c406e6f7ac4fe204d0f844c0c792eea1c17072b435fefd15d1758864cf7"
+      "bytes": 21350,
+      "sha256": "292c46833ea6b5a418ea09c7b39197d8f734cb47b11c98f771deb77bdbc33d11"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/references/credit-name-titles.md",
+      "bytes": 2025,
+      "sha256": "2de34ae4dae783f049397ba55af0c20acd0190f6786869d5a394bcfdb3d171c5"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/pinned-comment-templates.md",
-      "bytes": 5528,
-      "sha256": "83abe3f8fd13157f56d7b9f93793d2c1426d68261670f931da1eb4728050fe63"
+      "bytes": 6350,
+      "sha256": "c63cf738908a71e58822d2a9142b66f2388050dc8271e28d61257aff81224229"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/studio-setup.md",
@@ -1468,6 +1473,11 @@
       "path": "skills/ttimes-youtube-upload-package/references/user-approved-output-contract-20260715.md",
       "bytes": 4316,
       "sha256": "ab1c87a76cf06fdc2dfe6ee409c9c113f8d63b28c2a194c635cecb0d4d5aab11"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/references/user-approved-two-block-contract-20261014.md",
+      "bytes": 11949,
+      "sha256": "7a361006972aecbc81bb423a5235dc36823b4926a93574e8eb781540c0e7109a"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/scripts/verify_upload_package.py",

@@ -42,7 +42,7 @@ Reference video: `https://www.youtube.com/watch?v=4p6gq8J_tCc`
 AI 에이전트가 모든 것을 집어삼킨다!
 내년 전략 수립을 위한 AI 10대 아젠다 강좌 오픈
 ∙ 에이전트는 2027년 어디까지 가능할까?
-∙ 깊어질 AI 병목, 부의 지도는 어떻게 바뀐까?
+∙ 깊어질 AI 병목, 부의 지도는 어떻게 바뀔까?
 ∙ 내 업무와 조직을 어떻게 재설계해야 하나?
 ∙ 우리는 어떤 역량으로 살아남아야 하나?
 
@@ -132,6 +132,26 @@ Detection script supplied by the user:
 ```
 
 Preserve the approved pinned-comment copy above exactly. The script is for front-ad detection; do not substitute it for the approved comment copy.
+
+## PA | AI Connect 2026 conference
+
+User supplied 2026-10-02. Reference ad video: `https://youtu.be/gD3L73FhS64`. Preserve the tracked application URL in full. No numbered producer designation has been supplied.
+
+```text
+'PA | AI Connect 2026: 데이터로 여는 HR의 다음 단계' 컨퍼런스 개최합니다.
+HR의 패러다임 변화!
+피플 애널리틱스와 AI를 어떻게 적용해야 할까요?
+국내 최고의 HR 전문가들의 인사이트와 현업 적용사례를 현장에서 확인하십시오.
+📍 시간 : 11월6일 오전10시~오후6시
+📍 장소 : 서울 강남구 코엑스 오디토리움(3F)
+📍 신청 : https://www.offpiste.ai/paai2026?utm_source=ttimes&utm_medium=social&utm_campaign=PA2026&utm_content=PA2026
+```
+
+Opening chapter:
+
+```text
+00:00 PA | AI Connect 2026 컨퍼런스
+```
 
 ## Fixed chapter footer
 
