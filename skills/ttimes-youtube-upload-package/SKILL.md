@@ -5,12 +5,10 @@ description: 'Build the TTimes YouTube upload package from a video URL and YouTu
   block with inferred front-ad copy when present. Also preserves supplied publishing
   metadata fields in labeled-bundle mode.'
 metadata:
-  version: 1.4.5
+  version: 1.4.6
 ---
 
 # TTimes YouTube Upload Package
-
-설명란 사례 비교나 형식 개편을 요청받으면 [다른 채널의 실제 설명란 사례](references/description-benchmarks.md)를 참고한다.
 
 For authorized Studio work, follow [Studio setup and CLI verification](references/studio-setup.md).
 

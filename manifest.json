@@ -1451,13 +1451,8 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
-      "bytes": 15450,
-      "sha256": "af276f90b0021385b01544e739bf8d8b7623c06078f26fbe176b568dbdc23fca"
-    },
-    {
-      "path": "skills/ttimes-youtube-upload-package/references/description-benchmarks.md",
-      "bytes": 1407,
-      "sha256": "51c887862e12f569d0686900f8c5de07ed969d9c9800b53c9b5caf4894da0212"
+      "bytes": 15291,
+      "sha256": "c438ec0dbb100220c8f9de5ad91cdb8ccd910e941efc677a97f1a14e2250a067"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/pinned-comment-templates.md",
