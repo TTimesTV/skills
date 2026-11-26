@@ -1452,7 +1452,7 @@
     {
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
       "bytes": 15360,
-      "sha256": "951eba5d7586dfd1332cadf1296b27bf4b73d278911fb0ac1925427e11d741e3"
+      "sha256": "dac31c406e6f7ac4fe204d0f844c0c792eea1c17072b435fefd15d1758864cf7"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/pinned-comment-templates.md",
@@ -1461,8 +1461,8 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/studio-setup.md",
-      "bytes": 3893,
-      "sha256": "ce089ee188a0e3edc09580b04f3a5e1a6b95f553d97ef0d3e22c96ee01adcb71"
+      "bytes": 3939,
+      "sha256": "6b4fb3ea62a06c9010db706a157989bd89e79cf37f7fa10fecf390a5a4171fb5"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/user-approved-output-contract-20260715.md",

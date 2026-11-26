@@ -5,7 +5,7 @@ description: 'Build the TTimes YouTube upload package from a video URL and YouTu
   block with inferred front-ad copy when present. Also preserves supplied publishing
   metadata fields in labeled-bundle mode.'
 metadata:
-  version: 1.4.7
+  version: 1.4.8
 ---
 
 # TTimes YouTube Upload Package
