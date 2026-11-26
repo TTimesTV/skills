@@ -5,12 +5,12 @@ description: 'Build the TTimes YouTube upload package from a video URL and YouTu
   block with inferred front-ad copy when present. Also preserves supplied publishing
   metadata fields in labeled-bundle mode.'
 metadata:
-  version: 1.4.6
+  version: 1.4.7
 ---
 
 # TTimes YouTube Upload Package
 
-For authorized Studio work, follow [Studio setup and CLI verification](references/studio-setup.md).
+Prepare copy and a [Studio checklist for the editor](references/studio-setup.md). The editor enters, saves, and verifies the settings in Studio using their own account.
 
 ## Trigger and deliverable
 
