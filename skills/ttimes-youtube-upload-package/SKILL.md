@@ -10,6 +10,8 @@ metadata:
 
 # TTimes YouTube Upload Package
 
+For authorized Studio work, follow [Studio setup and CLI verification](references/studio-setup.md).
+
 ## Trigger and deliverable
 
 Use when the user asks for `업로드 작업`, `유튜브 업로드 세트`, asks for hashtags and a pinned comment together with timestamps, or supplies a labeled publishing bundle plus a YouTube URL.
