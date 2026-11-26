@@ -1451,8 +1451,13 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
-      "bytes": 15291,
-      "sha256": "e2d13a8e26a9c7cfcb30c101fda574092ccf66c3b8274f5971aa25f838c0a16f"
+      "bytes": 15450,
+      "sha256": "af276f90b0021385b01544e739bf8d8b7623c06078f26fbe176b568dbdc23fca"
+    },
+    {
+      "path": "skills/ttimes-youtube-upload-package/references/description-benchmarks.md",
+      "bytes": 1407,
+      "sha256": "51c887862e12f569d0686900f8c5de07ed969d9c9800b53c9b5caf4894da0212"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/pinned-comment-templates.md",
@@ -1461,8 +1466,8 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/studio-setup.md",
-      "bytes": 5055,
-      "sha256": "c5438a62590ecb4002db67f802662520b8fff45695fbffe4e24005f8b00f3cf8"
+      "bytes": 5427,
+      "sha256": "d888de42c38feff5bc5d24600733dc4e57bce80d8329b4852bbd3eaae8d3f14f"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/user-approved-output-contract-20260715.md",
