@@ -1,6 +1,6 @@
-# Current upload contract — approved 2026-10-14
+# Current upload contract
 
-Default output order: unnumbered YouTube title, 1. description, 2. pinned comment, 3. ten upload tags, 4. CMS unpublished draft. The filename retains the original approval for compatibility.
+Default output order: unnumbered YouTube title, 1. description, 2. ten upload tags, 3. CMS unpublished draft. Include pinned-comment copy only on explicit request. The filename retains the original approval for compatibility.
 
 ## Block 1: full YouTube description
 
@@ -27,11 +27,11 @@ ttimes6000@gmail.com
 
 The user said they will supply the introduction: never make one up just to complete a package. Preserve their body wording, including book-title punctuation such as `<공부의 미래>`. Supplied thumbnail, YouTube/article titles and landing URLs remain separate metadata; do not insert them into the description or return additional blocks unless requested. If the introduction is absent, make useful progress on credits/chapters and identify the missing input; an explicit practice draft may show a clearly marked placeholder.
 
-Description hashtags have `#` and use spaces, exactly three; reuse them in the CMS block. The separate third numbered block has exactly ten comma-separated, no-`#` tags for YouTube's upload-tag field.
+Description hashtags have `#` and use spaces, exactly three. Reuse them in the CMS block. The separate upload-tag block has exactly ten comma-separated, no-`#` tags for YouTube's upload-tag field.
 
 ## Production-credit evidence
 
-Use the team's shared Google Sheet 월별 일정표. Resolve it through connected Drive or the link your team supplies.
+Verified shared source: [월별 일정표](https://docs.google.com/spreadsheets/d/1GD39SPe_GAzaBctj4hYjc1qpMtucCWDN2Onht_pN7VM/edit#gid=1752956629).
 
 The user initially called it Google Calendar, but it is a native Google Sheet. Prefer connected Drive/Sheets tools; use the relevant skills and read metadata before bounded reads. On 2026-10-14 the active tab was `2026년`, sheetId `1752956629`; future runs must resolve current tabs and headers from metadata rather than assuming this tab forever.
 
@@ -51,7 +51,7 @@ User correction (2026-10-15): Park Young-sun's presenter credit must be exactly 
 
 Canonical credit-label lookup is now [credit-name-titles.md](credit-name-titles.md), including user-approved affiliation/professional labels for 이중학 and 김지현. Read it when assembling credits; it does not replace episode-specific staff assignment evidence.
 
-## Block 2: pinned comment
+## Pinned-comment copy on explicit request
 
 Use the exact ad corresponding to the actual final video, then:
 
@@ -72,15 +72,15 @@ Without an ad, start directly at the topic header and omit the separator. Ad/hig
 
 ## Delivery and scope
 
-Return the user's YouTube title first in its own copy block, then the numbered description/comment/ten-tag/CMS blocks. Labels stay outside the `text` fences. Reuse user-approved/published chapters for the same final video when no chapter rewrite is requested. Do not add standalone article titles or chapter lists by default. Preparing copy does not authorize editing YouTube Studio, posting comments, registering CMS drafts or changing the shared schedule.
+Return the user's YouTube title first in its own copy block, then the numbered description, ten-tag, and CMS blocks. When comment copy was requested, add it after the description and keep CMS last. Labels stay outside the `text` fences. Reuse user-approved chapters for the same final video when no chapter rewrite is requested. Preparing copy does not authorize editing a platform, posting comments, or changing the shared schedule. Follow the [draft-only workflow](publishing-workflow.md) for actual registration requests.
 
-## Top title and block 3: upload tags
+## Top title and upload tags
 
 The top `유튜브 제목` block preserves the supplied YouTube title, not the thumbnail or article title. Generate a title only when the user explicitly asks.
 
-Block `3. 해시태그 — 유튜브 태그 입력란용` contains exactly ten unique source-supported tags, separated by comma and space, without `#`. This default restores the separate upload field alongside the three public description/CMS hashtags. It does not change those three public hashtags to ten. Do not add unrelated front-ad keywords merely to reach ten; retain useful topics, central guests/entities and channel tags.
+The `해시태그 — 유튜브 태그 입력란용` block contains exactly ten unique source-supported tags, separated by comma and space, without `#`. Keep the separate three description/CMS hashtags. Use relevant topics, central guests/entities and channel tags.
 
-## Block 4: CMS unpublished-draft registration clipboard
+## Final block: CMS unpublished-draft registration clipboard
 
 The user has a Gemini workflow connected to the CMS and wants a clipboard that supplies the registration data and controls video embedding. Draft registration defaults to `표출 설정: 0` (미발행 임시저장 초안), never public publication.
 

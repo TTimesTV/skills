@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate TTimes upload-package hashtags and pinned comment."""
+"""Validate TTimes upload-package tags and optional pinned-comment copy."""
 from __future__ import annotations
 import argparse, re
 from pathlib import Path
@@ -11,11 +11,14 @@ def seconds(ts: str) -> int:
     return p[0]*60+p[1] if len(p)==2 else p[0]*3600+p[1]*60+p[2]
 
 def main() -> int:
-    ap=argparse.ArgumentParser(); ap.add_argument('--hashtags',required=True); ap.add_argument('--comment',required=True); a=ap.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--hashtags', required=True)
+    ap.add_argument('--comment')
+    a = ap.parse_args()
     errors=[]; warnings=[]
     hashtag_text=Path(a.hashtags).read_text(encoding='utf-8').strip().replace('\n',' ')
     parts=[x.strip() for x in hashtag_text.split(',') if x.strip()]
-    bad=[x for x in parts if not re.fullmatch(r'[^\s,#]+',x)]
+    bad = [tag for tag in parts if not re.fullmatch(r'[^\s,#]+(?: [^\s,#]+)*', tag)]
     hash_prefixed=[x for x in parts if x.startswith('#')]
     tags=parts
     unique=[]
@@ -26,6 +29,14 @@ def main() -> int:
     if hash_prefixed: errors.append(f'tags must not include # prefixes: {hash_prefixed}')
     if len(tags)!=len(unique): warnings.append('duplicate hashtags found')
     if len(tags)>1 and hashtag_text.count(',')<len(tags)-1: errors.append('hashtags must be comma-separated')
+
+    if a.comment is None:
+        for error in errors:
+            print('ERROR', error)
+        for warning in warnings:
+            print('WARN', warning)
+        print(f'hashtags={len(unique)} comment=skipped errors={len(errors)} warnings={len(warnings)}')
+        return 1 if errors else 0
 
     comment=Path(a.comment).read_text(encoding='utf-8').strip()
     header='📌오늘의 주제 모아보기📌'

@@ -1,8 +1,8 @@
 ---
 name: ttimes-youtube-upload-package
-description: "Prepare TTimes publication packages and provide a manual YouTube Studio checklist, including playlists, end screens, recording date, metadata, monetization and multilingual tracks. Preserve supplied copy and derive chapters from YouTube CC."
+description: "Prepare TTimes upload packages and guide draft-only registration in YouTube Studio, Naver Blog, and TTimes CMS. Preserve supplied copy, derive chapters from YouTube CC, and verify unlisted or unpublished status."
 metadata:
-  version: 1.6.8
+  version: 1.7.0
 ---
 
 # TTimes YouTube Upload Package
@@ -11,20 +11,21 @@ metadata:
 
 Use when the user asks for `업로드 작업`, `유튜브 업로드 세트`, asks for hashtags and a pinned comment together with timestamps, or supplies a labeled publishing bundle plus a YouTube URL.
 
-Prepare copy and a [Studio checklist for the editor](references/studio-setup.md). The editor enters, saves, and verifies the settings in Studio using their own account.
+For a request to register drafts or explain the full process, read the [draft-only publishing workflow](references/publishing-workflow.md). Follow **YouTube Studio → Naver Blog → TTimes CMS**. Use the [Studio checklist](references/studio-setup.md) for Studio fields and end screens.
 
-The checklist specifies unlisted as the handoff state for a new video. The user handles publication. Keep the current visibility when documenting changes to an existing public video.
+Use **일부 공개** for YouTube, **미발행 임시저장** for Naver Blog, and **미표출 `0` / 임시저장** with external delivery set to **설정안함** for CMS. `업로드`, `등록`, and `올려줘` authorize only these draft states when actual registration is requested. Confirm the target and draft state before saving, reopen and verify the saved state before continuing, and stop the affected write if either cannot be confirmed. Publication, scheduling, and external delivery require separate explicit authorization. A copy-only request authorizes preparation. Leave comments out of the default registration and package. Prepare a pinned-comment block only on explicit request.
 
-Read [current two-block contract](references/user-approved-two-block-contract-20261014.md) for the default deliverable and production-credit lookup. Use `references/pinned-comment-templates.md` for exact approved ad copy. `references/user-approved-output-contract-20260715.md` records historical formatting; its three/six-block defaults are superseded by the current contract.
+Read the [current copy format and production-credit source](references/user-approved-two-block-contract-20261014.md). Use `references/pinned-comment-templates.md` for exact ad copy when requested. `references/user-approved-output-contract-20260715.md` records historical formatting.
 
-### Default: title first, then four numbered copy-ready blocks
+### Default: title first, then three numbered copy-ready blocks
 
-At the very top, return `유튜브 제목` in its own `text` block, preserving the user's supplied YouTube title. Then return the four numbered blocks below. If the title is absent, identify that missing input without generating a new title unless requested.
+At the very top, return `유튜브 제목` in its own `text` block, preserving the user's supplied YouTube title. Then return the three numbered blocks below. If the title is absent, identify that missing input without generating a new title unless requested.
 
 1. `유튜브 설명란`: user-supplied introduction verbatim → credits in the order 편집 / 촬영 / 자료 / 진행 / 섬네일 → fixed website and business-contact lines → approximately three relevant `#hashtags` → chapters.
-2. `고정 댓글`: exact approved copy for the ad actually present, if any → separator only with an ad → topic header → identical chapters → fixed thank-you lines.
-3. `해시태그 — 유튜브 태그 입력란용`: exactly ten unique, source-supported tags on one line, comma plus space separated, without `#`. This separate upload-tag block is now part of the default package; keep the three `#hashtags` inside description and CMS as well.
-4. `CMS 미발행 초안 등록용`: copy-ready registration instructions/data for the user's connected CMS workflow. Include supplied article title and body, exactly three hashtags matching the YouTube description, final YouTube URL, list-image status, `표출 설정: 0`, deduplicated internal production contributors with established role titles, five credits, and reference landing URL/title/date. Do not include a separate video ID or embed HTML; embedding is handled by the connected CMS workflow. Follow the exact CMS format in the current contract reference. This clipboard is preparation, not authorization to submit to CMS.
+2. `해시태그 — 유튜브 태그 입력란용`: exactly ten unique, source-supported tags on one line, comma plus space separated, without `#`. Keep the three `#hashtags` inside description and CMS as well.
+3. `CMS 미발행 초안 등록용`: copy-ready registration instructions/data for the user's connected CMS workflow. Include supplied article title and body, exactly three hashtags matching the YouTube description, final YouTube URL, list-image status, `표출 설정: 0`, deduplicated internal production contributors with established role titles, five credits, and reference landing URL/title/date. Do not include a separate video ID or embed HTML; embedding is handled by the connected CMS workflow. Follow the exact CMS format in the current contract reference. This clipboard is preparation, not authorization to submit to CMS.
+
+If the user explicitly requests pinned-comment copy, add it after the description and renumber so CMS stays last. Use the exact approved copy for the ad actually present, if any → separator only with an ad → topic header → identical chapters → fixed thank-you lines.
 
 Do not draft an introduction merely from the URL, transcript, thumbnail or title. The user supplies the introduction. If absent, continue chapter/credit work and mark the missing introduction for a draft handoff; do not present a placeholder as publish-ready.
 
@@ -36,13 +37,13 @@ The supplied YouTube title and ten upload tags now have standalone blocks by def
 
 ### Legacy URL-only split output — only when explicitly requested
 
-Return three copy-ready sections in this fixed order:
+Return the applicable copy-ready sections in this order:
 
 1. `해시태그` — one plain-text code block with at least 10 comma-separated upload tags, without `#` prefixes
 2. `본문 업로드용 타임스탬프` — one plain-text code block containing only the chapter list
 3. `고정 댓글 (댓글용 타임스탬프 포함)` — one plain-text code block containing inferred front-ad copy when present, chapter list, and fixed thank-you lines
 
-The pinned comment must always be the final section.
+Include the final pinned-comment section when explicitly requested.
 
 #### Mid-task scope narrowing
 
@@ -54,16 +55,9 @@ If the user follows a URL-only upload request with `타임스탬프만`, `챕터
 - do not explain the abandoned package workflow or make the user wait for files they no longer requested
 - still run timestamp validation before delivery
 
-#### Do not silently drop the pinned comment
+#### Preserve an explicit request for comment copy
 
-A request to hurry the timestamp work (`빨리 줘`, `앞에 것만 하라고`, `컷편 기준으로 해`) changes the **timing method**, not the upload-package deliverable. When a labeled publishing bundle or upload-package request is active:
-
-- return the full description and pinned-comment blocks together as soon as the available inputs validate; use separate timestamps only when explicitly requested
-- keep the pinned comment last and use the exact recognized ad template
-- omit the pinned comment only when the user explicitly says `타임스탬프만`, `챕터만`, or `댓글 제외`
-- never make the user ask a second time with `댓글도 줘야죠`
-
-If metadata and tags were already delivered in earlier partial responses, do not repeat them unless requested; finish the remaining pair atomically.
+A request to hurry the timestamp work (`빨리 줘`, `앞에 것만 하라고`, `컷편 기준으로 해`) changes the timing method. If the user also explicitly requested comment copy, return it with the matching description once the chapters validate. A later request for chapters only narrows the output to chapters.
 
 ### Legacy labeled publishing split — only when explicitly requested
 
@@ -84,15 +78,15 @@ ignore `썸네일/리스트 제목` by default and return these copy-ready secti
 3. `기사 내용` — preserve the supplied `<유튜브 설명/기사/페북>` exactly
 4. `해시태그` — comma-separated, at least 10
 5. `본문 업로드용 타임스탬프` — a separate code block containing only the chapter list
-6. `고정 댓글 (댓글용 타임스탬프 포함)` — ad template when present, chapters, thank-you lines; always last
+6. `고정 댓글 (댓글용 타임스탬프 포함)` — only when requested; ad template when present, chapters, thank-you lines
 
-Do not rewrite supplied titles/body, silently substitute the thumbnail title, or merge the two timestamp deliverables unless the user asks. Ignore `<네이버 다음 제목>` and `<랜딩>` in the default output unless the user explicitly asks to output those fields.
+Preserve the supplied titles and body. In this legacy split, return standalone `<네이버 다음 제목>` and `<랜딩>` blocks only when explicitly requested.
 
 ### Cross-workflow isolation
 
 Card-news and upload metadata are separate authorities. A carousel cover title, LinkedIn storyline, body copy, or closing quote from `ttimes-cardnews-imagegen` must never replace supplied `<유튜브 제목>`, `<기사 제목>`, `<네이버 다음 제목>`, `<유튜브 설명/기사/페북>`, or `<랜딩>`. When a final video URL arrives, reuse the saved publishing bundle verbatim and change only derived upload fields such as shifted timestamps, hashtags when requested, and the timestamp-bearing pinned comment. Reuse card-news copy only when the user explicitly supplies it again as an upload metadata field.
 
-In default mode, the timestamp list appears in both the full description and pinned comment. The last block is CMS registration data, not a standalone timestamp list.
+The timestamp list appears in the full description. If requested, use the same list in the pinned-comment copy. Keep CMS registration data in the last default block.
 
 ### Metadata-set-first handoff
 
@@ -116,7 +110,7 @@ If the user has already supplied the labeled publishing bundle and the first-cut
 - Once the applicable prefix-shift gate and validation pass, return the default publication blocks (or the explicitly requested fields). A missing CMS-only input does not delay the completed YouTube blocks; clearly identify the incomplete CMS field.
 - Do not interleave long diagnostic narration, repeated progress reports, dependency experiments, or requests for information already provided.
 - If a verification issue does not affect whole-second chapters or copy content, record it internally rather than delaying delivery.
-- Escalate only a genuine body mismatch, unknown ad template, missing publishing field, or failed validation.
+- Escalate only a genuine body mismatch, unidentified ad timing, missing requested content, or failed validation.
 
 ## Required timestamp workflow
 
@@ -250,7 +244,7 @@ If the final upload begins with highlight or the main program and contains no co
 - all course-ad copy
 - the `=================================` separator
 
-The pinned comment starts directly with:
+When requested, the pinned comment starts directly with:
 
 ```text
 📌오늘의 주제 모아보기📌
@@ -265,11 +259,11 @@ If CC clearly contains another ad but it does not match a saved template:
 - identify the advertised product/course from CC
 - search the current/past TTimes description or source supplied by the user for exact approved copy and URL
 - do not invent price, phone, email, purchase URL, benefits, or promotional claims
-- if exact copy is unavailable, ask for the approved template
+- request the approved promotional text only if the user asked for comment copy and the text is unavailable. If the ad identity is clear, finish the description chapters independently.
 
 ## Step 2: three description hashtags and ten upload tags
 
-In default mode, put three relevant `#hashtags` on one space-separated line inside the description and reuse those same three in the CMS block. Also provide exactly ten comma-separated, no-`#` tags in the third numbered block for YouTube's tag field. Preserve user-approved hashtags for the same episode when available.
+In default mode, put three relevant `#hashtags` on one space-separated line inside the description and reuse those same three in the CMS block. Also provide exactly ten comma-separated, no-`#` tags in the upload-tag block. Preserve user-approved hashtags for the same episode when available.
 
 Create exactly ten unique upload tags by default. A different count requires a user request.
 
@@ -295,7 +289,7 @@ Rules:
 
 **User correction:** Never answer with `#AI, #인공지능`. The approved shape is `AI, 인공지능`.
 
-## Step 3: assemble the pinned comment
+## Optional: assemble pinned-comment copy on request
 
 ### With a recognized front ad
 
@@ -333,40 +327,35 @@ Formatting rules:
 
 ## Output shape — default
 
-Return five fenced `text` blocks in this order: `유튜브 제목` at the top, then `1. 유튜브 설명란`, `2. 고정 댓글`, `3. 해시태그 — 유튜브 태그 입력란용`, `4. CMS 미발행 초안 등록용`. Each is destination text or instructions, not a conversational approval request. This supersedes older output-count and pinned-comment-last defaults. Labels, evidence, uncertainty and file links stay outside the copy blocks, except clearly marked missing fields in an incomplete draft. Respect an explicitly narrower request.
+Return four fenced `text` blocks in this order: `유튜브 제목` at the top, then `1. 유튜브 설명란`, `2. 해시태그 — 유튜브 태그 입력란용`, `3. CMS 미발행 초안 등록용`. Labels, evidence, uncertainty and file links stay outside the copy blocks, except clearly marked missing fields in an incomplete draft. Respect an explicitly narrower request.
 
 ### Explicit legacy split output
 
-For URL-only mode, return three labeled sections in this order:
+For URL-only mode, return the applicable labeled sections in this order:
 
 1. `해시태그`
 2. `본문 업로드용 타임스탬프`
-3. `고정 댓글 — 댓글용 타임스탬프 포함`
+3. `고정 댓글 — 댓글용 타임스탬프 포함`, only when requested
 
-For labeled-bundle mode, return supplied metadata fields first, then hashtags, body timestamps, and the pinned comment last.
+For labeled-bundle mode, return supplied metadata fields first, then hashtags and body timestamps. If requested, add pinned-comment copy last.
 
 Every section must use one fenced `text` code block containing only copy-ready content. Do not make the user remove bullets, quote marks, Markdown bold markers, or explanatory text from inside the copy blocks.
 
 ## Validation
 
-Save default drafts as `youtube_description.txt`, `final_timestamps.txt` and `pinned_comment.txt`. Validate the chapter list with the timestamp skill's verifier, and verify that description/comment contain exactly the same chapters. Check user-supplied body preservation, credit evidence and actual ad state. Do not force description hashtags through the separate upload-tag validator or generate ten tags merely to satisfy it.
-
-For the default ten comma-separated upload tags, save drafts as:
-
-- `hashtags.txt`
-- `pinned_comment.txt`
+Save default drafts as `youtube_description.txt`, `final_timestamps.txt` and `hashtags.txt`. Validate the chapter list with the timestamp skill's verifier. Check user-supplied body preservation, credit evidence and actual ad state. When comment copy was requested, also save `pinned_comment.txt` and verify it uses exactly the same chapters as the description.
 
 Run:
 
 ```bash
-python3 SKILL_DIR/scripts/verify_upload_package.py \
-  --hashtags hashtags.txt \
-  --comment pinned_comment.txt
+python3 SKILL_DIR/scripts/verify_upload_package.py --hashtags hashtags.txt
 ```
+
+Add `--comment pinned_comment.txt` only when validating requested comment copy.
 
 Quality gate:
 
-- [ ] Default output has supplied YouTube title first, followed by description, comment, exactly ten upload tags, and the CMS draft (five copy blocks total)
+- [ ] Default output has the supplied YouTube title first, followed by description, exactly ten upload tags, and the CMS draft
 - [ ] Description introduction is user-supplied and preserved, not newly invented
 - [ ] Production credits follow the current evidence and fixed field order
 - [ ] CMS block preserves supplied article title/body, uses display setting 0, and does not claim registration or image validation without evidence
@@ -374,13 +363,9 @@ Quality gate:
 - [ ] Upload-tag block has exactly ten unique tags separated by `, `, without `#`
 - [ ] Legacy three/six-block splits are used only when explicitly requested
 - [ ] If the user narrowed the request to `타임스탬프만/챕터만`, package assembly stopped and exactly one validated timestamp block was returned
-- [ ] Pinned comment is always the final section
+- [ ] Default registration and package exclude comments. Requested comment copy has matching chapters, the approved ad copy and separator when applicable, the topic header, and the exact thank-you lines.
 - [ ] Supplied YouTube title, article title, and article body are copied exactly
 - [ ] Thumbnail/list title is ignored unless explicitly requested
 - [ ] Correct ad state inferred from first 90 seconds
-- [ ] Exact approved ad template and URL used
-- [ ] No ad copy/separator when there is no front ad
-- [ ] Topic header present
 - [ ] Timestamp list passes YouTube chapter validation
-- [ ] Thank-you lines exactly preserved
 - [ ] Every output block can be copied and pasted without editing
