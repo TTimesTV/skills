@@ -1452,7 +1452,7 @@
     {
       "path": "skills/ttimes-youtube-upload-package/SKILL.md",
       "bytes": 21163,
-      "sha256": "0bc0f4b0f68fd9411481b2f3309537ce0248ece4060d3b905925cb53df873ea4"
+      "sha256": "056d2ed7e181efd74f53ce6b416e370fe7d352ec7a5207856ff689e9be2377c4"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/credit-name-titles.md",
@@ -1466,8 +1466,8 @@
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/publishing-workflow.md",
-      "bytes": 6103,
-      "sha256": "b53de4bcb6abd40af246a22cbc51da961fd51d65fa78436fb6dc809580c61e00"
+      "bytes": 6704,
+      "sha256": "08f828cf2d1f6388dc5ac0200c5dac4a8bc433109a1ded4b81555b379fd3db39"
     },
     {
       "path": "skills/ttimes-youtube-upload-package/references/studio-setup.md",

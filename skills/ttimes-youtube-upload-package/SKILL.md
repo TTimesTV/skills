@@ -2,7 +2,7 @@
 name: ttimes-youtube-upload-package
 description: "Prepare TTimes upload packages and guide draft-only registration in YouTube Studio, Naver Blog, and TTimes CMS. Preserve supplied copy, derive chapters from YouTube CC, and verify unlisted or unpublished status."
 metadata:
-  version: 1.7.0
+  version: 1.7.1
 ---
 
 # TTimes YouTube Upload Package
